@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <p class="bg-primary p-4 m-0">Header top</p>
+  <div class="d-flex justify-content-between bg-primary p-3 m-0">
+    <img src="../assets/mlg-logo.png" style="max-width: 300px;">
+    <p >Header top</p>
   </div>
 </template>
 
