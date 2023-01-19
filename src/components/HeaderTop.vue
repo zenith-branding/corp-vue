@@ -1,8 +1,6 @@
-
 <template>
   <div>
-    <HeaderTop />
-    <p class="blue_text">{{ msg }}</p>
+    <p class="bg-primary p-4 m-0">Header top</p>
   </div>
 </template>
 
@@ -11,7 +9,7 @@
     name: '',
     data() {
       return {
-        msg: "hello world"
+
       }
     }
   }
