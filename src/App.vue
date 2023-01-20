@@ -8,7 +8,7 @@ import "bootstrap/dist/js/bootstrap.js"
 </script>
 
 <template>
-  <header class="container-fluid">
+  <header>
     <HeaderTop />
     <HeaderBottom />
   </header>

@@ -22,17 +22,17 @@
         </div>
         <div class="col-lg-9 col-md-9 col-sm-8 col-8 navigation-col">
           <ul class="pt-3">
-            <li class="btn-icon  last float-end ">
+            <li class="btn-icon  last float-right">
               <a href="#/login" class="" title="Log Out"
                 ><i class="far fa-power-off text-white"></i
               ></a>
             </li>
-            <li class="btn-icon  alt d-none d-sm-block float-end">
+            <li class="btn-icon  alt d-none d-sm-block float-right">
               <a href="#/my-account" class="" :title="name"
                 ><i class="far fa-user text-white"></i
               ></a>
             </li>
-            <li class="btn-icon  float-end">
+            <li class="btn-icon  float-right">
               <a href="javascript:void(0);" title="Notifications"
                 ><i class="far fa-bell text-white"></i
               ></a>
