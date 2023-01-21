@@ -1,8 +1,10 @@
 <template>
   <div class="header-bottom container-xl bg-light">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="container navbar navbar-expand-md navbar-light">
+      <span class="d-md-none d-sm-block"></span>
+      <!-- <div class="container-fluid"> -->
+        <!-- <span class=""></span>
+        <a class="navbar-brand d-none d-md-block" href="#">Home</a> -->
         <button
           class="navbar-toggler"
           type="button"
@@ -40,10 +42,10 @@
                         <li class="nav-item  mr-3">
               <a class="nav-link" href="#/shifts"
               title="Shifts"
-                ><i class="far fa-clock"></i>Shifts </a
+                ><i class="far fa-clock mr-1"></i>Shifts </a
               >
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown mr-3">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -53,7 +55,7 @@
                 aria-expanded="false"
                 title="Invoices"
               >
-                <i class="far fa-file-invoice-dollar"></i>Invoices
+                <i class="far fa-file-invoice-dollar mr-1"></i>Invoices
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -66,43 +68,10 @@
             </li>
           </ul>
         </div>
-      </div>
+      <!-- </div> -->
     </nav>
   </div>
-  
-  <!--  -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#"
-            >Home <span class="sr-only">(current)</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+
 </template>
 
 <script>

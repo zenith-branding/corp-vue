@@ -3134,7 +3134,7 @@ tbody.collapse.show {
   display: block;
   padding: 0.5rem 1rem;
 }
-.nav-link.disabled {
+.nav-link.disablednavbar-toggler {
   color: #868e96;
 }
 .nav-link:focus,
@@ -3223,10 +3223,8 @@ tbody.collapse.show {
 }
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: inherit;
   white-space: nowrap;
 }
@@ -3263,7 +3261,7 @@ tbody.collapse.show {
   align-items: center;
 }
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
+  padding: 0.15rem 0.55rem;
   font-size: 1.25rem;
   line-height: 1;
   background: transparent;
@@ -3272,12 +3270,13 @@ tbody.collapse.show {
 }
 .navbar-toggler:focus,
 .navbar-toggler:hover {
+  cursor: pointer;
   text-decoration: none;
 }
 .navbar-toggler-icon {
   display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
+  width: 1.3em;
+  height: 1.3em;
   vertical-align: middle;
   content: "";
   background: no-repeat center center;
@@ -7774,17 +7773,42 @@ ol,
 ul {
   list-style-type: none;
 }
+.navbar-toggler {
+  margin-top: -80px;
+  float: right;
+  display: block;
+}
+.navbar-toggler:focus,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+.navbar-toggler:hover {
+  border: 1px solid #198754;
+}
+.navbar-toggler-icon:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.9);
+}
 .header-top .logo img {
   width: auto;
-  height: 46px;
+  height: 49px;
 }
 .btn-icon {
   padding: 10px;
-  margin: -10px 0px 0px 10px;
+  margin: -13px 0px 0px 10px;
   background: rgba(0,0,0,0);
   border-radius: 50%;
   transition: all 0.5s ease;
 }
 .btn-icon:hover {
   background: #198754;
+}
+@media (max-width: 767.98px) {
+  .btn-icon:first-child {
+    margin-right: 60px;
+  }
+  .container {
+    max-width: 100%;
+  }
 }

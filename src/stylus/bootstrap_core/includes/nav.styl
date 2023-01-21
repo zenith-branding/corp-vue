@@ -10,7 +10,7 @@
 .nav-link
     display block
     padding 0.5rem 1rem
-    &.disabled
+    &.disablednavbar-toggler
         color $secondary
 
 .nav-link:focus, .nav-link:hover
@@ -96,10 +96,10 @@
 
 .navbar-brand
     display inline-block
-    padding-top 0.3125rem
-    padding-bottom 0.3125rem
+    // padding-top 0.3125rem
+    // padding-bottom 0.3125rem
     margin-right 1rem
-    font-size 1.25rem
+    font-size 1rem
     line-height inherit
     white-space nowrap
 
@@ -133,7 +133,7 @@
     align-items center
 
 .navbar-toggler
-    padding 0.25rem 0.75rem
+    padding 0.15rem 0.55rem
     font-size 1.25rem
     line-height 1
     background transparent
@@ -141,12 +141,13 @@
     border-radius $border-radius
 
 .navbar-toggler:focus, .navbar-toggler:hover
+    cursor pointer
     text-decoration none
 
 .navbar-toggler-icon
     display inline-block
-    width 1.5em
-    height 1.5em
+    width 1.3em
+    height 1.3em
     vertical-align middle
     content ""
     background no-repeat center center

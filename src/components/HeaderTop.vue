@@ -4,7 +4,7 @@
     <p >Header top</p>
   </div> -->
   <div class="header-top bg-primary p-2">
-    <div class="container-xl">
+    <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-4 col-4 logo-col">
           <a href="#/" class="logo router-link-active" title="Medical Locums">
