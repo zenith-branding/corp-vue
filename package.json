@@ -5,10 +5,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "stylus": "stylus -w src/stylus -o src/assets/style.css"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
     "jquery": "^1.9.1",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"

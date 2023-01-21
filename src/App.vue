@@ -8,10 +8,11 @@ import "bootstrap/dist/js/bootstrap.js"
 </script>
 
 <template>
+  <!-- <Header ></Header> -->
   <header>
     <HeaderTop />
     <HeaderBottom />
   </header>
 
-  <!-- <RouterView /> -->
+  <RouterView />
 </template>

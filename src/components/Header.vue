@@ -1,18 +1,21 @@
 
 <template>
-  <div>
-    <HeaderTop />
-    <p class="blue_text">{{ msg }}</p>
-  </div>
+  <HeaderTop />
+  <HeaderBottom />
+  <!-- <p class="blue_text">{{ msg }}</p> -->
 </template>
 
 <script>
-  export default {
-    name: '',
-    data() {
-      return {
-        msg: "hello world"
-      }
+import HeaderTop from "./HeaderTop.vue"
+import HeaderBottom from "./HeaderBottom.vue"
+
+
+export default {
+  name: '',
+  data() {
+    return {
+      msg: "hello world"
     }
   }
+}
 </script>

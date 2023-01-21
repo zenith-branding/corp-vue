@@ -7,10 +7,13 @@ import { createApp } from "vue"
 import App from "./App.vue"
 import router from "./router"
 
+// import HeaderTop from "./components/HeaderTop.vue"
+// import HeaderBottom from "./components/HeaderBottom.vue"
 
 const app = createApp(App)
 
 app.use(router)
+// app.component("HeaderTop", HeaderTop, "HeaderBottom", HeaderBottom)
 
 app.mount("#app")
 

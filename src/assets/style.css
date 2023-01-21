@@ -22,7 +22,7 @@
     display: none;
   }
   .badge {
-    border: 1px solid #000;
+    border: 1px solid #080808;
   }
   .table {
     border-collapse: collapse !important;
@@ -91,8 +91,8 @@ body {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
-  color: #fff;
-  background-color: #212529;
+  color: #212529;
+  background-color: #ebeff5;
 }
 [tabindex="-1"]:focus {
   outline: none !important;
@@ -364,23 +364,23 @@ h6,
 }
 h1,
 .h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 h2,
 .h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 h3,
 .h3 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 h4,
 .h4 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 h5,
 .h5 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 h6,
 .h6 {
@@ -414,7 +414,7 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0,0,0,0.1);
+  border-top: 1px solid rgba(8,8,8,0.1);
 }
 small,
 .small {
@@ -3208,7 +3208,6 @@ tbody.collapse.show {
   align-items: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
 }
 .navbar > .container,
 .navbar > .container-fluid {
@@ -3240,6 +3239,7 @@ tbody.collapse.show {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  padding: 0.5rem 0 0.4rem;
 }
 .navbar-nav .nav-link {
   padding-right: 0;
@@ -4359,13 +4359,13 @@ button.list-group-item-dark.active {
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1;
-  color: #000;
+  color: #080808;
   text-shadow: 0 1px 0 #fff;
   opacity: 0.5;
 }
 .close:focus,
 .close:hover {
-  color: #000;
+  color: #080808;
   text-decoration: none;
   opacity: 0.75;
 }
@@ -4428,7 +4428,7 @@ button.close {
   bottom: 0;
   left: 0;
   z-index: 1040;
-  background-color: #000;
+  background-color: #080808;
 }
 .modal-backdrop.fade {
   opacity: 0;
@@ -4543,7 +4543,7 @@ button.close {
   margin-left: -3px;
   content: "";
   border-width: 5px 5px 0;
-  border-top-color: #000;
+  border-top-color: #080808;
 }
 .tooltip.bs-tooltip-right,
 .tooltip.bs-tooltip-auto[x-placement^="right"] {
@@ -4558,7 +4558,7 @@ button.close {
   margin-top: -3px;
   content: "";
   border-width: 5px 5px 5px 0;
-  border-right-color: #000;
+  border-right-color: #080808;
 }
 .tooltip.bs-tooltip-bottom,
 .tooltip.bs-tooltip-auto[x-placement^="bottom"] {
@@ -4573,7 +4573,7 @@ button.close {
   margin-left: -3px;
   content: "";
   border-width: 0 5px 5px;
-  border-bottom-color: #000;
+  border-bottom-color: #080808;
 }
 .tooltip.bs-tooltip-left,
 .tooltip.bs-tooltip-auto[x-placement^="left"] {
@@ -4589,14 +4589,14 @@ button.close {
   margin-top: -3px;
   content: "";
   border-width: 5px 0 5px 5px;
-  border-left-color: #000;
+  border-left-color: #080808;
 }
 .tooltip-inner {
   max-width: 200px;
   padding: 3px 8px;
   color: #fff;
   text-align: center;
-  background-color: #000;
+  background-color: #080808;
   border-radius: 0.25rem;
 }
 .popover {
@@ -7768,13 +7768,25 @@ a.text-dark:hover {
 body {
   padding: 0;
   margin: 0;
+  background-color: #ebeff5;
 }
 ol,
 ul {
   list-style-type: none;
 }
+html {
+  font-size: 14px;
+}
+.main-heading {
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+.header-top .logo img {
+  width: auto;
+  height: 42px;
+}
 .navbar-toggler {
-  margin-top: -80px;
+  margin-top: -55px;
   float: right;
   display: block;
 }
@@ -7790,25 +7802,35 @@ ul {
   transition: all 0.2s ease-in-out;
   transform: scale(0.9);
 }
-.header-top .logo img {
-  width: auto;
-  height: 49px;
-}
-.btn-icon {
+.header-top .btn-icon {
   padding: 10px;
   margin: -13px 0px 0px 10px;
   background: rgba(0,0,0,0);
   border-radius: 50%;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
 }
-.btn-icon:hover {
+.header-top .btn-icon:hover {
   background: #198754;
 }
 @media (max-width: 767.98px) {
-  .btn-icon:first-child {
-    margin-right: 60px;
-  }
   .container {
     max-width: 100%;
+  }
+  .header-top .btn-icon:first-child {
+    margin-right: 55px;
+  }
+}
+@media (max-width: 576px) {
+  .button-area {
+    padding-bottom: 1rem;
+  }
+}
+@media (max-width: 281.98px) {
+  .header-top .btn-icon:first-child {
+    margin-right: 40px;
+  }
+  .header-top .btn-icon {
+    padding: 10px;
+    margin: -13px 0px 0px 0px;
   }
 }
