@@ -1,6 +1,5 @@
 // import "../dist/style.css"
 // import "./assets/stylus.styl"
-import "./assets/theme.styl"
 import "../src/assets/font-awesome.css"
 import "../src/assets/style.css"
 import { createApp } from "vue"

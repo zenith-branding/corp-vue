@@ -1,5 +1,6 @@
 <template>
-    <!-- <layout-default> -->
+    <HeaderTop />
+    <HeaderBottom />
         <div class="main-wrapper container">
             <div class="main-heading-wrapper">
                 <div class="row">
@@ -167,16 +168,17 @@
                 </div>
             </div>
         </div>
-    <!-- </layout-default> -->
 </template>
 
 <script>
-    // import LayoutDefault from '../../layouts/LayoutDefault'
+import HeaderTop from './Components/HeaderTop.vue'
+import HeaderBottom from './Components/HeaderBottom.vue'
 
-    export default {
-        name: 'Users',
-        components: {
-            // LayoutDefault
-        }
+export default {
+    name: 'Users',
+    components: {
+        HeaderTop,
+        HeaderBottom
     }
+}
 </script>
