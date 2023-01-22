@@ -1,7 +1,7 @@
 
 <template>
-  <HeaderTop />
-  <HeaderBottom />
+  <!-- <HeaderTop />
+  <HeaderBottom /> -->
   <!-- <p class="blue_text">{{ msg }}</p> -->
 </template>
 

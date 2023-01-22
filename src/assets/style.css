@@ -7781,6 +7781,34 @@ html {
   padding-top: 1rem;
   font-size: 2rem;
 }
+.col-actions {
+  min-width: 110px;
+}
+.icon-button {
+  display: inline-block;
+  height: 23px;
+  width: 23px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  transition: 0.6s;
+  background: #28313f;
+  font-size: 1rem;
+  margin-right: 2px;
+  position: relative;
+}
+.icon-button i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  font-size: 0.9rem;
+}
+.icon-button:hover {
+  background: #3ab048;
+  color: #fff;
+}
 .header-top .logo img {
   width: auto;
   height: 42px;
@@ -7811,6 +7839,10 @@ html {
 }
 .header-top .btn-icon:hover {
   background: #198754;
+}
+.table-sm th,
+.table-sm td {
+  padding: 0.3rem 0.3rem 0rem;
 }
 @media (max-width: 767.98px) {
   .container {

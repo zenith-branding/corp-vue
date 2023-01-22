@@ -26,7 +26,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <div class="content-area">
                                 <h4 class="card-title text-brand">List of all Users</h4>
-                                <p class="card-text" id="Users-all-Users-counts"><span class="total">4</span> Users currently in the system</p>
+                                <p class="card-text pb-1" id="Users-all-Users-counts"><span class="total">4</span> Users currently in the system</p>
                             </div>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                                     </td>
                                     <td>132093</td>
                                     <td class="col-actions">
-                                        <router-link to="/Users/view" class="icon-button bg-brand" title="View Medical Locums Group">
+                                        <router-link to="/users/view" class="icon-button bg-brand" title="View Medical Locums Group">
                                             <i class="far fa-eye"></i>
                                         </router-link>
                                         <a href="#" class="icon-button bg-default" title="Shifts">

@@ -1,5 +1,5 @@
 <template>
-    <layout-default>
+    <!-- <layout-default> -->
         <div class="auth-main-area-inner">
             <div class="content-area">
                 <img src="@/assets/images/logo-icon.png" alt="Gud Ideas Corp" class="logo">
@@ -41,16 +41,16 @@
                 </form>
             </div>
         </div>
-    </layout-default>
+    <!-- </layout-default> -->
 </template>
 
 <script>
 import LayoutDefault from '../../layouts/LayoutDefault'
 
 export default {
-  name: 'LoginVue',
+  name: 'Login',
   components: {
-    LayoutDefault
+    // LayoutDefault
   }
 }
 </script>
