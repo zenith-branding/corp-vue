@@ -46,9 +46,9 @@
           <table id="Users-all-Users-table" class="table table-sm table-hover">
             <thead class="table-head">
               <tr>
-                <th scope="col">#</th>
+                <th scope="col">ID</th>
                 <th scope="col">Name</th>
-                <th scope="col">Role</th>
+                <th scope="col">Email</th>
                 <th scope="col">Type</th>
                 <th scope="col">Status</th>
                 <th scope="col">Eclipse ID</th>
@@ -56,118 +56,34 @@
               </tr>
             </thead>
             <tbody class="table-body">
-              <tr>
-                <td>CA-1</td>
-                <td>John Doe</td>
-                <td>Doctor</td>
-                <td>PAYE</td>
-                <td>
-                  <span class="badge badge-pill badge-success">Active</span>
-                </td>
-                <td>323466</td>
-                <td class="col-actions">
-                  <router-link
-                    to="/Users/view"
-                    class="icon-button bg-brand"
-                    title="View Medical Locums Group"
-                  >
-                    <i class="far fa-eye"></i>
-                  </router-link>
-                  <a href="#" class="icon-button bg-default" title="Shifts">
-                    <i class="far fa-clock"></i>
-                  </a>
-                  <a href="#" class="icon-button bg-default" title="Payslips">
-                    <i class="far fa-money-check"></i>
-                  </a>
-                  <a href="#" class="icon-button bg-default" title="Invoices">
-                    <i class="far fa-file-invoice-dollar"></i>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>CA-2</td>
-                <td>Jane Doe</td>
-                <td>Nurse</td>
-                <td>Limited</td>
-                <td>
-                  <span class="badge badge-pill badge-warning">Inactive</span>
-                </td>
-                <td>465433</td>
-                <td class="col-actions">
-                  <router-link
-                    to="/Users/view"
-                    class="icon-button bg-brand"
-                    title="View Medical Locums Group"
-                  >
-                    <i class="far fa-eye"></i>
-                  </router-link>
-                  <a href="#" class="icon-button bg-default" title="Shifts">
-                    <i class="far fa-clock"></i>
-                  </a>
-                  <a href="#" class="icon-button bg-default" title="Payslips">
-                    <i class="far fa-money-check"></i>
-                  </a>
-                  <a href="#" class="icon-button bg-default" title="Invoices">
-                    <i class="far fa-file-invoice-dollar"></i>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>CA-3</td>
-                <td>Jack Doe</td>
-                <td>Mental Health</td>
-                <td>Umbrella</td>
-                <td>
-                  <span class="badge badge-pill badge-danger">Suspended</span>
-                </td>
-                <td>234553</td>
-                <td class="col-actions">
-                  <router-link
-                    to="/Users/view"
-                    class="icon-button bg-brand"
-                    title="View Medical Locums Group"
-                  >
-                    <i class="far fa-eye"></i>
-                  </router-link>
-                  <a href="#" class="icon-button bg-default" title="Shifts">
-                    <i class="far fa-clock"></i>
-                  </a>
-                  <a href="#" class="icon-button bg-default" title="Payslips">
-                    <i class="far fa-money-check"></i>
-                  </a>
-                  <a href="#" class="icon-button bg-default" title="Invoices">
-                    <i class="far fa-file-invoice-dollar"></i>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>CA-4</td>
-                <td>Jacob Doe</td>
-                <td>Mental Health</td>
-                <td>Limited</td>
-                <td>
-                  <span class="badge badge-pill badge-secondary">Archived</span>
-                </td>
-                <td>132093</td>
-                <td class="col-actions">
-                  <router-link
-                    to="/users/view"
-                    class="icon-button bg-brand"
-                    title="View Medical Locums Group"
-                  >
-                    <i class="far fa-eye"></i>
-                  </router-link>
-                  <a href="#" class="icon-button bg-default" title="Shifts">
-                    <i class="far fa-clock"></i>
-                  </a>
-                  <a href="#" class="icon-button bg-default" title="Payslips">
-                    <i class="far fa-money-check"></i>
-                  </a>
-                  <a href="#" class="icon-button bg-default" title="Invoices">
-                    <i class="far fa-file-invoice-dollar"></i>
-                  </a>
-                </td>
-              </tr>
+                <tr v-for="user in APIData.data" :key="user.id">
+                  <td>{{ user.id }}</td>
+                  <td>{{ user.forename }}</td>
+                  <td>{{ user.email }}</td>
+                  <td>PAYE</td>
+                  <td>
+                    <span class="badge badge-pill badge-success">Active</span>
+                  </td>
+                  <td>323466</td>
+                  <td class="col-actions">
+                    <router-link
+                      to="/Users/view"
+                      class="icon-button bg-brand"
+                      title="View Medical Locums Group"
+                    >
+                      <i class="far fa-eye"></i>
+                    </router-link>
+                    <a href="#" class="icon-button bg-default" title="Shifts">
+                      <i class="far fa-clock"></i>
+                    </a>
+                    <a href="#" class="icon-button bg-default" title="Payslips">
+                      <i class="far fa-money-check"></i>
+                    </a>
+                    <a href="#" class="icon-button bg-default" title="Invoices">
+                      <i class="far fa-file-invoice-dollar"></i>
+                    </a>
+                  </td>
+                </tr>
             </tbody>
           </table>
         </div>
@@ -205,11 +121,7 @@ import { getAPI } from "../../utils/axios-api"
 
 export default {
   name: "Users",
-  data() {
-    return {
-      APIData: [],
-    }
-  },
+
   components: {
     HeaderTop,
     HeaderBottom,
@@ -217,14 +129,17 @@ export default {
   computed: mapState(["APIData"]),
   created() {
     getAPI
-      .get("/users/", { headers: { Authorization: `Bearer ${this.$store.state.token}` } })
+      .get("/users/", {
+        headers: { Authorization: `Bearer ${this.$store.state.token}` },
+      })
       .then((response) => {
-        this.$store.state.APIData = response.data
+        console.log(response.data.users)
+        this.$store.state.APIData = response.data.users
+        this.status = "success"
       })
       .catch((err) => {
         console.log(err)
       })
   },
-
 }
 </script>

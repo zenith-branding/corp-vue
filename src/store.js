@@ -4,11 +4,8 @@ import { createStore } from "vuex"
 export default createStore({
   state: {
     token: null,
-    access_token: 1234,
-    access_key: "qwe",
-    email: "test@email.com",
-    password: "123456",
     APIData: "",
+    status: "pending",
   },
 
   mutations: {
@@ -33,19 +30,12 @@ export default createStore({
     userLogin(context, usercredentials) {
       return new Promise((resolve, reject) => {
         getAPI
-          .post(
-            "/login/",
-            {
-              email: "test@email.com",
-              password: "123456",
-            }
-            // username: usercredentials.username,
-            // password: usercredentials.password,
-          )
+          .post("/login/", {
+            email: usercredentials.email,
+            password: usercredentials.password,
+          })
           .then((response) => {
             context.commit("updateStorage", {
-              //   access: response.data.access,
-              //   refresh: response.data.refresh,
               token: response.data.token,
             })
             resolve()
