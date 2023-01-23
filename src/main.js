@@ -5,6 +5,7 @@ import "../src/assets/style.css"
 import { createApp } from "vue"
 import App from "./App.vue"
 import router from "./router"
+import store from "./store"
 
 // import HeaderTop from "./components/HeaderTop.vue"
 // import HeaderBottom from "./components/HeaderBottom.vue"
@@ -12,9 +13,13 @@ import router from "./router"
 const app = createApp(App)
 
 app.use(router)
+app.use(store)
 // app.component("HeaderTop", HeaderTop, "HeaderBottom", HeaderBottom)
 
 app.mount("#app")
 
 // import "../src/stylus/bootstrap_core/index.js"
+
+
+
 

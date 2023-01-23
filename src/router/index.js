@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router"
 import HomeView from "../views/HomeView.vue" //
 import Users from "../views/users/UsersView.vue"
 import Login from "../views/auth/LoginVue.vue"
+import Logout from "../views/auth/LogoutVue.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +28,12 @@ const router = createRouter({
       name: "Login",
       component: Login,
     },
+    // -> Logout
+    {
+      path: "/logout",
+      name: "Logout",
+      component: Logout,
+    },
     // -> Reset Password
     {
       path: "/password/reset",
@@ -38,6 +45,7 @@ const router = createRouter({
       name: "ResetEmail",
       // component: ResetEmail,
     },
+    // --- Auth ----
     {
       path: "/users",
       name: "Users",
