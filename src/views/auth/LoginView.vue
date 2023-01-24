@@ -1,5 +1,6 @@
 <template>
-  <layout-default>
+  <!-- <layout-default> -->
+  <div class="row">
     <div
       class="col-sm-6 p-5 vh-100 d-flex justify-content-center align-items-center"
     >
@@ -12,7 +13,7 @@
         <h1 class="main-heading mb-3">Sign In.</h1>
 
         <p v-if="incorrectAuth" class="badge badge-warning">
-          Incorrect username or password entered
+          Incorrect username or password entered!
         </p>
         <form v-on:submit.prevent="login">
           <div class="mb-3">
@@ -57,14 +58,15 @@
     </div>
 
     <div class="col-sm-6 auth-img d-none d-sm-block vh-100"></div>
-  </layout-default>
+  </div>
+  <!-- </layout-default> -->
 </template>
 
 <script>
-import LayoutDefault from "./components/LayoutDefault.vue"
+import LayoutDefault from "./components/LayoutAuthDefault.vue"
 
 export default {
-  name: "Login",
+  name: "LoginView",
   data() {
     return {
       email: "",
@@ -73,7 +75,7 @@ export default {
     }
   },
   components: {
-    LayoutDefault,
+    // LayoutDefault,
   },
   methods: {
     login() {

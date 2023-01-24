@@ -120,7 +120,7 @@ import { mapState } from "vuex"
 import { getAPI } from "../../utils/axios-api"
 
 export default {
-  name: "Users",
+  name: "UsersView",
 
   components: {
     HeaderTop,

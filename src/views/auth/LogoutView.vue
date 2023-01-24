@@ -19,10 +19,10 @@
 </template>
 
 <script>
-import LayoutDefault from "./components/LayoutDefault.vue"
+import LayoutDefault from "./components/LayoutAuthDefault.vue"
 
 export default {
-  name: "Logout",
+  name: "LogoutView",
   components: {
     LayoutDefault,
   },

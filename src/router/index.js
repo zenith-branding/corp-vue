@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router"
 import HomeView from "../views/HomeView.vue" //
-import Users from "../views/users/UsersView.vue"
-import Login from "../views/auth/LoginVue.vue"
-import Logout from "../views/auth/LogoutVue.vue"
+import UsersView from "../views/users/UsersView.vue"
+import UsersDetailsView from "../views/Users/UsersDetailsView.vue"
+import LoginView from "../views/auth/LoginView.vue"
+import LogoutView from "../views/auth/LogoutView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,13 +27,13 @@ const router = createRouter({
     {
       path: "/login",
       name: "Login",
-      component: Login,
+      component: LoginView,
     },
     // -> Logout
     {
       path: "/logout",
       name: "Logout",
-      component: Logout,
+      component: LogoutView,
     },
     // -> Reset Password
     {
@@ -45,12 +46,19 @@ const router = createRouter({
       name: "ResetEmail",
       // component: ResetEmail,
     },
-    // --- Auth ----
+    // --- AuthEnd ----
+    // --- Users ----
     {
       path: "/users",
       name: "Users",
-      component: Users,
+      component: UsersView,
     },
+    {
+      path: "/users/view",
+      name: "UsersDetails",
+      component: UsersDetailsView,
+    },
+    // --- UsersEnd ----
   ],
 })
 

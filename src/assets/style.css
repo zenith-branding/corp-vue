@@ -7813,6 +7813,11 @@ html {
   background: #3ab048;
   color: #fff;
 }
+.tab-button {
+  font-size: 0.85rem;
+  padding: 1.1rem 1.1rem;
+  margin-bottom: 0.5rem;
+}
 .header-top .logo img {
   width: auto;
   height: 42px;
