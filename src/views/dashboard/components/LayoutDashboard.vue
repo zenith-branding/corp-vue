@@ -2,28 +2,22 @@
     <HeaderTop />
     <HeaderBottom />
     <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-4 m-xs-b">
-          <UsersSidebar />
-        </div>
-        <div class="col-lg-9 col-md-8 col-sm-8">
-          <slot />
-        </div>
-      </div>
+        <slot />
+        <!-- <DashboardTable/> -->
     </div>
 </template>
 
 <script>
 import HeaderBottom from "../../../components/HeaderBottom.vue";
 import HeaderTop from "../../../components/HeaderTop.vue";
-import UsersSidebar from "./UsersSidebar.vue";
+import DashboardTable from "./DashboardTable.vue";
 
 export default {
-  name: "LayoutUsersDetails",
+  name: "LayoutDashboard",
   components: {
     HeaderTop,
     HeaderBottom,
-    UsersSidebar
+    DashboardTable,
   },
 }
 </script>

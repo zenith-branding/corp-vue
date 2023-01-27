@@ -7,9 +7,32 @@
     max-width: 65px
 
 .auth-img
-    // position:relative
-    // height:100%
     background:url(./login-page-bg.png);
     background-position:50% 50%;
     background-size:cover;
     background-repeat:no-repeat
+
+// ======== Dashboard Page ========
+
+.stat-box
+    .card-body
+        color:$gray-600
+    
+    .stat-box-wrapper
+        position:relative
+        color:$gray-800
+        
+
+        .stat-num
+            font-size: 2.2em;
+            margin-bottom: 16px;
+            line-height: 1em;
+
+        .icon
+            position: absolute;
+            top: -5px;
+            right: 0;
+            font-size: 2.8em
+    
+    &:hover
+        background: rgba(58, 176, 72, 0.18)

@@ -3,7 +3,7 @@
   <HeaderBottom />
   <div class="main-wrapper container">
     <div class="main-heading-wrapper">
-      <div class="row">
+      <div class="row mb-4">
         <div class="col-sm-6">
           <div class="content-area">
             <!-- Title Area !-->
@@ -35,7 +35,7 @@
         <div class="row card-table-header">
           <div class="col-lg-4 col-md-4 col-sm-12">
             <div class="content-area">
-              <h4 class="card-title text-brand">List of all Users</h4>
+              <h4 class="card-title text-brand">Users</h4>
               <p class="card-text pb-1" id="Users-all-Users-counts">
                 <span class="total">4</span> Users currently in the system
               </p>
@@ -117,8 +117,8 @@
 
 <script>
 import { Bootstrap5Pagination } from "laravel-vue-pagination"
-import HeaderTop from "./Components/HeaderTop.vue"
-import HeaderBottom from "./Components/HeaderBottom.vue"
+import HeaderBottom from "../../components/HeaderBottom.vue";
+import HeaderTop from "../../components/HeaderTop.vue";
 import { mapState } from "vuex"
 import { getAPI } from "../../utils/axios-api"
 

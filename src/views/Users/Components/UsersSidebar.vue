@@ -14,7 +14,7 @@
       <li class="list-group-item">
         <div class="ms-2 me-auto">
           <span class="text-muted">User Role</span>
-          <div class="font-weight-bold pt-1">Stuff</div>
+          <div class="font-weight-bold pt-1">Staff</div>
         </div>
       </li>
       <li class="list-group-item d-flex">
@@ -22,7 +22,7 @@
           <i class="fa fa-envelope"></i
         ></a>
         <span class="value pt-1">
-          <a href="">info@mlg.co.uk</a>
+          <a href = "mailto: info@mlg.co.uk">info@mlg.co.uk</a>
         </span>
       </li>
       <li class="list-group-item d-flex">
@@ -30,7 +30,7 @@
           <i class="fa fa-mobile"></i
         ></a>
         <span class="value pt-1">
-          <a href="">info@mlg.co.uk</a>
+          <a href="tel:555-666-7777">555-666-7777</a>
         </span>
       </li>
     </ul>

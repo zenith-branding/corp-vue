@@ -21,7 +21,7 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item mr-3">
             <a
-              href="#/"
+              href="http://localhost:5173/"
               class="nav-link active"
               aria-current="page"
               title="Dashboard"

@@ -9,12 +9,12 @@
         <div class="col-lg-3 col-md-3 col-sm-4 col-4 logo-col">
           <a href="#/" class="logo router-link-active" title="Medical Locums">
             <img
-              src="../../../assets/mlg-logo.png"
+              src="../assets/mlg-logo.png"
               alt="Medical Locums"
               class="d-none d-sm-block"
             />
             <img
-              src="../../../assets/mlg-sm-logo.png"
+              src="../assets/mlg-sm-logo.png"
               alt="Medical Locums"
               class="d-block d-sm-none"
             />
