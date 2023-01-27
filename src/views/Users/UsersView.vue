@@ -56,37 +56,39 @@
               </tr>
             </thead>
             <tbody class="table-body">
-                <tr v-for="user in APIData.data" :key="user.id">
-                  <td>{{ user.id }}</td>
-                  <td>{{ user.forename }}</td>
-                  <td>{{ user.email }}</td>
-                  <td>PAYE</td>
-                  <td>
-                    <span class="badge badge-pill badge-success">Active</span>
-                  </td>
-                  <td>323466</td>
-                  <td class="col-actions">
-                    <router-link
-                      to="/Users/view"
-                      class="icon-button bg-brand"
-                      title="View Medical Locums Group"
-                    >
-                      <i class="far fa-eye"></i>
-                    </router-link>
-                    <a href="#" class="icon-button bg-default" title="Shifts">
-                      <i class="far fa-clock"></i>
-                    </a>
-                    <a href="#" class="icon-button bg-default" title="Payslips">
-                      <i class="far fa-money-check"></i>
-                    </a>
-                    <a href="#" class="icon-button bg-default" title="Invoices">
-                      <i class="far fa-file-invoice-dollar"></i>
-                    </a>
-                  </td>
-                </tr>
+              <tr v-for="user in APIData.data" :key="user.id">
+                <td>{{ user.id }}</td>
+                <td>{{ user.forename }}</td>
+                <td>{{ user.email }}</td>
+                <td>PAYE</td>
+                <td>
+                  <span class="badge badge-pill badge-success">Active</span>
+                </td>
+                <td>323466</td>
+                <td class="col-actions">
+                  <router-link
+                    to="/Users/view"
+                    class="icon-button bg-brand"
+                    title="View Medical Locums Group"
+                  >
+                    <i class="far fa-eye"></i>
+                  </router-link>
+                  <a href="#" class="icon-button bg-default" title="Shifts">
+                    <i class="far fa-clock"></i>
+                  </a>
+                  <a href="#" class="icon-button bg-default" title="Payslips">
+                    <i class="far fa-money-check"></i>
+                  </a>
+                  <a href="#" class="icon-button bg-default" title="Invoices">
+                    <i class="far fa-file-invoice-dollar"></i>
+                  </a>
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
+        <!-- https://laravel-vue-pagination.org/guide/install.html#install -->
+        <Bootstrap5Pagination :data="APIData" @pagination-change-page="getUsers" />
         <div class="pagination-wrapper mt-3">
           <nav>
             <ul class="pagination">
@@ -114,6 +116,7 @@
 </template>
 
 <script>
+import { Bootstrap5Pagination } from "laravel-vue-pagination"
 import HeaderTop from "./Components/HeaderTop.vue"
 import HeaderBottom from "./Components/HeaderBottom.vue"
 import { mapState } from "vuex"
@@ -125,6 +128,9 @@ export default {
   components: {
     HeaderTop,
     HeaderBottom,
+  },
+  mounted() {
+    console.log("Component mounted.")
   },
   computed: mapState(["APIData"]),
   created() {
@@ -140,6 +146,25 @@ export default {
       .catch((err) => {
         console.log(err)
       })
+  },
+
+  methods: {
+    getUsers(page) {
+      if (typeof page === "undefined") {
+        page = 1
+      }
+
+      this.$http
+        .get("/users?page=" + page)
+
+        .then((response) => {
+          console.log(response)
+          return response.json()
+        })
+        .then((data) => {
+          this.laravelData = data
+        })
+    },
   },
 }
 </script>

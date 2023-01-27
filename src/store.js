@@ -11,9 +11,11 @@ export default createStore({
   mutations: {
     updateStorage(state, { access, refresh, token }) {
       state.token = token
+      localStorage.setItem('token' , token)
     },
     destroyToken(state) {
       state.token = null
+      localStorage.removeItem("token", token)
     },
   },
   getters: {
