@@ -18,7 +18,7 @@
     width:23px;
     text-align:center;
     border-radius:50%;
-    color:#fff
+    color:$white
     transition:.6s;
     background:#28313f;
     font-size:1rem;
@@ -30,37 +30,35 @@
 
 .icon-button i
     position:absolute;
+    color: $white
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
     display:block
     font-size:0.9rem;
+    :hover
+        background:#3ab048
+        color:$white
 
-.icon-button:hover
 
-    background:#3ab048
-    color:#fff
-// Accordion btn
-.accordion-button
-    padding .5rem
-    width: 100%;
-    border: none;
-    &:active, &:focus,&.active
-        background-color: $primary
-// Table Tab Buttons
-.tab-button
-    font-size: 0.85rem
-    padding:1.1rem 1.1rem
-    margin-bottom:0.5rem
+// accordion tabs
+ul.accordion-tabs
+    li a
+        font-size: .93rem
+    li.active
+        .btn
+            background: $infoBtnHov
 
-// smaller faded font
-// .fs-silent
-//     font-size: 0.8rem
-//     margin-bottom: 1.2rem
+    
+.btn 
+  cursor: pointer
 
 .badge
     font-size 85%
+
 .list-group-item
     padding: 0.5rem 1.25rem;
     border-radius: 40px
-
+    line-height 1.5
+.card-body
+    line-height: 1.5

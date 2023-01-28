@@ -1,146 +1,141 @@
 <template>
   <LayoutUsersDetails>
-    <div class="row">
-      <div class="col-sm-12 p-4">
-        <div class="card accordion" id="accordionExample">
-          <!-- Addresses -->
-          <div class="accordion-item">
-            <h4 class="card-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                Addresses
-              </button>
-            </h4>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="card-body row">
-                <div class="col-md-8 col-sm-12">
-                  <h3 class="card-title">Personal address</h3>
-                  <p>Alanod, Chippenham Dr</p>
-                  <p>Milton Keynes</p>
-                  <p>MK10 0AN</p>
-
-                </div>
-                <div class="col-md-8 col-sm-12 text-right">
-                  <div class="button-area">
+    <div class="main-content user-main">
+      <div class="main-content-panel my-4">
+        <div class="card mb-3">
+          <div class="card-body tabs-wrapper">
+            <div class="row">
+              <div class="col-lg-3 col-md-12 col-sm-12 m-md-b m-sm-b m-xs-b">
+                <!-- Tab Buttons -->
+                <ul class="accordion-tabs">
+                  <li
+                    v-for="(tab, index) in tabs"
+                    @click="currentTab = index"
+                    :class="{ active: currentTab === index }"
+                  >
+                    <a
+                      class="text-left btn btn-info w-100 m-1"
+                      :title="tab.title"
+                    >
+                      <i :class="tab.icon"></i>{{ tab.title }}</a
+                    >
+                  </li>
+                </ul>
+                <!-- END Tab Buttons -->
+              </div>
+              <div class="col-lg-9 col-md-12 col-sm-12">
+                <div class="tab-contents">
+                  <!-- START Candidate Address !-->
+                  <div
+                    v-show="currentTab === 0"
+                    class="tab-content"
+                    id="candidate-addresses"
+                  >
+                    <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
+                      <div class="col-lg-8 col-md-8 col-sm-12">
+                        <h4 class="card-title text-brand">Addresses</h4>
+                        <p class="card-text">
+                          Addresses for John Doe in the system
+                        </p>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12 text-right">
+                        <div class="button-area">
+                          <a
+                            href="#"
+                            title="Edit John Doe's Details"
+                            class="btn btn-brand"
+                          >
+                            <i class="far fa-plus icon left mr-2"></i>Edit Address
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END Candidate Address !-->
+                  <!-- START Candidate Contact Numbers !-->
+                  <div
+                    v-show="currentTab === 1"
+                    class="tab-content"
+                    id="candidate-contact-number"
+                  >
+                    <div class="row button-row mb-3">
+                      <div class="col-lg-8 col-md-8 col-sm-12">
+                        <h4 class="card-title text-brand">Contact Numbers</h4>
+                        <p class="card-text">
+                          Contact numbers for John Doe in the system
+                        </p>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12 text-right">
+                        <div class="button-area">
+                          <a
+                            href="#"
+                            title="Edit Contact Number"
+                            class="btn btn-brand"
+                          >
+                            <i class="far fa-plus icon left mr-2"></i>Edit Contact
+                            Number
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END Candidate Contact Numbers !-->
+                  <!-- START Candidate Email Addresses !-->
+                  <div
+                    v-show="currentTab === 2"
+                    class="tab-content"
+                    id="candidate-email-addresses"
+                  >
+                    <div class="row button-row mb-3">
+                      <div class="col-lg-8 col-md-8 col-sm-12">
+                        <h4 class="card-title text-brand">Email Addresses</h4>
+                        <p class="card-text">
+                          Email Addresses for John Doe in the system
+                        </p>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12 text-right">
+                        <div class="button-area">
+                          <a
+                            href="#"
+                            title="Edit John Doe's Details"
+                            class="btn btn-brand"
+                          >
+                            <i class="far fa-plus icon left mr-2"></i>Edit Email
+                            Address
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END Candidate Email Addresses !-->
+                  <!-- START Candidate General Details !-->
+                  <div
+                    v-show="currentTab === 3"
+                    class="tab-content active"
+                    id="candidate-general-details"
+                  >
+                    <div class="row button-row mb-3">
+                      <div class="col-lg-8 col-md-8 col-sm-12">
+                        <h4 class="card-title text-brand">Recent Activity</h4>
+                        <p class="card-text">
+                          Recent Activity for John Doe in the system
+                        </p>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12 text-right">
+                        <!-- <div class="button-area">
                           <a
                             href="#"
                             title="Edit Details"
                             class="btn btn-brand"
                           >
-                            <i class="far fa-pencil icon left"></i>Edit Details
+                            <i class="far fa-pencil icon left mr-2"></i>Edit Details
                           </a>
-                        </div>
-                  <button class="btn btn-primary">Edit Details</button></div>
-              </div>
-            </div>
-          </div>
-          <!-- Contact Numbers -->
-          <div class="accordion-item">
-            <h4 class="card-header" id="headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                Contact Numbers
-              </button>
-            </h4>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="card-body">
-                <strong>This is the second item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.card-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-          <!-- Emails -->
-          <div class="accordion-item">
-            <h4 class="card-header" id="headingThree">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                Email Addresses
-              </button>
-            </h4>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="card-body">
-                <strong>This is the third item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.card-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-          <!-- Activity -->
-          <div class="accordion-item">
-            <h4 class="card-header" id="headingFour">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFour"
-                aria-expanded="false"
-                aria-controls="collapseFour"
-              >
-                Activity
-              </button>
-            </h4>
-            <div
-              id="collapseFour"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingFour"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="card-body">
-                <strong>This is the third item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END Candidate General Details !-->
+                </div>
               </div>
             </div>
           </div>
@@ -157,6 +152,29 @@ export default {
   name: "UsersDetails",
   components: {
     LayoutUsersDetails,
+  },
+  data() {
+    return {
+      currentTab: 0,
+      tabs: [
+        {
+          title: "Addresses",
+          icon: "far fa-map-marker-alt icon left mr-2 lg",
+        },
+        {
+          title: "Contact Numbers",
+          icon: "far fa-phone icon left mr-2 lg",
+        },
+        {
+          title: "Email Addresses",
+          icon: "far fa-envelope icon left mr-2 lg",
+        },
+        {
+          title: "Activity",
+          icon: "far fa-user icon left mr-2 lg",
+        },
+      ],
+    }
   },
 }
 </script>

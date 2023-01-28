@@ -1,27 +1,31 @@
 *,
 *:before,
-*:after{
-  box-sizing: border-box;
-}
+*:after
+  box-sizing: border-box
+
 
 @-ms-viewport
   width device-width
 
 body
+  line-height: 1
   padding 0
   margin 0
   background-color $bodyBackground
 
 ol, ul 
     list-style-type: none
+    padding: 0
+    margin: 0
+
 
 html 
   font-size: 14px
 
-a:hover {
-    color: $primaryHov;
-    text-decoration: none;
-}
+a:hover
+    color: $primaryHov
+    text-decoration: none
+
 
 main 
     display flex

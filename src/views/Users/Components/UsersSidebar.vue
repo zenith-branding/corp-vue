@@ -18,7 +18,7 @@
         </div>
       </li>
       <li class="list-group-item d-flex">
-        <a href="#" class="icon-button sidebar bg-primary mr-2" title="Shifts">
+        <a href="#" class="icon-button sidebar bg-primary mr-2" title="Email">
           <i class="fa fa-envelope"></i
         ></a>
         <span class="value pt-1">
@@ -26,7 +26,7 @@
         </span>
       </li>
       <li class="list-group-item d-flex">
-        <a href="#" class="icon-button sidebar bg-primary mr-2" title="Shifts">
+        <a href="#" class="icon-button sidebar bg-primary mr-2" title="Contact Number">
           <i class="fa fa-mobile"></i
         ></a>
         <span class="value pt-1">

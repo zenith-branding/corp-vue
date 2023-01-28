@@ -2157,8 +2157,8 @@ fieldset[disabled] a.btn {
 }
 .btn-info:hover {
   color: #fff;
-  background-color: #138496;
-  border-color: #117a8b;
+  background-color: rgba(58,176,72,0.33);
+  border-color: rgba(58,176,72,0.63);
 }
 .btn-info:focus,
 .btn-info.focus {
@@ -2172,9 +2172,9 @@ fieldset[disabled] a.btn {
 .btn-info:active,
 .btn-info.active,
 .show > .btn-info.dropdown-toggle {
-  background-color: #138496;
+  background-color: rgba(58,176,72,0.33);
   background-image: none;
-  border-color: #117a8b;
+  border-color: rgba(58,176,72,0.63);
 }
 .btn-warning {
   color: #111;
@@ -3888,7 +3888,7 @@ tbody.collapse.show {
 .badge-info[href]:hover {
   color: #fff;
   text-decoration: none;
-  background-color: #117a8b;
+  background-color: rgba(58,176,72,0.63);
 }
 .badge-warning {
   color: #111;
@@ -5033,7 +5033,7 @@ a.bg-success:hover {
 }
 a.bg-info:focus,
 a.bg-info:hover {
-  background-color: #117a8b !important;
+  background-color: rgba(58,176,72,0.63) !important;
 }
 .bg-warning {
   background-color: #ffc107 !important;
@@ -6170,7 +6170,7 @@ a.text-success:hover {
 }
 a.text-info:focus,
 a.text-info:hover {
-  color: #117a8b !important;
+  color: rgba(58,176,72,0.63) !important;
 }
 .text-warning {
   color: #ffc107 !important;
@@ -7766,6 +7766,7 @@ a.text-dark:hover {
   width: device-width;
 }
 body {
+  line-height: 1;
   padding: 0;
   margin: 0;
   background-color: #ebeff5;
@@ -7773,6 +7774,8 @@ body {
 ol,
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 html {
   font-size: 14px;
@@ -7813,30 +7816,25 @@ main {
 }
 .icon-button i {
   position: absolute;
+  color: #fff;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: block;
   font-size: 0.9rem;
 }
-.icon-button:hover {
+.icon-button i :hover {
   background: #3ab048;
   color: #fff;
 }
-.accordion-button {
-  padding: 0.5rem;
-  width: 100%;
-  border: none;
+ul.accordion-tabs li a {
+  font-size: 0.93rem;
 }
-.accordion-button:active,
-.accordion-button:focus,
-.accordion-button.active {
-  background-color: #3ab048;
+ul.accordion-tabs li.active .btn {
+  background: rgba(58,176,72,0.33);
 }
-.tab-button {
-  font-size: 0.85rem;
-  padding: 1.1rem 1.1rem;
-  margin-bottom: 0.5rem;
+.btn {
+  cursor: pointer;
 }
 .badge {
   font-size: 85%;
@@ -7844,6 +7842,10 @@ main {
 .list-group-item {
   padding: 0.5rem 1.25rem;
   border-radius: 40px;
+  line-height: 1.5;
+}
+.card-body {
+  line-height: 1.5;
 }
 .header-top .logo img {
   width: auto;
@@ -7868,7 +7870,7 @@ main {
 }
 .header-top .btn-icon {
   padding: 10px;
-  margin: -13px 0px 0px 10px;
+  margin: -10px 0px 0px 10px;
   background: rgba(0,0,0,0);
   border-radius: 50%;
   transition: all 0.5s ease-in-out;
