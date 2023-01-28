@@ -1,6 +1,6 @@
 <template>
   
-  <div class="header-bottom container-xl bg-light">
+  <div class="header-bottom container-xl bg-light mb-4">
     <nav class="container navbar navbar-expand-md navbar-light">
       <span class="d-md-none d-sm-block"></span>
       <!-- <div class="container-fluid"> -->

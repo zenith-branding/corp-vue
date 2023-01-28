@@ -6,7 +6,7 @@
             <div class="content-area">
               <h4 class="card-title text-brand">Users</h4>
               <p class="card-text pb-1" id="Users-all-Users-counts">
-                <span class="total">4</span> Latest Users Acivity in The System
+                <span class="total"></span> Latest Users Acivity in The System
               </p>
             </div>
           </div>

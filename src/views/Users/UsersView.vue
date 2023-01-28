@@ -3,7 +3,7 @@
   <HeaderBottom />
   <div class="main-wrapper container">
     <div class="main-heading-wrapper">
-      <div class="row mb-4">
+      <div class="row">
         <div class="col-sm-6">
           <div class="content-area">
             <!-- Title Area !-->

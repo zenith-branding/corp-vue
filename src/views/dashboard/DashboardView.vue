@@ -1,11 +1,11 @@
 <template>
   <LayoutDashboard>
-    <main clss="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 pl-0">
+    <main class="row">
+      <div class="col-lg-6 col-md-6 col-xs-12 md-pl-0">
         <!-- Shifts on-hold this week !-->
         <div
           id="dashboard-shifts-on-hold"
-          class="card card-danger stat-box mb-3 mt-4"
+          class="card card-danger stat-box mb-3"
         >
           <router-link
             to="/users"
@@ -81,7 +81,7 @@
         <!-- END Candidates ready to pay this week !-->
       </div>
       <!-- Second Column-->
-      <div class="col-lg-6 col-md-6 col-sm-12 mt-4 pr-0">
+      <div class="col-lg-6 col-md-6 col-xs-12 md-pr-0">
         <!-- Clients paid this week !-->
         <div
           id="dashboard-clients-paid"

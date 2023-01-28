@@ -14,7 +14,7 @@
 
         <p v-if="incorrectAuth" class="badge badge-warning">
           Incorrect username or password entered!
-        </p>
+           </p>
         <form v-on:submit.prevent="login">
           <div class="mb-3">
             <label for="email" class="form-label">Email address</label>

@@ -3,7 +3,7 @@
     <HeaderBottom />
     <div class="container">
         <slot />
-        <!-- <DashboardTable/> -->
+        <DashboardTable/>
     </div>
 </template>
 
