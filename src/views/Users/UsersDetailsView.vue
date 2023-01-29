@@ -143,12 +143,27 @@
                     id="candidate-email-addresses"
                   >
                     <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
-                      <div class="col-lg-8 col-md-7 col-sm-12">
-                        <h4 class="card-title text-brand">Notes</h4>
-                        <p class="card-text">
-                          Notes for John Doe in the system
-                        </p>
-                        <ul class="list-group notes">
+                      <div class="col-sm-12">
+                        <div class="d-flex  justify-content-between">
+                          <div>
+                            <h4 class="card-title text-brand">Notes</h4>
+                            <p class="card-text">
+                              Notes for John Doe in the system
+                            </p>
+                          </div>
+
+                          <div class="button-area">
+                            <a
+                              href="#"
+                              title="Edit John Doe's Details"
+                              class="btn btn-brand"
+                            >
+                              <i class="far fa-plus icon left mr-2"></i>Edit
+                              Address
+                            </a>
+                          </div>
+                        </div>
+                        <ul class="list-group notes mt-3">
                           <li class="list-group-item">Cras justo odio</li>
                           <li class="list-group-item">
                             Dapibus ac facilisis in
@@ -159,17 +174,6 @@
                           </li>
                           <li class="list-group-item">Vestibulum at eros</li>
                         </ul>
-                      </div>
-                      <div class="col-lg-4 col-md-5 col-sm-12 text-right">
-                        <div class="button-area">
-                          <a
-                            href="#"
-                            title="Edit John Doe's Details"
-                            class="btn btn-brand"
-                          >
-                            <i class="far fa-plus icon left mr-2"></i>Add Note
-                          </a>
-                        </div>
                       </div>
                     </div>
                   </div>
