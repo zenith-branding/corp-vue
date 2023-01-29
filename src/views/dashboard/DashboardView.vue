@@ -28,7 +28,7 @@
         </div>
         <!-- END Shifts on-hold this week !-->
         <!-- Shifts pending this week !-->
-        <div
+        <!-- <div
           id="dashboard-shifts-pending"
           class="card card-primary stat-box mb-3"
         >
@@ -50,7 +50,7 @@
               since this time last week
             </div>
           </router-link>
-        </div>
+        </div> -->
         <!-- END Shifts pending this week !-->
         <!-- Candidates ready to pay this week !-->
         <div
@@ -108,7 +108,7 @@
         </div>
         <!-- END Clients paid this week !-->
         <!-- Incoming Invoices Waiting to Recieve !-->
-        <div
+        <!-- <div
           id="dashboard-client-invoices-due"
           class="card stat-box card-warning mb-3"
         >
@@ -130,7 +130,7 @@
               since this time last week
             </div>
           </router-link>
-        </div>
+        </div> -->
         <!-- END Incoming Invoices Waiting to Recieve !-->
         <!-- Candidates amount to pay !-->
         <div

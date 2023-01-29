@@ -5,7 +5,7 @@
       <li class="list-group-item font-weight-bold">ID-1421</li>
       <li class="list-group-item">
         <div class="ms-2 me-auto">
-          <span class="text-muted">User Status</span>
+          <span class="text-muted">Your Status</span>
           <div class="font-weight-bold pt-1">
             <span class="badge badge-pill badge-success">Active</span>
           </div>
@@ -13,8 +13,8 @@
       </li>
       <li class="list-group-item">
         <div class="ms-2 me-auto">
-          <span class="text-muted">User Role</span>
-          <div class="font-weight-bold pt-1">Staff</div>
+          <span class="text-muted">Your Role</span>
+          <div class="font-weight-bold pt-1">Admin</div>
         </div>
       </li>
       <li class="list-group-item d-flex">
@@ -39,7 +39,7 @@
 
 <script>
 export default {
-  name: "UsersSidebar",
+  name: "AccountSidebar",
   components: {},
 }
 </script>

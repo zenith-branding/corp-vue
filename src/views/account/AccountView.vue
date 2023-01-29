@@ -1,5 +1,5 @@
 <template>
-  <LayoutUsersDetails>
+  <LayoutAccount>
     <div class="main-content user-main">
       <div class="main-content-panel my-2">
         <div class="card mb-3">
@@ -42,7 +42,7 @@
                         <div class="button-area">
                           <a
                             href="#"
-                            title="Edit John Doe's Details"
+                            title="Edit John Doe's "
                             class="btn btn-brand"
                           >
                             <i class="far fa-plus icon left mr-2"></i>Edit
@@ -98,7 +98,7 @@
                         <div class="button-area">
                           <a
                             href="#"
-                            title="Edit John Doe's Details"
+                            title="Edit John Doe's "
                             class="btn btn-brand"
                           >
                             <i class="far fa-plus icon left mr-2"></i>Edit Email
@@ -109,11 +109,11 @@
                     </div>
                   </div>
                   <!-- END Candidate Email Addresses !-->
-                  <!-- START Candidate General Details !-->
+                  <!-- START Candidate General  !-->
                   <div
                     v-show="currentTab === 3"
                     class="tab-content active"
-                    id="candidate-general-details"
+                    id="candidate-general-"
                   >
                     <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
                       <div class="col-lg-8 col-md-7 col-sm-12">
@@ -126,16 +126,16 @@
                         <!-- <div class="button-area">
                           <a
                             href="#"
-                            title="Edit Details"
+                            title="Edit "
                             class="btn btn-brand"
                           >
-                            <i class="far fa-pencil icon left mr-2"></i>Edit Details
+                            <i class="far fa-pencil icon left mr-2"></i>Edit 
                           </a>
                         </div> -->
                       </div>
                     </div>
                   </div>
-                  <!-- END Candidate General Details !-->
+                  <!-- END Candidate General  !-->
                   <!-- START Candidate Notes !-->
                   <div
                     v-show="currentTab === 4"
@@ -148,26 +148,15 @@
                         <p class="card-text">
                           Notes for John Doe in the system
                         </p>
-                        <ul class="list-group notes">
-                          <li class="list-group-item">Cras justo odio</li>
-                          <li class="list-group-item">
-                            Dapibus ac facilisis in
-                          </li>
-                          <li class="list-group-item">Morbi leo risus</li>
-                          <li class="list-group-item">
-                            Porta ac consectetur ac
-                          </li>
-                          <li class="list-group-item">Vestibulum at eros</li>
-                        </ul>
                       </div>
                       <div class="col-lg-4 col-md-5 col-sm-12 text-right">
                         <div class="button-area">
                           <a
                             href="#"
-                            title="Edit John Doe's Details"
+                            title="Edit John Doe's "
                             class="btn btn-brand"
                           >
-                            <i class="far fa-plus icon left mr-2"></i>Add Note
+                            <i class="far fa-plus icon left mr-2"></i>Edit Notes
                           </a>
                         </div>
                       </div>
@@ -181,16 +170,16 @@
         </div>
       </div>
     </div>
-  </LayoutUsersDetails>
+  </LayoutAccount>
 </template>
 
 <script>
-import LayoutUsersDetails from "./Components/LayoutUsersDetails.vue"
+import LayoutAccount from "./Components/LayoutAccount.vue"
 
 export default {
-  name: "UsersDetails",
+  name: "Account",
   components: {
-    LayoutUsersDetails,
+    LayoutAccount,
   },
   data() {
     return {

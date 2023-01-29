@@ -7833,6 +7833,9 @@ ul.accordion-tabs li a {
 ul.accordion-tabs li.active .btn {
   background: rgba(58,176,72,0.33);
 }
+.list-group.notes .list-group-item {
+  border-radius: 0px;
+}
 .btn {
   cursor: pointer;
 }

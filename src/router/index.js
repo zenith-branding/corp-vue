@@ -5,6 +5,7 @@ import UsersDetailsView from "../views/Users/UsersDetailsView.vue"
 import LoginView from "../views/auth/LoginView.vue"
 import LogoutView from "../views/auth/LogoutView.vue"
 import DashboardView from "../views/dashboard/DashboardView.vue"
+import AccountView from "../views/account/AccountView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,13 +34,13 @@ const router = createRouter({
     },
     // -> Reset Password
     {
-      path: "/password/reset",
-      name: "ResetPassword",
+      // path: "/password/reset",
+      // name: "ResetPassword",
       // component: ResetPassword,
     },
     {
-      path: "/password/email",
-      name: "ResetEmail",
+      // path: "/password/email",
+      // name: "ResetEmail",
       // component: ResetEmail,
     },
     // --- AuthEnd ----
@@ -48,6 +49,12 @@ const router = createRouter({
       path: "/",
       name: "Dashboard",
       component: DashboardView,
+    },
+    // --- My Account ----
+    {
+      path: "/my-account",
+      name: "AccountView",
+      component: AccountView,
     },
     // --- Users ----
     {

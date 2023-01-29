@@ -4,7 +4,7 @@
         <div class="row card-table-header">
           <div class="col-lg-4 col-md-4 col-sm-12">
             <div class="content-area">
-              <h4 class="card-title text-brand">Users</h4>
+              <h4 class="card-title text-brand">Activity</h4>
               <p class="card-text pb-1" id="Users-all-Users-counts">
                 <span class="total"></span> Latest Users Acivity in The System
               </p>
@@ -20,7 +20,7 @@
                 <th scope="col">Email</th>
                 <th scope="col">Type</th>
                 <th scope="col">Status</th>
-                <th scope="col">Eclipse ID</th>
+                <th scope="col">Model</th>
                 <th scope="col" class="col-actions">Actions</th>
               </tr>
             </thead>
@@ -29,11 +29,11 @@
                 <td>id</td>
                 <td> user.forename </td>
                 <td> user.email </td>
-                <td>PAYE</td>
+                <td>Create</td>
                 <td>
                   <span class="badge badge-pill badge-success">Active</span>
                 </td>
-                <td>323466</td>
+                <td>Note</td>
                 <td class="col-actions">
                   <router-link
                     to="/Users/view"
@@ -42,7 +42,7 @@
                   >
                     <i class="far fa-eye"></i>
                   </router-link>
-                  <a href="#" class="icon-button bg-default" title="Shifts">
+                  <!-- <a href="#" class="icon-button bg-default" title="Shifts">
                     <i class="far fa-clock"></i>
                   </a>
                   <a href="#" class="icon-button bg-default" title="Payslips">
@@ -50,7 +50,7 @@
                   </a>
                   <a href="#" class="icon-button bg-default" title="Invoices">
                     <i class="far fa-file-invoice-dollar"></i>
-                  </a>
+                  </a> -->
                 </td>
               </tr>
             </tbody>
