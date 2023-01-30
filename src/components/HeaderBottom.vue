@@ -1,5 +1,4 @@
 <template>
-  
   <div class="header-bottom container-xl bg-light mb-4">
     <nav class="container navbar navbar-expand-md navbar-light">
       <span class="d-md-none d-sm-block"></span>
@@ -44,9 +43,14 @@
             >
           </li>
           <li class="nav-item mr-3">
-            <a class="nav-link" href="#/shifts" title="Shifts"
+            <a class="nav-link" href="/shifts" title="Shifts"
               ><i class="far fa-clock mr-1"></i>Shifts
             </a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#/reports" title="Reports"
+              ><i class="far far fa-hospital mr-1"></i>Reports</a
+            >
           </li>
           <li class="nav-item dropdown mr-3">
             <a
