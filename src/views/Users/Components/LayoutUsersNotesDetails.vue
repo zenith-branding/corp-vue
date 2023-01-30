@@ -2,7 +2,21 @@
   <HeaderTop />
   <HeaderBottom />
   <div class="container">
-    <UsersHeader />
+ <!-- Page Header -->
+    <div class="main-heading-wrapper">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="content-area text-center">
+            <!-- Title Area !-->
+            <h1 class="main-heading">Note Details</h1>
+            <!-- <p class="main-sub-heading">Read or update your note</p> -->
+            <!-- END Title Area !-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Page Header -->
+
     <div class="row">
       <div class="col-lg-3 col-md-4 col-sm-4 m-xs-b">
         <UsersSidebar />
@@ -18,15 +32,14 @@
 import HeaderBottom from "../../../components/HeaderBottom.vue"
 import HeaderTop from "../../../components/HeaderTop.vue"
 import UsersSidebar from "./UsersSidebar.vue"
-import UsersHeader from "./UsersHeader.vue"
+
 
 export default {
-  name: "LayoutUsersDetails",
+  name: "LayoutUsersNotesDetails",
   components: {
     HeaderTop,
     HeaderBottom,
     UsersSidebar,
-    UsersHeader
   },
 }
 </script>

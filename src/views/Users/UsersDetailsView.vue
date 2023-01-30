@@ -11,6 +11,7 @@
                   <li
                     v-for="(tab, index) in tabs"
                     @click="currentTab = index"
+                    :key="tab.title"
                     :class="{ active: currentTab === index }"
                   >
                     <a
@@ -32,23 +33,53 @@
                     id="candidate-addresses"
                   >
                     <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
-                      <div class="col-lg-8 col-md-7 col-sm-12">
-                        <h4 class="card-title text-brand">Addresses</h4>
-                        <p class="card-text">
-                          Addresses for John Doe in the system
-                        </p>
-                      </div>
-                      <div class="col-lg-4 col-md-5 col-sm-12 text-right">
-                        <div class="button-area">
-                          <a
-                            href="#"
-                            title="Edit John Doe's Details"
-                            class="btn btn-brand"
-                          >
-                            <i class="far fa-plus icon left mr-2"></i>Edit
-                            Address
-                          </a>
+                      <div class="col-sm-12">
+                        <div class="d-flex justify-content-between">
+                          <div>
+                            <h4 class="card-title text-brand">Addresses</h4>
+                            <p class="card-text">
+                              Addresses for John Doe in the system
+                            </p>
+                          </div>
+
+                          <div class="button-area">
+                            <a
+                              href="#"
+                              title="Edit John Doe's Details"
+                              class="btn btn-brand"
+                            >
+                              <i class="far fa-plus icon left mr-2"></i>
+                              Add Address
+                            </a>
+                          </div>
                         </div>
+                        <ul class="list-group notes mt-3">
+                          <li class="list-group-item">
+                            <span class="font-weight-bold">Address 1</span
+                            ><br />
+                            <router-link
+                              to="/users/view/addresses/view"
+                              class="list-selector"
+                              title="View Note"
+                            >
+                              Alanod, Chippenham Dr <br />
+                              Milton Keynes<br />
+                              MK10 0AN
+                            </router-link>
+                          </li>
+                          <li class="list-group-item">
+                            <span class="font-weight-bold">Address 2</span
+                            ><br />
+                            <router-link
+                              to="/users/view/addresses/view"
+                              class="list-selector"
+                              title="View Note"
+                            >
+                              Alanod, Chippenham Dr <br />
+                              Milton Keynes <br />MK10 0AN
+                            </router-link>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -60,23 +91,29 @@
                     id="candidate-contact-number"
                   >
                     <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
-                      <div class="col-lg-8 col-md-7 col-sm-12">
+                      <div class="col-sm-12">
                         <h4 class="card-title text-brand">Contact Numbers</h4>
                         <p class="card-text">
-                          Contact numbers for John Doe in the system
-                        </p>
-                      </div>
-                      <div class="col-lg-4 col-md-5 col-sm-12 text-right">
-                        <div class="button-area">
-                          <a
-                            href="#"
-                            title="Edit Contact Number"
-                            class="btn btn-brand"
+                          <label for="validationDefault01">Mobile Phone:</label>
+                          <input
+                            type="text"
+                            class="form-control mb-3"
+                            id="validationDefault01"
+                            placeholder="07354898956"
+                          />
+                          <label for="validationDefault01"
+                            >Landline Phone:</label
                           >
-                            <i class="far fa-plus icon left mr-2"></i>Edit
-                            Contact Number
-                          </a>
-                        </div>
+                          <input
+                            type="text"
+                            class="form-control mb-3"
+                            id="validationDefault02"
+                            placeholder="01354898956"
+                          />
+                          <button type="submit" class="btn btn-primary mt-3">
+                            Update
+                          </button>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -88,23 +125,22 @@
                     id="candidate-email-addresses"
                   >
                     <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
-                      <div class="col-lg-8 col-md-7 col-sm-12">
+                      <div class="col-sm-12">
                         <h4 class="card-title text-brand">Email Addresses</h4>
                         <p class="card-text">
-                          Email Addresses for John Doe in the system
-                        </p>
-                      </div>
-                      <div class="col-lg-4 col-md-5 col-sm-12 text-right">
-                        <div class="button-area">
-                          <a
-                            href="#"
-                            title="Edit John Doe's Details"
-                            class="btn btn-brand"
+                          <label for="validationDefault01"
+                            >Email Address:</label
                           >
-                            <i class="far fa-plus icon left mr-2"></i>Edit Email
-                            Address
-                          </a>
-                        </div>
+                          <input
+                            type="text"
+                            class="form-control mb-3"
+                            id="validationDefault01"
+                            placeholder="info@mlg.co.uk"
+                          />
+                          <button type="submit" class="btn btn-primary mt-3">
+                            Update
+                          </button>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -116,35 +152,8 @@
                     id="candidate-general-details"
                   >
                     <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
-                      <div class="col-lg-8 col-md-7 col-sm-12">
-                        <h4 class="card-title text-brand">Recent Activity</h4>
-                        <p class="card-text">
-                          Recent Activity for John Doe in the system
-                        </p>
-                      </div>
-                      <div class="col-lg-4 col-md-5 col-sm-12 text-right">
-                        <!-- <div class="button-area">
-                          <a
-                            href="#"
-                            title="Edit Details"
-                            class="btn btn-brand"
-                          >
-                            <i class="far fa-pencil icon left mr-2"></i>Edit Details
-                          </a>
-                        </div> -->
-                      </div>
-                    </div>
-                  </div>
-                  <!-- END Candidate General Details !-->
-                  <!-- START Candidate Notes !-->
-                  <div
-                    v-show="currentTab === 4"
-                    class="tab-content"
-                    id="candidate-email-addresses"
-                  >
-                    <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
                       <div class="col-sm-12">
-                        <div class="d-flex  justify-content-between">
+                        <div class="d-flex justify-content-between">
                           <div>
                             <h4 class="card-title text-brand">Notes</h4>
                             <p class="card-text">
@@ -158,21 +167,148 @@
                               title="Edit John Doe's Details"
                               class="btn btn-brand"
                             >
-                              <i class="far fa-plus icon left mr-2"></i>Edit
-                              Address
+                              <i class="far fa-plus icon left mr-2"></i>
+                              Add note
+                            </a>
+                          </div>
+                        </div>
+                        <div class="table-responsive hide-scroll-bars pt-3">
+                          <table
+                            id="Users-all-Users-table"
+                            class="table table-sm table-hover"
+                          >
+                            <thead class="table-head">
+                              <tr>
+                                <th scope="col">Type</th>
+                                <th scope="col">Model</th>
+                                <th scope="col">Date</th>
+                              </tr>
+                            </thead>
+                            <tbody class="table-body">
+                              <tr>
+                                <td>
+                                  <span class="badge badge-pill badge-warning"
+                                    >Update</span
+                                  >
+                                </td>
+                                <td>Address</td>
+                                <td>
+                                  <span>22/01/2023</span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span class="badge badge-pill badge-success"
+                                    >Create</span
+                                  >
+                                </td>
+                                <td>Note</td>
+                                <td>
+                                  <span>16/01/2023</span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <span class="badge badge-pill badge-danger"
+                                    >Delete</span
+                                  >
+                                </td>
+                                <td>Note</td>
+                                <td>
+                                  <span>11/01/2023</span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END Candidate General Details !-->
+                  <!-- START Candidate Notes !-->
+                  <div
+                    v-show="currentTab === 4"
+                    class="tab-content"
+                    id="candidate-email-addresses"
+                  >
+                    <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
+                      <div class="col-sm-12">
+                        <div class="d-flex justify-content-between">
+                          <div>
+                            <h4 class="card-title text-brand">Notes</h4>
+                            <p class="card-text">
+                              Notes for John Doe in the system
+                            </p>
+                          </div>
+
+                          <div class="button-area">
+                            <a
+                              href="#"
+                              title="Edit John Doe's Details"
+                              class="btn btn-brand"
+                            >
+                              <i class="far fa-plus icon left mr-2"></i>
+                              Add note
                             </a>
                           </div>
                         </div>
                         <ul class="list-group notes mt-3">
-                          <li class="list-group-item">Cras justo odio</li>
                           <li class="list-group-item">
-                            Dapibus ac facilisis in
+                            <router-link
+                              to="/users/view/notes/view"
+                              class="list-selector"
+                              title="View Note"
+                            >
+                              Cras justo odio
+                              <span class="float-right">
+                                24th January 2023</span
+                              >
+                            </router-link>
                           </li>
-                          <li class="list-group-item">Morbi leo risus</li>
                           <li class="list-group-item">
-                            Porta ac consectetur ac
+                            <router-link
+                              to="/users/view/notes/view"
+                              class="list-selector"
+                              title="View Note"
+                            >
+                              Dapibus ac facilisis in
+                              <span class="float-right">
+                                14th January 2023</span
+                              >
+                            </router-link>
                           </li>
-                          <li class="list-group-item">Vestibulum at eros</li>
+                          <li class="list-group-item">
+                            <router-link
+                              to="/users/view/notes/view"
+                              class="list-selector"
+                              title="View Note"
+                            >
+                              Cras justo odio
+                              <span class="float-right">
+                                12th January 2023</span
+                              >
+                            </router-link>
+                          </li>
+                          <li class="list-group-item">
+                            <router-link
+                              to="/users/view/notes/view"
+                              class="list-selector"
+                              title="View Note"
+                            >
+                              Porta ac consectetur ac
+                              <span class="float-right"> 7th January 2023</span>
+                            </router-link>
+                          </li>
+                          <li class="list-group-item">
+                            <router-link
+                              to="/users/view/notes/view"
+                              class="list-selector"
+                              title="View Note"
+                            >
+                              Vestibulum at eros
+                              <span class="float-right"> 6th January 2023</span>
+                            </router-link>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -189,7 +325,7 @@
 </template>
 
 <script>
-import LayoutUsersDetails from "./Components/LayoutUsersDetails.vue"
+import LayoutUsersDetails from "./components/LayoutUsersDetails.vue"
 
 export default {
   name: "UsersDetails",

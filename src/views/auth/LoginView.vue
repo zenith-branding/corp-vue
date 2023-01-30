@@ -1,5 +1,4 @@
 <template>
-  <!-- <layout-default> -->
   <div class="row">
     <div
       class="col-sm-6 p-5 vh-100 d-flex justify-content-center align-items-center"
@@ -49,11 +48,9 @@
 
     <div class="col-sm-6 auth-img d-none d-sm-block vh-100"></div>
   </div>
-  <!-- </layout-default> -->
 </template>
 
 <script>
-import LayoutDefault from "./components/LayoutAuthDefault.vue"
 
 export default {
   name: "LoginView",

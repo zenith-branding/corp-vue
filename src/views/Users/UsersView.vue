@@ -14,21 +14,29 @@
             <!-- END Title Area !-->
           </div>
         </div>
-        <div
+
+           <div
           class="col-sm-6 d-sm-flex justify-content-end align-items-center pb-xs-5"
         >
-          <div class="button-area text-right">
-            <!-- Tickets Search Button !-->
+          <div class="button-area d-flex">
+            <!-- Search Button Button !-->
+            <a href="#" title="Add" class="btn btn-primary mr-3">
+              <i class="far fa-search icon left mr-2"></i>Search
+            </a>
+            <!-- END Search Button Button !-->
+            <!-- Search Input Field !-->
             <input
               class="form-control"
               type="text"
               placeholder="Search User"
               aria-label="User Search"
             />
-            <!-- END Tickets Search Button !-->
+            <!-- END Search Input Field !-->
+          </div>
+        
           </div>
         </div>
-      </div>
+
     </div>
     <div id="Users-all-Users" class="card card-table">
       <div class="card-body">
@@ -49,9 +57,8 @@
                 <th scope="col">ID</th>
                 <th scope="col">Name</th>
                 <th scope="col">Email</th>
-                <th scope="col">Type</th>
+                <th scope="col">Role</th>
                 <th scope="col">Status</th>
-                <th scope="col">Eclipse ID</th>
                 <th scope="col" class="col-actions">Actions</th>
               </tr>
             </thead>
@@ -64,11 +71,10 @@
                 <td>
                   <span class="badge badge-pill badge-success">Active</span>
                 </td>
-                <td>323466</td>
                 <td class="col-actions">
                   <router-link
                     to="/Users/view"
-                    class="icon-button bg-brand"
+                    class="icon-button"
                     title="View Medical Locums Group"
                   >
                     <i class="far fa-eye"></i>

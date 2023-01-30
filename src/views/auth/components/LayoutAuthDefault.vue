@@ -7,7 +7,6 @@
 </template>
 
 <script>
-// import Header from "../../../components/HeaderTop.vue"
 
 export default {
   name: "LayoutAuthDefault",

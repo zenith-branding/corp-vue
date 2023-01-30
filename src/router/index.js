@@ -6,6 +6,8 @@ import LoginView from "../views/auth/LoginView.vue"
 import LogoutView from "../views/auth/LogoutView.vue"
 import DashboardView from "../views/dashboard/DashboardView.vue"
 import AccountView from "../views/account/AccountView.vue"
+import UsersNotesDetailsView from "../views/users/UsersNotesDetailsView.vue"
+import UsersAddressesDetailsView from "../views/users/UsersAddressesDetailsView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -67,6 +69,17 @@ const router = createRouter({
       name: "UsersDetails",
       component: UsersDetailsView,
     },
+    {
+      path: "/users/view/notes/view",
+      name: "UsersNotesDetailsView",
+      component: UsersNotesDetailsView,
+    },
+    {
+      path: "/users/view/addresses/view",
+      name: "UsersAddressesDetailsView",
+      component: UsersAddressesDetailsView,
+    },
+
     // --- UsersEnd ----
   ],
 })
