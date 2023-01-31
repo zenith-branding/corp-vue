@@ -7794,6 +7794,15 @@ main {
   height: 100vh;
   overflow: hidden;
 }
+.table.invoices {
+  font-size: 0.9rem;
+}
+.table thead th,
+.table-sm th,
+.table-sm td {
+  padding: 0.45rem 0.47rem !important;
+  vertical-align: middle;
+}
 .col-actions {
   min-width: 110px;
 }

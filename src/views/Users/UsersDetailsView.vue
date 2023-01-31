@@ -242,14 +242,18 @@
                           </div>
 
                           <div class="button-area">
-                            <a
+                            <router-link to="/users/view/notes/create" class="btn btn-brand" title="Create New Note"><i class="far fa-plus icon left mr-2"></i>
+
+                              Add note</router-link>
+                            <!-- <a
                               href="#"
                               title="Edit John Doe's Details"
                               class="btn btn-brand"
                             >
                               <i class="far fa-plus icon left mr-2"></i>
+
                               Add note
-                            </a>
+                            </a> -->
                           </div>
                         </div>
                         <ul class="list-group notes mt-3">

@@ -3,6 +3,7 @@ import HomeView from "../views/HomeView.vue" //
 import UsersView from "../views/users/UsersView.vue"
 import UsersDetailsView from "../views/Users/UsersDetailsView.vue"
 import UsersNotesDetailsView from "../views/users/UsersNotesDetailsView.vue"
+import UsersNotesCreateView from "../views/users/UsersNotesCreateView.vue"
 import UsersAddressesDetailsView from "../views/users/UsersAddressesDetailsView.vue"
 import LoginView from "../views/auth/LoginView.vue"
 import LogoutView from "../views/auth/LogoutView.vue"
@@ -10,6 +11,11 @@ import DashboardView from "../views/dashboard/DashboardView.vue"
 import AccountView from "../views/account/AccountView.vue"
 import ShiftsView from "../views/shifts/ShiftsView.vue"
 import ShiftsDetailsView from "../views/shifts/ShiftsDetailsView.vue"
+import InvoicesView from "../views/invoices/InvoicesView.vue"
+import IncomingInvoicesView from "../views/invoices/IncomingInvoicesView.vue"
+import OutgoingInvoicesView from "../views/invoices/OutgoingInvoicesView.vue"
+
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -76,6 +82,11 @@ const router = createRouter({
       component: UsersNotesDetailsView,
     },
     {
+      path: "/users/view/notes/create",
+      name: "UsersNotesCreateView",
+      component: UsersNotesCreateView,
+    },
+    {
       path: "/users/view/addresses/view",
       name: "UsersAddressesDetailsView",
       component: UsersAddressesDetailsView,
@@ -96,6 +107,24 @@ const router = createRouter({
     },
 
     // --- ShiftsEnd ----
+    // --- Invoices ----
+    {
+      path: "/invoices",
+      name: "InvoicesView",
+      component: InvoicesView,
+    },
+    {
+      path: "/invoices/incoming",
+      name: "IncomingInvoicesView",
+      component: IncomingInvoicesView,
+    },
+    {
+      path: "/invoices/outgoing",
+      name: "OutgoingInvoicesView",
+      component: OutgoingInvoicesView,
+    },
+
+    // --- InvoicesEnd ----
   ],
 })
 
