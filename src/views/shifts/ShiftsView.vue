@@ -19,11 +19,19 @@
           class="col-sm-6 d-sm-flex justify-content-end align-items-center pb-xs-5"
         >
           <div class="button-area d-flex">
-            <!-- Search Button Button !-->
-            <a href="#" title="Add" class="btn btn-primary mr-3">
-              <i class="far fa-search icon left mr-2"></i>Search
-            </a>
-            <!-- END Search Button Button !-->
+              <!-- Sort By Button !-->
+              <select class="custom-select mr-3" id="inlineFormCustomSelect">
+                  <option selected>Sort By</option>
+                  <option value="1">Candidate</option>
+                  <option value="2">Hospital</option>
+                  <option value="3">Date</option>
+                </select>
+                <!-- END Sort By Button !-->
+                <!-- Search Button Button !-->
+                <a href="#" title="Add" class="btn btn-primary mr-3">
+                  <i class="far fa-search icon left mr-2"></i>Search
+                </a>
+                <!-- END Search Button Button !-->
             <!-- Search Input Field !-->
             <input
               class="form-control"
@@ -39,7 +47,7 @@
     <div id="Shifts-all-Shifts" class="card card-table">
       <div class="card-body">
         <div class="row card-table-header">
-          <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="col-md-6 col-sm-12">
             <div class="content-area">
               <h4 class="card-title text-brand">Shifts</h4>
               <p class="card-text pb-1" id="Shifts-all-Shifts-counts">
@@ -76,18 +84,15 @@
                   <span class="badge badge-pill badge-success">Paid</span>
                 </td>
 
-                <td>
-                  IN-8495843
-                </td>
+                <td>IN-8495843</td>
                 <td class="col-actions">
                   <router-link
-                    to="/Users/view"
+                    to="/shifts/view"
                     class="icon-button"
                     title="View Medical Locums Group"
                   >
                     <i class="far fa-eye"></i>
                   </router-link>
-                 
                 </td>
               </tr>
             </tbody>

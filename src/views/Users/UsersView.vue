@@ -15,10 +15,18 @@
           </div>
         </div>
 
-           <div
+        <div
           class="col-sm-6 d-sm-flex justify-content-end align-items-center pb-xs-5"
         >
           <div class="button-area d-flex">
+            <!-- Sort By Button !-->
+            <select class="custom-select mr-3" id="inlineFormCustomSelect">
+              <option selected>Sort By</option>
+              <option value="1">Role</option>
+              <option value="2">Name</option>
+              <option value="3">Status</option>
+            </select>
+            <!-- END Sort By Button !-->
             <!-- Search Button Button !-->
             <a href="#" title="Add" class="btn btn-primary mr-3">
               <i class="far fa-search icon left mr-2"></i>Search
@@ -33,15 +41,13 @@
             />
             <!-- END Search Input Field !-->
           </div>
-        
-          </div>
         </div>
-
+      </div>
     </div>
     <div id="Users-all-Users" class="card card-table">
       <div class="card-body">
         <div class="row card-table-header">
-          <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="col-md-6 col-sm-12">
             <div class="content-area">
               <h4 class="card-title text-brand">Users</h4>
               <p class="card-text pb-1" id="Users-all-Users-counts">
@@ -73,7 +79,7 @@
                 </td>
                 <td class="col-actions">
                   <router-link
-                    to="/Users/view"
+                    to="/users/view"
                     class="icon-button"
                     title="View Medical Locums Group"
                   >
@@ -94,7 +100,10 @@
           </table>
         </div>
         <!-- https://laravel-vue-pagination.org/guide/install.html#install -->
-        <Bootstrap5Pagination :data="APIData" @pagination-change-page="getUsers" />
+        <Bootstrap5Pagination
+          :data="APIData"
+          @pagination-change-page="getUsers"
+        />
         <div class="pagination-wrapper mt-3">
           <nav>
             <ul class="pagination">
@@ -123,8 +132,8 @@
 
 <script>
 import { Bootstrap5Pagination } from "laravel-vue-pagination"
-import HeaderBottom from "../../components/HeaderBottom.vue";
-import HeaderTop from "../../components/HeaderTop.vue";
+import HeaderBottom from "../../components/HeaderBottom.vue"
+import HeaderTop from "../../components/HeaderTop.vue"
 import { mapState } from "vuex"
 import { getAPI } from "../../utils/axios-api"
 

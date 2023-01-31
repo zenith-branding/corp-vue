@@ -7918,6 +7918,10 @@ ul.accordion-tabs li.active .btn {
 .stat-box:hover {
   background: rgba(58,176,72,0.18);
 }
+.shift-details-table th,
+.shift-details-table td {
+  padding: 1rem;
+}
 @media (max-width: 767.98px) {
   .container {
     max-width: 100%;

@@ -9,7 +9,7 @@ import LogoutView from "../views/auth/LogoutView.vue"
 import DashboardView from "../views/dashboard/DashboardView.vue"
 import AccountView from "../views/account/AccountView.vue"
 import ShiftsView from "../views/shifts/ShiftsView.vue"
-
+import ShiftsDetailsView from "../views/shifts/ShiftsDetailsView.vue"
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -85,9 +85,14 @@ const router = createRouter({
 
     // --- Shifts ----
     {
-      path: "/Shifts",
-      name: "Shifts",
+      path: "/shifts",
+      name: "ShiftsView",
       component: ShiftsView,
+    },
+    {
+      path: "/shifts/view",
+      name: "ShiftsDetails",
+      component: ShiftsDetailsView,
     },
 
     // --- ShiftsEnd ----
