@@ -8,8 +8,8 @@
         <div class="col-sm-12">
           <div class="content-area text-center">
             <!-- Title Area !-->
-            <h1 class="main-heading pt-3">Note Details</h1>
-            <p class="main-sub-heading pb-4">Delete or update your note</p>
+            <h1 class="main-heading">Add New Address</h1>
+            <p class="main-sub-heading pb-4">Add new address</p>
             <!-- END Title Area !-->
           </div>
         </div>
@@ -17,13 +17,11 @@
     </div>
     <!-- END Page Header -->
 
-    <div class="row">
-      <div class="col-lg-3 col-md-4 col-sm-4 m-xs-b">
-        <UsersSidebar />
-      </div>
-      <div class="col-lg-9 col-md-8 col-sm-8">
-        <slot />
-      </div>
+    <div class="col-lg-3 col-md-4 col-sm-4 m-xs-b">
+      <UsersSidebar />
+    </div>
+    <div class="col-lg-9 col-md-8 col-sm-8">
+      <slot />
     </div>
   </div>
 </template>
@@ -34,7 +32,7 @@ import HeaderTop from "../../../components/HeaderTop.vue"
 import UsersSidebar from "./UsersSidebar.vue"
 
 export default {
-  name: "LayoutUsersNotesDetails",
+  name: "LayoutUsersAddressesCreate",
   components: {
     HeaderTop,
     HeaderBottom,

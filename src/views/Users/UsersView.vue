@@ -8,15 +8,15 @@
           <div class="content-area">
             <!-- Title Area !-->
             <h1 class="main-heading">Users</h1>
-            <p class="main-sub-heading">
-              List of all current Users in the system
+            <p class="main-sub-heading pb-4">
+              List of all current users in the system
             </p>
             <!-- END Title Area !-->
           </div>
         </div>
 
         <div
-          class="col-sm-6 d-sm-flex justify-content-end align-items-center pb-xs-5"
+          class="col-sm-6 d-sm-flex justify-content-end align-items-center pb-xs-5 pb-4"
         >
           <div class="button-area d-flex">
             <!-- Sort By Button !-->
@@ -50,14 +50,17 @@
           <div class="col-md-6 col-sm-12">
             <div class="content-area">
               <h4 class="card-title text-brand">Users</h4>
-              <p class="card-text pb-1" id="Users-all-Users-counts">
+              <p
+                class="card-text main-sub-heading pb-4 mt-0"
+                id="Users-all-Users-counts"
+              >
                 <span class="total">4</span> Users currently in the system
               </p>
             </div>
           </div>
         </div>
         <div class="table-responsive hide-scroll-bars">
-          <table id="Users-all-Users-table" class="table table-sm table-hover">
+          <table id="Users-all-Users-table" class="table table-sm">
             <thead class="table-head">
               <tr>
                 <th scope="col">ID</th>
@@ -96,6 +99,46 @@
                   </a>
                 </td>
               </tr>
+              <!--  -->
+              <tr>
+                <td>user.id</td>
+                <td>user.forename</td>
+                <td>user.email</td>
+                <td>PAYE</td>
+                <td>
+                  <span class="badge badge-pill badge-success">Active</span>
+                </td>
+                <td class="col-actions hover-primary">
+                  <router-link
+                    to="/users/view"
+                    class="icon-button"
+                    title="View Medical Locums Group"
+                  >
+                    <i class="far fa-eye"></i>
+                  </router-link>                  
+                </td>
+              </tr>
+              <!--  -->
+              <!--  -->
+              <tr>
+                <td>user.id</td>
+                <td>user.forename</td>
+                <td>user.email</td>
+                <td>PAYE</td>
+                <td>
+                  <span class="badge badge-pill badge-success">Active</span>
+                </td>
+                <td class="col-actions hover-primary">
+                  <router-link
+                    to="/users/view"
+                    class="icon-button"
+                    title="View Medical Locums Group"
+                  >
+                    <i class="far fa-eye"></i>
+                  </router-link>                  
+                </td>
+              </tr>
+              <!--  -->
             </tbody>
           </table>
         </div>

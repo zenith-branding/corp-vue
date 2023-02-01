@@ -5,6 +5,7 @@ import UsersDetailsView from "../views/Users/UsersDetailsView.vue"
 import UsersNotesDetailsView from "../views/users/UsersNotesDetailsView.vue"
 import UsersNotesCreateView from "../views/users/UsersNotesCreateView.vue"
 import UsersAddressesDetailsView from "../views/users/UsersAddressesDetailsView.vue"
+import UsersAddressesCreateView from "../views/users/UsersAddressesCreateView.vue"
 import LoginView from "../views/auth/LoginView.vue"
 import LogoutView from "../views/auth/LogoutView.vue"
 import DashboardView from "../views/dashboard/DashboardView.vue"
@@ -90,6 +91,11 @@ const router = createRouter({
       path: "/users/view/addresses/view",
       name: "UsersAddressesDetailsView",
       component: UsersAddressesDetailsView,
+    },
+    {
+      path: "/users/view/addresses/create",
+      name: "UsersAddressesCreateView",
+      component: UsersAddressesCreateView,
     },
 
     // --- UsersEnd ----

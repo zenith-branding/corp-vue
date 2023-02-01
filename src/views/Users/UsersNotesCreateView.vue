@@ -1,7 +1,7 @@
 <template>
   <LayoutUsersNotesCreate>
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 card m-2">
 
         <form class="form-group pt-5" v-on:submit.prevent="updateNote">
           <label for="validationDefault01">Title:</label>
@@ -13,7 +13,7 @@
           />
           <label for="edit-note">Body:</label>
           <textarea class="form-control" rows="5" id="edit-note"></textarea>
-           <button type="submit" class="btn btn-primary mt-3">Save</button>
+           <button type="submit" class="btn btn-primary mt-3">Save Note</button>
         </form>
       </div>
     </div>

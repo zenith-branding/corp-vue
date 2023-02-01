@@ -94,7 +94,7 @@
                 </td>
                 <td>23-01-2021</td>
                 <td>-</td>
-                <td class="col-actions">
+                <td class="col-actions hover-primary">
                   <a href="#" class="icon-button bg-brand" title="View Invoice">
                     <i class="far fa-eye"></i>
                   </a>
@@ -125,7 +125,7 @@
                 </td>
                 <td>-</td>
                 <td>2 days</td>
-                <td class="col-actions">
+                <td class="col-actions hover-primary">
                   <a href="#" class="icon-button bg-brand" title="View Invoice">
                     <i class="far fa-eye"></i>
                   </a>
@@ -154,7 +154,7 @@
                 </td>
                 <td>23-01-2021</td>
                 <td>-</td>
-                <td class="col-actions">
+                <td class="col-actions hover-primary">
                   <a href="#" class="icon-button bg-brand" title="View Invoice">
                     <i class="far fa-eye"></i>
                   </a>
@@ -185,7 +185,7 @@
                 </td>
                 <td>-</td>
                 <td>4 days</td>
-                <td class="col-actions">
+                <td class="col-actions hover-primary">
                   <a href="#" class="icon-button bg-brand" title="View Invoice">
                     <i class="far fa-eye"></i>
                   </a>

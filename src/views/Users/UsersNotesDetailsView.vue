@@ -1,12 +1,14 @@
 <template>
   <LayoutUsersNotesDetails>
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 card m-2 pb-4">
         <h3 class="text-center pt-5">Sed ut perspiciatis unde omnis</h3>
         <p class="card-body pt-3">
           Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
           suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
           autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+          nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+           autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
           nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
           voluptas nulla pariatur?
         </p>

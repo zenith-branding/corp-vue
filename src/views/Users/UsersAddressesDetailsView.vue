@@ -1,9 +1,9 @@
 <template>
   <LayoutUsersAddressesDetails>
-    <div class="row">
-      <div class="col-12">
+
+      <div class="card  my-2 pb-4">
         <h3 class="text-center pt-5">Edit Address</h3>
-        <p class="card card-body d-block pt-3">
+        <p class="card-body d-block p-3">
           <span class="font-weight-bold mr-3">Street:</span>Alanod, Chippenham
           Dr <br />
           <span class="font-weight-bold mr-3">City:</span>Milton Keynes
@@ -51,7 +51,7 @@
           <button type="submit" class="btn btn-primary mt-3">Submit</button>
         </form>
       </div>
-    </div>
+
   </LayoutUsersAddressesDetails>
 </template>
 

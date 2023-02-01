@@ -3,9 +3,9 @@
     <div class="main-content user-main">
       <div class="main-content-panel my-2">
         <div class="card mb-3">
-          <div class="card-body tabs-wrapper">
+          <div class="card-body tabs-wrapper p-4">
             <div class="row">
-              <div class="col-lg-3 col-md-12 col-sm-12 m-md-b m-sm-b m-xs-b">
+              <div class="col-xl-3 col-sm-12">
                 <!-- Tab Buttons -->
                 <ul class="accordion-tabs">
                   <li
@@ -15,7 +15,7 @@
                     :class="{ active: currentTab === index }"
                   >
                     <a
-                      class="text-left btn btn-info w-100 m-1"
+                      class="text-left btn btn-info w-100 m-1 p-3"
                       :title="tab.title"
                     >
                       <i :class="tab.icon"></i>{{ tab.title }}</a
@@ -24,7 +24,7 @@
                 </ul>
                 <!-- END Tab Buttons -->
               </div>
-              <div class="col-lg-9 col-md-12 col-sm-12">
+              <div class="col-xl-9 col-sm-12">
                 <div class="tab-contents">
                   <!-- START Candidate Address !-->
                   <div
@@ -32,52 +32,63 @@
                     class="tab-content"
                     id="candidate-addresses"
                   >
-                    <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
+                    <div class="row button-row mb-3 p-1 pt-4 pt-xl-0">
                       <div class="col-sm-12">
                         <div class="d-flex justify-content-between">
                           <div>
-                            <h4 class="card-title text-brand">Addresses</h4>
-                            <p class="card-text">
+                            <h4 class="card-title text-brand pb-1">Addresses</h4>
+                            <p class="card-text sub-heading">
                               Addresses for John Doe in the system
                             </p>
                           </div>
 
                           <div class="button-area">
-                            <a
-                              href="#"
-                              title="Edit John Doe's Details"
+                            <router-link
+                              to="/users/view/addresses/create"
                               class="btn btn-brand"
+                              title="Add New Address"
+                              ><i class="far fa-plus icon left mr-2"></i>Add
+                              Address</router-link
                             >
-                              <i class="far fa-plus icon left mr-2"></i>
-                              Add Address
-                            </a>
                           </div>
                         </div>
-                        <ul class="list-group notes mt-3">
-                          <li class="list-group-item">
+                        <ul class="list-group notes mt-4">
+                          <li class="list-group-item position-relative">
+                            <div class="p-2">
+
+                            
                             <span class="font-weight-bold">Address 1</span
                             ><br />
+                            <br />
+                            Alanod, Chippenham Dr <br />
+                            Milton Keynes<br />
+                            MK10 0AN
                             <router-link
-                              to="/users/view/addresses/view"
-                              class="list-selector"
+                              to="/users/view/addresses/view"                  
                               title="View Note"
                             >
-                              Alanod, Chippenham Dr <br />
-                              Milton Keynes<br />
-                              MK10 0AN
+                              <span class="btn icon-brc"
+                                ><i class="fas fa-edit mr-1"></i>Edit</span
+                              >
                             </router-link>
+                          </div>
                           </li>
-                          <li class="list-group-item">
+                          <li class="list-group-item position-relative mt-2">
+                            <div class="p-2">
                             <span class="font-weight-bold">Address 2</span
                             ><br />
+                            <br />
+                            Alanod, Chippenham Dr <br />
+                            Milton Keynes <br />MK10 0AN
                             <router-link
                               to="/users/view/addresses/view"
-                              class="list-selector"
                               title="View Note"
                             >
-                              Alanod, Chippenham Dr <br />
-                              Milton Keynes <br />MK10 0AN
+                            <span class="btn icon-brc"
+                                ><i class="fas fa-edit mr-1"></i>Edit</span
+                              >
                             </router-link>
+                            </div>
                           </li>
                         </ul>
                       </div>
@@ -92,8 +103,8 @@
                   >
                     <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
                       <div class="col-sm-12">
-                        <h4 class="card-title text-brand">Contact Numbers</h4>
-                        <p class="card-text">
+                        <h4 class="card-title text-brand pb-1">Contact Numbers</h4>
+                        <p class="card-text sub-heading">
                           <label for="validationDefault01">Mobile Phone:</label>
                           <input
                             type="text"
@@ -126,8 +137,8 @@
                   >
                     <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
                       <div class="col-sm-12">
-                        <h4 class="card-title text-brand">Email Addresses</h4>
-                        <p class="card-text">
+                        <h4 class="card-title text-brand pb-1">Email Addresses</h4>
+                        <p class="card-text sub-heading">
                           <label for="validationDefault01"
                             >Email Address:</label
                           >
@@ -155,9 +166,9 @@
                       <div class="col-sm-12">
                         <div class="d-flex justify-content-between">
                           <div>
-                            <h4 class="card-title text-brand">Notes</h4>
-                            <p class="card-text">
-                              Notes for John Doe in the system
+                            <h4 class="card-title text-brand pb-1">Activity</h4>
+                            <p class="card-text sub-heading">
+                              Activity for John Doe in the system
                             </p>
                           </div>
 
@@ -235,16 +246,21 @@
                       <div class="col-sm-12">
                         <div class="d-flex justify-content-between">
                           <div>
-                            <h4 class="card-title text-brand">Notes</h4>
-                            <p class="card-text">
+                            <h4 class="card-title text-brand pb-1">Notes</h4>
+                            <p class="card-text sub-heading">
                               Notes for John Doe in the system
                             </p>
                           </div>
 
                           <div class="button-area">
-                            <router-link to="/users/view/notes/create" class="btn btn-brand" title="Create New Note"><i class="far fa-plus icon left mr-2"></i>
+                            <router-link
+                              to="/users/view/notes/create"
+                              class="btn btn-brand"
+                              title="Create New Note"
+                              ><i class="far fa-plus icon left mr-2"></i>
 
-                              Add note</router-link>
+                              Add note</router-link
+                            >
                             <!-- <a
                               href="#"
                               title="Edit John Doe's Details"

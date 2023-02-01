@@ -85,7 +85,7 @@
                 </td>
 
                 <td>IN-8495843</td>
-                <td class="col-actions">
+                <td class="col-actions hover-primary">
                   <router-link
                     to="/shifts/view"
                     class="icon-button"

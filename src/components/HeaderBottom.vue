@@ -18,7 +18,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-3 ">
-          <li class="nav-item mr-1 mr-lg-4">
+          <li class="nav-item mr-2 mr-lg-4">
             <router-link to="/"
               class="nav-link active"
               aria-current="page"
@@ -27,32 +27,32 @@
            </router-link
             >
           </li>
-          <li class="nav-item mr-1 mr-lg-4">
+          <li class="nav-item mr-2 mr-lg-4">
             <router-link to="/users" class="nav-link" title="Users"
               ><i class="far fa fa-users mr-1"></i>Users</router-link
             >
           </li>
-          <li class="nav-item mr-1 mr-lg-4">
+          <li class="nav-item mr-2 mr-lg-4">
             <router-link to="#/candidates" class="nav-link" title="Candidates"
               ><i class="far fa-user-nurse mr-1"></i>Candidates</router-link
             >
           </li>
-          <li class="nav-item mr-1 mr-lg-4">
+          <li class="nav-item mr-2 mr-lg-4">
             <router-link to="#/clients" class="nav-link" title="Clients"
               ><i class="far far fa-hospital mr-1"></i>Clients</router-link
             >
           </li>
-          <li class="nav-item mr-1 mr-lg-4">
+          <li class="nav-item mr-2 mr-lg-4">
             <router-link to="/shifts" class="nav-link" title="Shifts"
               ><i class="far fa-clock mr-1"></i>Shifts
             </router-link>
           </li>
-          <li class="nav-item mr-1 mr-lg-4">
+          <li class="nav-item mr-2 mr-lg-4">
             <router-link to="#/reports" class="nav-link" title="Reports"
               ><i class="far far fa-hospital mr-1"></i>Reports</router-link
             >
           </li>
-          <li class="nav-item dropdown mr-1 mr-lg-4">
+          <li class="nav-item dropdown mr-2 mr-lg-4">
             <a
               class="nav-link dropdown-toggle"
               href="/invoices"

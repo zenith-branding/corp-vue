@@ -8,8 +8,8 @@
         <div class="col-sm-12">
           <div class="content-area text-center">
             <!-- Title Area !-->
-            <h1 class="main-heading">Address Details</h1>
-            <!-- <p class="main-sub-heading">Read or update your note</p> -->
+            <h1 class="main-heading pt-3">Address Details</h1>
+            <p class="main-sub-heading pb-4">Edit or delete address</p>
             <!-- END Title Area !-->
           </div>
         </div>
