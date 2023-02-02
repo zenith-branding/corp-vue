@@ -1,8 +1,8 @@
 <template>
   <LayoutUsersNotesDetails>
-    <div class="row">
-      <div class="col-12 card m-2 pb-4">
-        <h3 class="text-center pt-5">Sed ut perspiciatis unde omnis</h3>
+
+      <div class="card p-2 pb-4">
+        <h3 class="text-center m-2 pb-4 pt-5">Sed ut perspiciatis unde omnis</h3>
         <p class="card-body pt-3">
           Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
           suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
@@ -21,7 +21,7 @@
             delete
           </a>
         </div>
-        <form class="form-group" v-show="toggle" v-on:submit.prevent="updateNote">
+        <form class="form-group p-2" v-show="toggle" v-on:submit.prevent="updateNote">
           <label for="validationDefault01">Edit Title:</label>
           <input
             type="text"
@@ -35,7 +35,7 @@
            <button type="submit" class="btn btn-primary mt-3">Submit</button>
         </form>
       </div>
-    </div>
+
   </LayoutUsersNotesDetails>
 </template>
 

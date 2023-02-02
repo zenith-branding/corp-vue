@@ -1,9 +1,8 @@
 <template>
   <LayoutUsersAddressesCreate>
-    <div class="row">
-      <div class="col-12 card m-2">
-        <form class="form-group pt-5" v-on:submit.prevent="addAddress">
-          <div class="p-3 sub-heading">
+
+        <form class="form-group my-2 pt-5 card" v-on:submit.prevent="addAddress">
+          <div class="p-4 sub-heading">
             <label for="validationDefault01">Address Line 1:</label>
             <input
               type="text"
@@ -50,8 +49,7 @@
             </button>
           </div>
         </form>
-      </div>
-    </div>
+
   </LayoutUsersAddressesCreate>
 </template>
 

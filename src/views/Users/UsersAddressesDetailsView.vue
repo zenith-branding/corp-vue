@@ -1,9 +1,9 @@
 <template>
   <LayoutUsersAddressesDetails>
 
-      <div class="card  my-2 pb-4">
+      <div class="card  my-2 pb-4 p-4">
         <h3 class="text-center pt-5">Edit Address</h3>
-        <p class="card-body d-block p-3">
+        <p class="card card-body d-block pt-lg-3">
           <span class="font-weight-bold mr-3">Street:</span>Alanod, Chippenham
           Dr <br />
           <span class="font-weight-bold mr-3">City:</span>Milton Keynes

@@ -18,7 +18,7 @@
     <!-- END Page Header -->
 
     <div class="row">
-      <div class="col-lg-3 col-md-4 col-sm-4 m-xs-b">
+      <div class="col-lg-3 col-md-4 col-sm-12 m-xs-b">
         <UsersSidebar />
       </div>
       <div class="col-lg-9 col-md-8 col-sm-8">

@@ -8,7 +8,8 @@
         <div class="col-sm-12">
           <div class="content-area text-center">
             <!-- Title Area !-->
-            <h1 class="main-heading">Create New Note</h1>
+            <h1 class="main-heading pt-3">Create New Note</h1>
+            <p class="main-sub-heading pb-4">Create New Note</p>
             <!-- END Title Area !-->
           </div>
         </div>
@@ -17,10 +18,10 @@
     <!-- END Page Header -->
 
     <div class="row">
-      <div class="col-lg-3 col-md-4 col-sm-4 m-xs-b">
+      <div class="col-lg-3 col-md-4 col-sm-12 m-xs-b">
         <UsersSidebar />
       </div>
-      <div class="col-lg-9 col-md-8 col-sm-8">
+      <div class="col-lg-9 col-md-8 col-sm-12">
         <slot />
       </div>
     </div>

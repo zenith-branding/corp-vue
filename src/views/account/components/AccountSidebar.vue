@@ -1,11 +1,11 @@
 <template>
-  <div class="my-2">
-    <ul class="card list-group list-group-flush">
+  <div class="my-2 pb-3">
+    <ul class="card list-group list-group-flush px-2 py-3">
       <li class="list-group-item font-weight-bold">John Doe</li>
       <li class="list-group-item font-weight-bold">ID-1421</li>
       <li class="list-group-item">
         <div class="ms-2 me-auto">
-          <span class="text-muted">Your Status</span>
+          <span class="text-muted">User Status</span>
           <div class="font-weight-bold pt-1">
             <span class="badge badge-pill badge-success">Active</span>
           </div>
@@ -13,8 +13,8 @@
       </li>
       <li class="list-group-item">
         <div class="ms-2 me-auto">
-          <span class="text-muted">Your Role</span>
-          <div class="font-weight-bold pt-1">Admin</div>
+          <span class="text-muted">User Role</span>
+          <div class="font-weight-bold pt-1">Staff</div>
         </div>
       </li>
       <li class="list-group-item d-flex">
