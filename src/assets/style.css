@@ -7789,6 +7789,7 @@ main {
 }
 .main-heading {
   font-size: 2rem;
+  font-weight: 600;
 }
 .main-sub-heading,
 .sub-heading {
@@ -7802,10 +7803,13 @@ main {
   height: 100vh;
   overflow: hidden;
 }
+.container {
+  max-width: 1320px;
+}
 .table thead th,
 .table-sm th,
 .table-sm td {
-  padding: 0.45rem 0.47rem !important;
+  padding: 0.5rem 0.7rem !important;
   vertical-align: middle;
 }
 .table {

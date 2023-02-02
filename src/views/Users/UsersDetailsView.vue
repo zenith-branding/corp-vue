@@ -1,6 +1,6 @@
 <template>
   <LayoutUsersDetails>
-    <div class="main-content user-main">
+ <div class="main-content user-main">
       <div class="main-content-panel my-2">
         <div class="card mb-3">
           <div class="card-body tabs-wrapper p-4">
@@ -103,7 +103,7 @@
                   >
                     <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
                       <div class="col-sm-12">
-                        <h4 class="card-title text-brand pb-1">Contact Numbers</h4>
+                        <h4 class="card-title text-brand pb-3">Contact Numbers</h4>
                         <p class="card-text sub-heading">
                           <label for="validationDefault01">Mobile Phone:</label>
                           <input
@@ -137,7 +137,7 @@
                   >
                     <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
                       <div class="col-sm-12">
-                        <h4 class="card-title text-brand pb-1">Email Addresses</h4>
+                        <h4 class="card-title text-brand pb-3">Email Addresses</h4>
                         <p class="card-text sub-heading">
                           <label for="validationDefault01"
                             >Email Address:</label
@@ -167,7 +167,7 @@
                         <div class="d-flex justify-content-between">
                           <div>
                             <h4 class="card-title text-brand pb-1">Activity</h4>
-                            <p class="card-text sub-heading">
+                            <p class="card-text sub-heading pb-3">
                               Activity for John Doe in the system
                             </p>
                           </div>
@@ -247,7 +247,7 @@
                         <div class="d-flex justify-content-between">
                           <div>
                             <h4 class="card-title text-brand pb-1">Notes</h4>
-                            <p class="card-text sub-heading">
+                            <p class="card-text sub-heading pb-3">
                               Notes for John Doe in the system
                             </p>
                           </div>
@@ -273,7 +273,7 @@
                           </div>
                         </div>
                         <ul class="list-group notes mt-3">
-                          <li class="list-group-item">
+                          <li class="list-group-item p-3">
                             <router-link
                               to="/users/view/notes/view"
                               class="list-selector"
@@ -285,7 +285,7 @@
                               >
                             </router-link>
                           </li>
-                          <li class="list-group-item">
+                          <li class="list-group-item p-3">
                             <router-link
                               to="/users/view/notes/view"
                               class="list-selector"
@@ -297,7 +297,7 @@
                               >
                             </router-link>
                           </li>
-                          <li class="list-group-item">
+                          <li class="list-group-item p-3">
                             <router-link
                               to="/users/view/notes/view"
                               class="list-selector"
@@ -309,7 +309,7 @@
                               >
                             </router-link>
                           </li>
-                          <li class="list-group-item">
+                          <li class="list-group-item p-3">
                             <router-link
                               to="/users/view/notes/view"
                               class="list-selector"
@@ -319,7 +319,7 @@
                               <span class="float-right"> 7th January 2023</span>
                             </router-link>
                           </li>
-                          <li class="list-group-item">
+                          <li class="list-group-item p-3">
                             <router-link
                               to="/users/view/notes/view"
                               class="list-selector"

@@ -3,7 +3,7 @@
     <img src="../assets/mlg-logo.png" style="max-width: 300px;">
     <p >Header top</p>
   </div> -->
-  <div class="header-top bg-primary p-2">
+  <div class="header-top bg-primary p-3">
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-4 col-4 logo-col">
