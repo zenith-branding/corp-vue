@@ -3,7 +3,7 @@
     height:42px
 
 .navbar-toggler
-    margin-top:-55px
+    margin-top:-70px
     float: right
     display: block
 .navbar-toggler:focus,
@@ -17,6 +17,7 @@
     transform: scale(.9)
 .navbar a i
     font-size 1.2rem
+    color: $primary
 .header-top
     .btn-icon 
         padding:  10px
@@ -26,3 +27,16 @@
         transition: all .5s ease-in-out
         &:hover
             background: $primaryHov;
+
+.navbar-light .navbar-nav .nav-link
+    color: rgba(0,0,0,0.6)
+
+li.nav-item
+    &:hover
+        background: $info;
+
+.navbar-expand-md .navbar-nav .dropdown-menu 
+    top: 35px
+    padding: 0.5rem
+    .dropdown-item
+            padding: 0.5rem 1.5rem;

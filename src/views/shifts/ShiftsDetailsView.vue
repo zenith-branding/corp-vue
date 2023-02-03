@@ -7,7 +7,7 @@
       <div class="col-12 shift-details-table">
         <!-- Horizontal Table -->
         <div class="card table-responsive hide-scroll-bars d-none d-lg-block">
-          <table id="" class="table table-sm table-hover">
+          <table id="" class="table table-sm data-heavy table-hover">
             <thead>
               <tr>
                 <th scope="col">Start Time</th>

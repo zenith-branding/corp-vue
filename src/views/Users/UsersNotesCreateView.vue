@@ -2,7 +2,7 @@
   <LayoutUsersNotesCreate>
 
 
-        <form class="form-group pt-5 card  p-3" v-on:submit.prevent="updateNote">
+        <form class="form-group pt-5 card mt-2 p-3" v-on:submit.prevent="updateNote">
           <label for="validationDefault01">Title:</label>
           <input
             type="text"

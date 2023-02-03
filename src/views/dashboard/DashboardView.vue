@@ -1,6 +1,6 @@
 <template>
   <LayoutDashboard>
-    <main class="row">
+    <main class="row py-3">
       <div class="col-lg-6 col-md-6 col-xs-12 md-pl-0">
         <!-- Shifts on-hold this week !-->
         <div

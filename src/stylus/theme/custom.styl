@@ -7,9 +7,9 @@
     max-width: 65px
 
 .auth-img
-    background:url(./login-page-bg.png);
-    background-position:50% 50%;
-    background-size:cover;
+    background:url(./login-page-bg.png)
+    background-position:50% 50%
+    background-size:cover
     background-repeat:no-repeat
 
 // ======== Dashboard Page ========
@@ -24,14 +24,14 @@
         
 
         .stat-num
-            font-size: 2.2em;
-            margin-bottom: 16px;
-            line-height: 1em;
+            font-size: 2.2em
+            margin-bottom: 16px
+            line-height: 1em
 
         .icon
-            position: absolute;
-            top: -5px;
-            right: 0;
+            position: absolute
+            top: -5px
+            right: 0
             font-size: 2.8em
     
     &:hover
@@ -42,8 +42,27 @@
     th,td
         padding: 1rem
 
-// Usr Details
-.icon-brc
+// tab details icon
+
+.icon-brc-edit
     position: absolute
-    right: 10px
+    right: 0px
     bottom: 5px
+    font-size: 1.2rem
+    color: $warning
+    :hover
+        color: $infoHov
+
+.icon-brc-trash
+    position: absolute
+    right: 35px
+    bottom: 5px
+    font-size: 1.2rem
+    color: $danger
+    :hover
+        color: $infoHov
+        
+// Sidebar
+.sidebar-section
+    .list-group-item 
+        padding: 1rem

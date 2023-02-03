@@ -34,12 +34,17 @@
             <!-- END Search Button Button !-->
             <!-- Search Input Field !-->
             <input
-              class="form-control"
+              class="form-control mr-3"
               type="text"
               placeholder="Search User"
               aria-label="User Search"
             />
             <!-- END Search Input Field !-->
+            <!-- Add User Button !-->
+            <a href="#" title="Add" class="btn btn-primary mr-3">
+              <i class="far fa-search icon left mr-2"></i>Create user
+            </a>
+            <!-- END Add User Button !-->
           </div>
         </div>
       </div>

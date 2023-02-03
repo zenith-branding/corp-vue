@@ -1,6 +1,6 @@
 <template>
   <LayoutUsersDetails>
- <div class="main-content user-main">
+    <div class="main-content user-main">
       <div class="main-content-panel my-2">
         <div class="card mb-3">
           <div class="card-body tabs-wrapper p-4">
@@ -24,7 +24,7 @@
                 </ul>
                 <!-- END Tab Buttons -->
               </div>
-              <div class="col-xl-9 col-sm-12">
+              <div class="col-xl-9 col-sm-12 pt-5 pt-lg-0">
                 <div class="tab-contents">
                   <!-- START Candidate Address !-->
                   <div
@@ -32,11 +32,13 @@
                     class="tab-content"
                     id="candidate-addresses"
                   >
-                    <div class="row button-row mb-3 p-1 pt-4 pt-xl-0">
+                    <div class="row button-row mb-3 p-1 pt-xl-0">
                       <div class="col-sm-12">
                         <div class="d-flex justify-content-between">
                           <div>
-                            <h4 class="card-title text-brand pb-1">Addresses</h4>
+                            <h4 class="card-title text-brand pb-1">
+                              Addresses
+                            </h4>
                             <p class="card-text sub-heading">
                               Addresses for John Doe in the system
                             </p>
@@ -45,7 +47,7 @@
                           <div class="button-area">
                             <router-link
                               to="/users/view/addresses/create"
-                              class="btn btn-brand"
+                              class="btn btn-primary"
                               title="Add New Address"
                               ><i class="far fa-plus icon left mr-2"></i>Add
                               Address</router-link
@@ -55,39 +57,56 @@
                         <ul class="list-group notes mt-4">
                           <li class="list-group-item position-relative">
                             <div class="p-2">
-
-                            
-                            <span class="font-weight-bold">Address 1</span
-                            ><br />
-                            <br />
-                            Alanod, Chippenham Dr <br />
-                            Milton Keynes<br />
-                            MK10 0AN
-                            <router-link
-                              to="/users/view/addresses/view"                  
-                              title="View Note"
-                            >
-                              <span class="btn icon-brc"
-                                ><i class="fas fa-edit mr-1"></i>Edit</span
+                              <span class="font-weight-bold">Address 1</span
+                              ><br />
+                              <br />
+                              Alanod, Chippenham Dr <br />
+                              Milton Keynes<br />
+                              MK10 0AN
+                              <router-link
+                                to="/users/view/addresses/view"
+                                title="Edit Address"
                               >
-                            </router-link>
-                          </div>
+                                <span class="btn icon-brc-edit"
+                                  ><i class="fas fa-edit mr-1"></i
+                                ></span>
+                              </router-link>
+                              <a
+                                href="javascript:;"
+                                v-on:click="deleteAddress(0, 0)"
+                                class="mr-2"
+                                title="Delete Address"
+                              >
+                                <span class="btn icon-brc-trash"
+                                  ><i class="far fa-solid fa-trash"></i> </span
+                              ></a>
+                            </div>
                           </li>
                           <li class="list-group-item position-relative mt-2">
                             <div class="p-2">
-                            <span class="font-weight-bold">Address 2</span
-                            ><br />
-                            <br />
-                            Alanod, Chippenham Dr <br />
-                            Milton Keynes <br />MK10 0AN
-                            <router-link
-                              to="/users/view/addresses/view"
-                              title="View Note"
-                            >
-                            <span class="btn icon-brc"
-                                ><i class="fas fa-edit mr-1"></i>Edit</span
+                              <span class="font-weight-bold">Address 1</span
+                              ><br />
+                              <br />
+                              Alanod, Chippenham Dr <br />
+                              Milton Keynes<br />
+                              MK10 0AN
+                              <router-link
+                                to="/users/view/addresses/view"
+                                title="Edit Address"
                               >
-                            </router-link>
+                                <span class="btn icon-brc-edit"
+                                  ><i class="fas fa-edit mr-1"></i
+                                ></span>
+                              </router-link>
+                              <a
+                                href="javascript:;"
+                                v-on:click="deleteAddress(0, 0)"
+                                class="mr-2"
+                                title="Delete Address"
+                              >
+                                <span class="btn icon-brc-trash"
+                                  ><i class="far fa-solid fa-trash"></i> </span
+                              ></a>
                             </div>
                           </li>
                         </ul>
@@ -101,9 +120,11 @@
                     class="tab-content"
                     id="candidate-contact-number"
                   >
-                    <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
+                    <div class="row button-row mb-3 p-1 pt-lg-0">
                       <div class="col-sm-12">
-                        <h4 class="card-title text-brand pb-3">Contact Numbers</h4>
+                        <h4 class="card-title text-brand pb-3">
+                          Contact Numbers
+                        </h4>
                         <p class="card-text sub-heading">
                           <label for="validationDefault01">Mobile Phone:</label>
                           <input
@@ -135,9 +156,11 @@
                     class="tab-content"
                     id="candidate-email-addresses"
                   >
-                    <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
+                    <div class="row button-row mb-3 p-1 pt-lg-0">
                       <div class="col-sm-12">
-                        <h4 class="card-title text-brand pb-3">Email Addresses</h4>
+                        <h4 class="card-title text-brand pb-3">
+                          Email Addresses
+                        </h4>
                         <p class="card-text sub-heading">
                           <label for="validationDefault01"
                             >Email Address:</label
@@ -162,7 +185,7 @@
                     class="tab-content active"
                     id="candidate-general-details"
                   >
-                    <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
+                    <div class="row button-row mb-3 p-1 pt-lg-0">
                       <div class="col-sm-12">
                         <div class="d-flex justify-content-between">
                           <div>
@@ -170,17 +193,6 @@
                             <p class="card-text sub-heading pb-3">
                               Activity for John Doe in the system
                             </p>
-                          </div>
-
-                          <div class="button-area">
-                            <a
-                              href="#"
-                              title="Edit John Doe's Details"
-                              class="btn btn-brand"
-                            >
-                              <i class="far fa-plus icon left mr-2"></i>
-                              Add note
-                            </a>
                           </div>
                         </div>
                         <div class="table-responsive hide-scroll-bars pt-3">
@@ -242,7 +254,7 @@
                     class="tab-content"
                     id="candidate-email-addresses"
                   >
-                    <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
+                    <div class="row button-row mb-3 p-1 pt-lg-0">
                       <div class="col-sm-12">
                         <div class="d-flex justify-content-between">
                           <div>
@@ -255,21 +267,12 @@
                           <div class="button-area">
                             <router-link
                               to="/users/view/notes/create"
-                              class="btn btn-brand"
+                              class="btn btn-primary"
                               title="Create New Note"
                               ><i class="far fa-plus icon left mr-2"></i>
 
                               Add note</router-link
                             >
-                            <!-- <a
-                              href="#"
-                              title="Edit John Doe's Details"
-                              class="btn btn-brand"
-                            >
-                              <i class="far fa-plus icon left mr-2"></i>
-
-                              Add note
-                            </a> -->
                           </div>
                         </div>
                         <ul class="list-group notes mt-3">
@@ -378,6 +381,32 @@ export default {
         },
       ],
     }
+  },
+  methods: {
+    updateAddress() {
+      this.$store.dispatch("updateAddress", {
+        //   email: this.email,
+        //   password: this.password,
+        // })
+        // .then(() => {
+        //   this.$router.push({ name: "Users" })
+        // })
+        // .catch((err) => {
+        //   console.log(err)
+        //   this.incorrectAuth = true
+      })
+    },
+    deleteAddress(id, index) {
+      if (confirm("Delete Address?"))
+        axios
+          .delete("/api/artist/" + id)
+          .then((resp) => {
+            this.artists.data.splice(index, 1)
+          })
+          .catch((error) => {
+            console.log(error)
+          })
+    },
   },
 }
 </script>

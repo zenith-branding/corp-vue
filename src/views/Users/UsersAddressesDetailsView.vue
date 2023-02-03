@@ -2,8 +2,8 @@
   <LayoutUsersAddressesDetails>
 
       <div class="card  my-2 pb-4 p-4">
-        <h3 class="text-center pt-5">Edit Address</h3>
-        <p class="card card-body d-block pt-lg-3">
+        <h3 class="text-center pt-5 pb-3">Edit Address</h3>
+        <!-- <p class="card card-body d-block pt-lg-3">
           <span class="font-weight-bold mr-3">Street:</span>Alanod, Chippenham
           Dr <br />
           <span class="font-weight-bold mr-3">City:</span>Milton Keynes
@@ -11,8 +11,8 @@
           <span class="font-weight-bold mr-3">Postcode:</span>MK10 0AN
           <br />
           
-        </p>
-        <div class="text-right">
+        </p> -->
+        <!-- <div class="text-right">
           <a class="mr-2" href="#" @click="toggle = !toggle">
             <i class="fas fa-edit mr-1"></i>Edit
           </a>
@@ -20,25 +20,32 @@
             <i class="far fa-solid fa-trash"></i>
             delete
           </a>
-        </div>
+        </div> -->
         <form
           class="form-group"
           v-show="toggle"
           v-on:submit.prevent="updateAddress"
         >
-          <label for="validationDefault01">Street:</label>
+          <label for="validationDefault01">Address Line 1:</label>
           <input
             type="text"
             class="form-control mb-3"
             id="validationDefault01"
-            placeholder="Street name"
+            placeholder="Alanod"
+          />
+          <label for="validationDefault01">Address Line 2:</label>
+          <input
+            type="text"
+            class="form-control mb-3"
+            id="validationDefault01"
+            placeholder="Chippenham Dr"
           />
           <label for="validationDefault01">City:</label>
           <input
             type="text"
             class="form-control mb-3"
             id="validationDefault01"
-            placeholder="City"
+            placeholder="Milton Keynes"
 
           />
           <label for="validationDefault01">Postcode:</label>
@@ -46,7 +53,7 @@
             type="text"
             class="form-control mb-3"
             id="validationDefault01"
-            placeholder="Postcode"
+            placeholder="MK10 0AN"
           />
           <button type="submit" class="btn btn-primary mt-3">Submit</button>
         </form>
@@ -65,7 +72,7 @@ export default {
   },
   data() {
     return {
-      toggle: false,
+      toggle: true,
     }
   },
 

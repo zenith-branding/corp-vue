@@ -59,7 +59,7 @@
         <div class="table-responsive hide-scroll-bars">
           <table
             id="invoices-all-incoming-invoices-table"
-            class="table invoices table-sm table-hover"
+            class="table data-heavy table-sm table-hover"
           >
             <thead class="table-head">
               <tr>

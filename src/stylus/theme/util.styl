@@ -4,13 +4,19 @@
     font-size: 2rem
     font-weight: 600
 
+.text-brand
+    color: $primary
+
+.card-text
+    color: $gray-700
+
 
 .main-sub-heading, .sub-heading
     color: $gray-600
     font-weight: 300
 
 // Invoices table font size
-.table.invoices
+.table.data-heavy
     font-size 0.9rem
 
 // full screen height
@@ -25,6 +31,8 @@
 
 // ===Tables Styling===
 // table padding
+thead
+    background: $info;
 .table thead th,
 .table-sm th, .table-sm td
     padding: 0.5rem 0.7rem!important
@@ -50,7 +58,7 @@
     border-radius:50%;
     color:$white
     transition:.6s;
-    background:#28313f;
+    background:$infoHov;
     font-size:1rem;
     margin-right: 2px
     position:relative
@@ -104,11 +112,18 @@ ul.accordion-tabs
 .btn 
   cursor: pointer
 
+// badge
 .badge
     font-size 85%
+.badge-pill 
+    padding: 0.4rem 0.6rem
+    border-radius: 10rem
+
+
 
 .card-body
     line-height: 1.5
 
 .card-title
     margin-bottom: 0.5rem
+

@@ -17,74 +17,76 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-3 ">
-          <li class="nav-item mr-2 py-lg-2 mr-lg-5">
-            <router-link to="/"
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-3">
+          <li class="nav-item mr-2 py-lg-1 mr-lg-5">
+            <router-link
+              to="/"
               class="nav-link active"
               aria-current="page"
               title="Dashboard"
               ><i class="far fa-home mr-1"></i>Dashboard
-           </router-link
-            >
+            </router-link>
           </li>
-          <li class="nav-item mr-2 py-lg-2 mr-lg-5">
+          <li class="nav-item mr-2 py-lg-1 mr-lg-5">
             <router-link to="/users" class="nav-link" title="Users"
               ><i class="far fa fa-users mr-1"></i>Users</router-link
             >
           </li>
-          <li class="nav-item mr-2 py-lg-2 mr-lg-5">
+          <li class="nav-item mr-2 py-lg-1 mr-lg-5">
             <router-link to="#/candidates" class="nav-link" title="Candidates"
               ><i class="far fa-user-nurse mr-1"></i>Candidates</router-link
             >
           </li>
-          <li class="nav-item mr-2 py-lg-2 mr-lg-5">
+          <li class="nav-item mr-2 py-lg-1 mr-lg-5">
             <router-link to="#/clients" class="nav-link" title="Clients"
               ><i class="far far fa-hospital mr-1"></i>Clients</router-link
             >
           </li>
-          <li class="nav-item mr-2 py-lg-2 mr-lg-5">
+          <li class="nav-item mr-2 py-lg-1 mr-lg-5">
             <router-link to="/shifts" class="nav-link" title="Shifts"
               ><i class="far fa-clock mr-1"></i>Shifts
             </router-link>
           </li>
-          <li class="nav-item mr-2 py-lg-2 mr-lg-5">
+          <li class="nav-item mr-2 py-lg-1 mr-lg-5">
             <router-link to="#/reports" class="nav-link" title="Reports"
               ><i class="far far fa-hospital mr-1"></i>Reports</router-link
             >
           </li>
-          <li class="nav-item dropdown mr-2 py-lg-2 mr-lg-5">
-            <router-link to="/invoices"
+          <li
+            class="nav-item dropdown mr-2 py-lg-1 mr-lg-5"
+            @mouseover="toggle = true"
+            @mouseleave="toggle = false"
+          >
+            <router-link
+              to="/invoices"
               class="nav-link dropdown-toggle"
-              
               id="dropdownMenuButton1"
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
               title="Invoices"
-              @click="toggle = !toggle"
             >
               <i class="far fa-file-invoice-dollar mr-1"></i>Invoices
-            </router-link
-            >
+            </router-link>
             <ul
-              class="dropdown-menu"
+              class="dropdown-menu mt-n5"
               v-bind:class="{ 'd-block': toggle, 'd-none': !toggle }"
               aria-labelledby="dropdownMenuButton1"
-              v-show="toggle"
-              @click="toggle = !toggle"
             >
               <li>
-                <a class="dropdown-item" href="/invoices/incoming"
-                  >Incoming Invoices</a
+                <router-link to="/invoices/incoming" class="dropdown-item"
+                  >Incoming Invoices</router-link
                 >
               </li>
               <li>
-                <a class="dropdown-item" href="/invoices/outgoing"
-                  >Outgoing Invoices</a
+                <router-link to="/invoices/outgoing" class="dropdown-item"
+                  >Outgoing Invoices</router-link
                 >
               </li>
               <li>
-                <a class="dropdown-item" href="/invoices">All Invoices</a>
+                <router-link to="/invoices" class="dropdown-item"
+                  >All Invoices</router-link
+                >
               </li>
             </ul>
           </li>

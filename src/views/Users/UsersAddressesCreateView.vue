@@ -1,43 +1,44 @@
 <template>
   <LayoutUsersAddressesCreate>
 
-        <form class="form-group my-2 pt-5 card" v-on:submit.prevent="addAddress">
-          <div class="p-4 sub-heading">
-            <label for="validationDefault01">Address Line 1:</label>
+        <form class="form-group my-2 p-5 card" v-on:submit.prevent="addAddress">
+
+
+            <label for="validationDefault01" class="text-muted">Address Line 1:</label>
             <input
               type="text"
               class="form-control mb-3"
               id="validationDefault01"
               value=""
             />
-            <label for="validationDefault01">Address Line 2:</label>
+            <label for="validationDefault01" class="text-muted">Address Line 2:</label>
             <input
               type="text"
               class="form-control mb-3"
               id="validationDefault01"
               value=""
             />
-            <label for="validationDefault01">City:</label>
+            <label for="validationDefault01" class="text-muted">City:</label>
             <input
               type="text"
               class="form-control mb-3"
               id="validationDefault01"
               value=""
             />
-            <label for="validationDefault01">County:</label>
+            <label for="validationDefault01" class="text-muted">County:</label>
             <input
               type="text"
               class="form-control mb-3"
               id="validationDefault01"
               value=""
-            /><label for="validationDefault01">Postcode:</label>
+            /><label for="validationDefault01" class="text-muted">Postcode:</label>
             <input
               type="text"
               class="form-control mb-3"
               id="validationDefault01"
               value=""
             />
-            <label for="validationDefault01">Country:</label>
+            <label for="validationDefault01" class="text-muted">Country:</label>
             <input
               type="text"
               class="form-control mb-3"
@@ -47,7 +48,7 @@
             <button type="submit" class="btn btn-primary mt-3">
               Save Address
             </button>
-          </div>
+        
         </form>
 
   </LayoutUsersAddressesCreate>

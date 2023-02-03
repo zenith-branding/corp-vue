@@ -34,7 +34,7 @@
                         </div>
                     </div>
                     <div class="table-responsive hide-scroll-bars">
-                        <table id="invoices-all-outgoing-invoices-table" class="table invoices table-sm table-hover">
+                        <table id="invoices-all-outgoing-invoices-table" class="table data-heavy table-sm table-hover">
                             <thead class="table-head">
                                 <tr>
                                     <th scope="col">#</th>
