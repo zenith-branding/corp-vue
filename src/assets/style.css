@@ -2158,7 +2158,7 @@ fieldset[disabled] a.btn {
 .btn-info:hover {
   color: #fff;
   background-color: rgba(58,176,72,0.33);
-  border-color: rgba(58,176,72,0.63);
+  border-color: #22832e;
 }
 .btn-info:focus,
 .btn-info.focus {
@@ -2174,7 +2174,7 @@ fieldset[disabled] a.btn {
 .show > .btn-info.dropdown-toggle {
   background-color: rgba(58,176,72,0.33);
   background-image: none;
-  border-color: rgba(58,176,72,0.63);
+  border-color: #22832e;
 }
 .btn-warning {
   color: #111;
@@ -3888,7 +3888,7 @@ tbody.collapse.show {
 .badge-info[href]:hover {
   color: #fff;
   text-decoration: none;
-  background-color: rgba(58,176,72,0.63);
+  background-color: #22832e;
 }
 .badge-warning {
   color: #111;
@@ -5033,7 +5033,7 @@ a.bg-success:hover {
 }
 a.bg-info:focus,
 a.bg-info:hover {
-  background-color: rgba(58,176,72,0.63) !important;
+  background-color: #22832e !important;
 }
 .bg-warning {
   background-color: #ffc107 !important;
@@ -6170,7 +6170,7 @@ a.text-success:hover {
 }
 a.text-info:focus,
 a.text-info:hover {
-  color: rgba(58,176,72,0.63) !important;
+  color: #22832e !important;
 }
 .text-warning {
   color: #ffc107 !important;
@@ -7791,12 +7791,18 @@ main {
   font-size: 2rem;
   font-weight: 600;
 }
+.text-brand {
+  color: #3ab048;
+}
+.card-text {
+  color: #495057;
+}
 .main-sub-heading,
 .sub-heading {
   color: #868e96;
   font-weight: 300;
 }
-.table.invoices {
+.table.data-heavy {
   font-size: 0.9rem;
 }
 .vh-100 {
@@ -7805,6 +7811,9 @@ main {
 }
 .container {
   max-width: 1320px;
+}
+thead {
+  background: rgba(58,176,72,0.18);
 }
 .table thead th,
 .table-sm th,
@@ -7830,7 +7839,7 @@ main {
   border-radius: 50%;
   color: #fff;
   transition: 0.6s;
-  background: #28313f;
+  background: #22832e;
   font-size: 1rem;
   margin-right: 2px;
   position: relative;
@@ -7879,6 +7888,10 @@ ul.accordion-tabs li.active .btn {
 .badge {
   font-size: 85%;
 }
+.badge-pill {
+  padding: 0.4rem 0.6rem;
+  border-radius: 10rem;
+}
 .card-body {
   line-height: 1.5;
 }
@@ -7890,7 +7903,7 @@ ul.accordion-tabs li.active .btn {
   height: 42px;
 }
 .navbar-toggler {
-  margin-top: -55px;
+  margin-top: -70px;
   float: right;
   display: block;
 }
@@ -7908,6 +7921,7 @@ ul.accordion-tabs li.active .btn {
 }
 .navbar a i {
   font-size: 1.2rem;
+  color: #3ab048;
 }
 .header-top .btn-icon {
   padding: 10px;
@@ -7918,6 +7932,19 @@ ul.accordion-tabs li.active .btn {
 }
 .header-top .btn-icon:hover {
   background: #198754;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0,0,0,0.6);
+}
+li.nav-item:hover {
+  background: rgba(58,176,72,0.18);
+}
+.navbar-expand-md .navbar-nav .dropdown-menu {
+  top: 35px;
+  padding: 0.5rem;
+}
+.navbar-expand-md .navbar-nav .dropdown-menu .dropdown-item {
+  padding: 0.5rem 1.5rem;
 }
 .table-sm th,
 .table-sm td {
@@ -7957,10 +7984,28 @@ ul.accordion-tabs li.active .btn {
 .shift-details-table td {
   padding: 1rem;
 }
-.icon-brc {
+.icon-brc-edit {
   position: absolute;
-  right: 10px;
+  right: 0px;
   bottom: 5px;
+  font-size: 1.2rem;
+  color: #ffc107;
+}
+.icon-brc-edit :hover {
+  color: #22832e;
+}
+.icon-brc-trash {
+  position: absolute;
+  right: 35px;
+  bottom: 5px;
+  font-size: 1.2rem;
+  color: #dc3545;
+}
+.icon-brc-trash :hover {
+  color: #22832e;
+}
+.sidebar-section .list-group-item {
+  padding: 1rem;
 }
 @media (max-width: 767.98px) {
   .container {
