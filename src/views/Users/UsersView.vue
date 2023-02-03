@@ -19,6 +19,14 @@
           class="col-sm-6 d-sm-flex justify-content-end align-items-center pb-xs-5 pb-4"
         >
           <div class="button-area d-flex">
+            <!-- Search Input Field !-->
+            <input
+              class="form-control mr-3"
+              type="text"
+              placeholder="Search User"
+              aria-label="User Search"
+            />
+            <!-- END Search Input Field !-->
             <!-- Sort By Button !-->
             <select class="custom-select mr-3" id="inlineFormCustomSelect">
               <option selected>Sort By</option>
@@ -32,21 +40,21 @@
               <i class="far fa-search icon left mr-2"></i>Search
             </a>
             <!-- END Search Button Button !-->
-            <!-- Search Input Field !-->
-            <input
-              class="form-control mr-3"
-              type="text"
-              placeholder="Search User"
-              aria-label="User Search"
-            />
-            <!-- END Search Input Field !-->
+          </div>
+        </div>
+        <div class="col-12 mb-3">
+          <div class="d-flex justify-content-end">
+
             <!-- Add User Button !-->
+            <h2 class="h4 text-primary mr-3 mt-2">Add new user to the sytem</h2>
             <a href="#" title="Add" class="btn btn-primary mr-3">
-              <i class="far fa-search icon left mr-2"></i>Create user
+              <i class="far fa-plus icon left mr-2"></i>Create user
             </a>
+            
             <!-- END Add User Button !-->
           </div>
         </div>
+        <UserModal />
       </div>
     </div>
     <div id="Users-all-Users" class="card card-table">
@@ -120,7 +128,7 @@
                     title="View Medical Locums Group"
                   >
                     <i class="far fa-eye"></i>
-                  </router-link>                  
+                  </router-link>
                 </td>
               </tr>
               <!--  -->
@@ -140,7 +148,7 @@
                     title="View Medical Locums Group"
                   >
                     <i class="far fa-eye"></i>
-                  </router-link>                  
+                  </router-link>
                 </td>
               </tr>
               <!--  -->
@@ -184,6 +192,7 @@ import HeaderBottom from "../../components/HeaderBottom.vue"
 import HeaderTop from "../../components/HeaderTop.vue"
 import { mapState } from "vuex"
 import { getAPI } from "../../utils/axios-api"
+import UserModal from "./components/CreateUserModal.vue"
 
 export default {
   name: "UsersView",
@@ -191,6 +200,7 @@ export default {
   components: {
     HeaderTop,
     HeaderBottom,
+    UserModal
   },
   mounted() {
     console.log("Component mounted.")
