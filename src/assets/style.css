@@ -7867,6 +7867,7 @@ thead {
 }
 ul.accordion-tabs li a {
   font-size: 0.9rem;
+  min-width: 120px;
 }
 ul.accordion-tabs li.active .btn {
   background: rgba(58,176,72,0.33);
@@ -7897,6 +7898,9 @@ ul.accordion-tabs li.active .btn {
 }
 .card-title {
   margin-bottom: 0.5rem;
+}
+.border-bottom {
+  border-bottom: 1px solid #e9ecef;
 }
 .header-top .logo img {
   width: auto;
@@ -8006,6 +8010,12 @@ li.nav-item:hover {
 }
 .sidebar-section .list-group-item {
   padding: 1rem;
+}
+.account-label {
+  min-width: 150px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-top: 2rem;
 }
 @media (max-width: 767.98px) {
   .container {

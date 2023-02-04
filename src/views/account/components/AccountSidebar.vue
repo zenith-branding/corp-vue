@@ -1,5 +1,5 @@
 <template>
-  <div class="my-2 pb-3 sidebar-section">
+  <div class="my-2 pb-3 sidebar-section d-none d-md-block">
     <ul class="card list-group list-group-flush px-2 py-3">
       <li class="list-group-item font-weight-bold">John Doe</li>
       <li class="list-group-item font-weight-bold">ID-1421</li>

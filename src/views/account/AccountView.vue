@@ -5,17 +5,18 @@
         <div class="card mb-3">
           <div class="card-body tabs-wrapper p-4">
             <div class="row">
-              <div class="col-xl-3 col-sm-12">
+              <div class="col-12">
                 <!-- Tab Buttons -->
-                <ul class="accordion-tabs">
+                <ul class="accordion-tabs d-flex flex-column flex-lg-row">
                   <li
                     v-for="(tab, index) in tabs"
                     @click="currentTab = index"
                     :key="tab.title"
                     :class="{ active: currentTab === index }"
+                    class="mr-2"
                   >
                     <a
-                      class="text-left btn btn-info w-100 m-1 p-3"
+                      class="text-left btn btn-info w-100 m-1 p-2"
                       :title="tab.title"
                     >
                       <i :class="tab.icon"></i>{{ tab.title }}</a
@@ -24,84 +25,24 @@
                 </ul>
                 <!-- END Tab Buttons -->
               </div>
-              <div class="col-xl-9 col-sm-12">
+              <div class="col-12">
                 <div class="tab-contents">
-                  <!-- START Candidate Address !-->
+                  <!-- START Personal Information !-->
                   <div
                     v-show="currentTab === 0"
                     class="tab-content"
-                    id="candidate-addresses"
                   >
-                    <div class="row button-row mb-3 p-1 pt-4 pt-xl-0">
-                      <div class="col-sm-12">
-                        <div class="d-flex justify-content-between">
-                          <div>
-                            <h4 class="card-title text-brand pb-1">Addresses</h4>
-                            <p class="card-text sub-heading">
-                              Addresses for John Doe in the system
-                            </p>
-                          </div>
+                    <PersonalInformation />
 
-                          <div class="button-area">
-                            <router-link
-                              to="/users/view/addresses/create"
-                              class="btn btn-brand"
-                              title="Add New Address"
-                              ><i class="far fa-plus icon left mr-2"></i>Add
-                              Address</router-link
-                            >
-                          </div>
-                        </div>
-                        <ul class="list-group notes mt-4">
-                          <li class="list-group-item position-relative">
-                            <div class="p-2">
-
-                            
-                            <span class="font-weight-bold">Address 1</span
-                            ><br />
-                            <br />
-                            Alanod, Chippenham Dr <br />
-                            Milton Keynes<br />
-                            MK10 0AN
-                            <router-link
-                              to="/users/view/addresses/view"                  
-                              title="View Note"
-                            >
-                              <span class="btn icon-brc"
-                                ><i class="fas fa-edit mr-1"></i>Edit</span
-                              >
-                            </router-link>
-                          </div>
-                          </li>
-                          <li class="list-group-item position-relative mt-2">
-                            <div class="p-2">
-                            <span class="font-weight-bold">Address 2</span
-                            ><br />
-                            <br />
-                            Alanod, Chippenham Dr <br />
-                            Milton Keynes <br />MK10 0AN
-                            <router-link
-                              to="/users/view/addresses/view"
-                              title="View Note"
-                            >
-                            <span class="btn icon-brc"
-                                ><i class="fas fa-edit mr-1"></i>Edit</span
-                              >
-                            </router-link>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
                   </div>
-                  <!-- END Candidate Address !-->
+                  <!-- END Personal Information !-->
                   <!-- START Candidate Contact Numbers !-->
                   <div
                     v-show="currentTab === 1"
                     class="tab-content"
                     id="candidate-contact-number"
                   >
-                    <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
+                    <div class="row button-row mb-3 p-1 pt-4">
                       <div class="col-sm-12">
                         <h4 class="card-title text-brand pb-3">Contact Numbers</h4>
                         <p class="card-text sub-heading">
@@ -129,40 +70,14 @@
                     </div>
                   </div>
                   <!-- END Candidate Contact Numbers !-->
-                  <!-- START Candidate Email Addresses !-->
-                  <div
-                    v-show="currentTab === 2"
-                    class="tab-content"
-                    id="candidate-email-addresses"
-                  >
-                    <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
-                      <div class="col-sm-12">
-                        <h4 class="card-title text-brand pb-3">Email Addresses</h4>
-                        <p class="card-text sub-heading">
-                          <label for="validationDefault01"
-                            >Email Address:</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control mb-3"
-                            id="validationDefault01"
-                            placeholder="info@mlg.co.uk"
-                          />
-                          <button type="submit" class="btn btn-primary mt-3">
-                            Update
-                          </button>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- END Candidate Email Addresses !-->
+                
                   <!-- START Candidate General Details !-->
                   <div
-                    v-show="currentTab === 3"
+                    v-show="currentTab === 2"
                     class="tab-content active"
                     id="candidate-general-details"
                   >
-                    <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
+                    <div class="row button-row mb-3 p-1 pt-4">
                       <div class="col-sm-12">
                         <div class="d-flex justify-content-between">
                           <div>
@@ -238,11 +153,11 @@
                   <!-- END Candidate General Details !-->
                   <!-- START Candidate Notes !-->
                   <div
-                    v-show="currentTab === 4"
+                    v-show="currentTab === 3"
                     class="tab-content"
                     id="candidate-email-addresses"
                   >
-                    <div class="row button-row mb-3 p-1 pt-4 pt-lg-0">
+                    <div class="row button-row mb-3 p-1 pt-4">
                       <div class="col-sm-12">
                         <div class="d-flex justify-content-between">
                           <div>
@@ -346,28 +261,27 @@
 
 <script>
 import LayoutAccount from "./Components/LayoutAccount.vue"
+import PersonalInformation from "./Components/PersonalInformation.vue"
 
 export default {
   name: "Account",
   components: {
     LayoutAccount,
+    PersonalInformation,
   },
   data() {
     return {
       currentTab: 0,
       tabs: [
         {
-          title: "Addresses",
+          title: "Personal Information",
           icon: "far fa-map-marker-alt icon left mr-2 lg",
         },
         {
-          title: "Contact Numbers",
+          title: "Account Settings   ",
           icon: "far fa-phone icon left mr-2 lg",
         },
-        {
-          title: "Email Addresses",
-          icon: "far fa-envelope icon left mr-2 lg",
-        },
+
         {
           title: "Activity",
           icon: "far fa-user icon left mr-2 lg",
