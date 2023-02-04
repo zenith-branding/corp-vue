@@ -14,7 +14,6 @@
             <!-- END Title Area !-->
           </div>
         </div>
-
         <div
           class="col-sm-6 d-sm-flex justify-content-end align-items-center pb-xs-5 pb-4"
         >
@@ -36,7 +35,7 @@
             </select>
             <!-- END Sort By Button !-->
             <!-- Search Button Button !-->
-            <a href="#" title="Add" class="btn btn-primary mr-3">
+            <a href="#" title="Add" class="btn btn-primary">
               <i class="far fa-search icon left mr-2"></i>Search
             </a>
             <!-- END Search Button Button !-->
@@ -44,19 +43,23 @@
         </div>
         <div class="col-12 mb-3">
           <div class="d-flex justify-content-end">
-
             <!-- Add User Button !-->
             <h2 class="h4 text-primary mr-3 mt-2">Add new user to the sytem</h2>
-            <a href="#" title="Add" class="btn btn-primary mr-3">
+
+            <a
+              href="#"
+              title="Add"
+              class="btn btn-primary"
+              @click="myModal = !myModal"
+            >
               <i class="far fa-plus icon left mr-2"></i>Create user
             </a>
-            
             <!-- END Add User Button !-->
           </div>
         </div>
-        <UserModal />
       </div>
     </div>
+
     <div id="Users-all-Users" class="card card-table">
       <div class="card-body">
         <div class="row card-table-header">
@@ -184,6 +187,40 @@
       </div>
     </div>
   </div>
+  <!-- modal user registration -->
+  <transition name="fade">
+    <div v-if="myModal">
+      <div class="modal-mask">
+        <div class="modal-wrapper">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button class="close" @click="myModal = !myModal">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <h4 class="modal-title">title here</h4>
+              <div class="modal-body">
+                <div class="form-group">form here</div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" @click="myModal = !myModal">
+                  Save changes
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  @click="myModal = !myModal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </transition>
 </template>
 
 <script>
@@ -200,10 +237,15 @@ export default {
   components: {
     HeaderTop,
     HeaderBottom,
-    UserModal
+    UserModal,
   },
   mounted() {
     console.log("Component mounted.")
+  },
+  data() {
+    return {
+      myModal: false,
+    }
   },
   computed: mapState(["APIData"]),
   created() {
@@ -241,3 +283,38 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.modal-mask {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  transition: opacity 0.5s ease;
+}
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.modal-dialog {
+  background: #fdfdfd;
+}
+
+.modal-content{
+  border-radius: 0;
+}
+</style>

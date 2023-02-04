@@ -3772,7 +3772,7 @@ tbody.collapse.show {
   border-bottom-right-radius: 0.25rem;
 }
 .page-item.active .page-link {
-  z-index: 2;
+  z-index: 0;
   color: #fff;
   background-color: #3ab048;
   border-color: #3ab048;
