@@ -28,9 +28,9 @@
               ></a>
             </li>
             <li class="btn-icon  alt d-none d-sm-block float-right">
-              <a href="/my-account" class="" :title="name"
+              <router-link to="/my-account" class="" :title="name"
                 ><i class="far fa-user text-white"></i
-              ></a>
+              ></router-link>
             </li>
             <li class="btn-icon  float-right">
               <a href="javascript:void(0);" title="Notifications"

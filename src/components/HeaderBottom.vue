@@ -54,8 +54,56 @@
           </li>
           <li
             class="nav-item dropdown mr-2 py-lg-1 mr-lg-5"
-            @mouseover="toggle = true"
-            @mouseleave="toggle = false"
+            @mouseover="toggleReports = true"
+            @mouseleave="toggleReports = false"
+          >
+            <router-link
+              to="#/reports"
+              class="nav-link dropdown-toggle"
+              id="dropdownMenuButton1"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              title="Reports"
+            >
+              <i class="far fa-file-invoice-dollar mr-1"></i>Reports
+            </router-link>
+            <ul
+              class="dropdown-menu mt-n5"
+              v-bind:class="{ 'd-block': toggleReports, 'd-none': !toggleReports }"
+              aria-labelledby="dropdownMenuButton1"
+            >
+              <li>
+                <router-link to="/reports/incoming" class="dropdown-item"
+                  >Outstanding Timesheets</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/reports/outgoing" class="dropdown-item"
+                  >Payroll - Ready to Pay</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/reports/outgoing" class="dropdown-item"
+                  >Payroll - On Hold</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/reports/outgoing" class="dropdown-item"
+                  >Candidates - Location Worked</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/reports" class="dropdown-item"
+                  >All Reports</router-link
+                >
+              </li>
+            </ul>
+          </li>
+          <li
+            class="nav-item dropdown mr-2 py-lg-1 mr-lg-5"
+            @mouseover="toggleInvoices = true"
+            @mouseleave="toggleInvoices = false"
           >
             <router-link
               to="/invoices"
@@ -70,7 +118,7 @@
             </router-link>
             <ul
               class="dropdown-menu mt-n5"
-              v-bind:class="{ 'd-block': toggle, 'd-none': !toggle }"
+              v-bind:class="{ 'd-block': toggleInvoices, 'd-none': !toggleInvoices }"
               aria-labelledby="dropdownMenuButton1"
             >
               <li>
@@ -102,7 +150,8 @@ export default {
   name: "",
   data() {
     return {
-      toggle: false,
+      toggleReports: false,
+      toggleInvoices: false,
     }
   },
 }

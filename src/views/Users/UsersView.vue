@@ -199,9 +199,9 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <h4 class="modal-title">title here</h4>
+              <h4 class="modal-title">Create New User</h4>
               <div class="modal-body">
-                <div class="form-group">form here</div>
+                <CreateUserForm />
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary" @click="myModal = !myModal">
@@ -229,7 +229,7 @@ import HeaderBottom from "../../components/HeaderBottom.vue"
 import HeaderTop from "../../components/HeaderTop.vue"
 import { mapState } from "vuex"
 import { getAPI } from "../../utils/axios-api"
-import UserModal from "./components/CreateUserModal.vue"
+import CreateUserForm from "./Components/CreateUserForm.vue"
 
 export default {
   name: "UsersView",
@@ -237,7 +237,7 @@ export default {
   components: {
     HeaderTop,
     HeaderBottom,
-    UserModal,
+    CreateUserForm,
   },
   mounted() {
     console.log("Component mounted.")
@@ -313,8 +313,15 @@ export default {
 .modal-dialog {
   background: #fdfdfd;
 }
+.modal-title{
+  padding: 1rem 2.5rem 0rem
+}
 
 .modal-content{
   border-radius: 0;
+}
+
+.close:hover{
+  cursor: pointer;
 }
 </style>
