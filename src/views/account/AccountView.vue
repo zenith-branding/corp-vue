@@ -1,13 +1,13 @@
 <template>
   <LayoutAccount>
-   <div class="main-content user-main">
+    <div class="main-content user-main">
       <div class="main-content-panel my-2">
         <div class="card mb-3">
           <div class="card-body tabs-wrapper p-4">
             <div class="row">
               <div class="col-12">
                 <!-- Tab Buttons -->
-                <ul class="accordion-tabs d-flex flex-column flex-lg-row">
+                <ul class="accordion-tabs d-flex flex-column flex-lg-row mb-3">
                   <li
                     v-for="(tab, index) in tabs"
                     @click="currentTab = index"
@@ -28,12 +28,8 @@
               <div class="col-12">
                 <div class="tab-contents">
                   <!-- START Personal Information !-->
-                  <div
-                    v-show="currentTab === 0"
-                    class="tab-content"
-                  >
+                  <div v-show="currentTab === 0" class="tab-content">
                     <PersonalInformation />
-
                   </div>
                   <!-- END Personal Information !-->
                   <!-- START Candidate Contact Numbers !-->
@@ -42,35 +38,10 @@
                     class="tab-content"
                     id="candidate-contact-number"
                   >
-                    <div class="row button-row mb-3 p-1 pt-4">
-                      <div class="col-sm-12">
-                        <h4 class="card-title text-brand pb-3">Contact Numbers</h4>
-                        <p class="card-text sub-heading">
-                          <label for="validationDefault01">Mobile Phone:</label>
-                          <input
-                            type="text"
-                            class="form-control mb-3"
-                            id="validationDefault01"
-                            placeholder="07354898956"
-                          />
-                          <label for="validationDefault01"
-                            >Landline Phone:</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control mb-3"
-                            id="validationDefault02"
-                            placeholder="01354898956"
-                          />
-                          <button type="submit" class="btn btn-primary mt-3">
-                            Update
-                          </button>
-                        </p>
-                      </div>
-                    </div>
+                    <AccountSettings />
                   </div>
                   <!-- END Candidate Contact Numbers !-->
-                
+
                   <!-- START Candidate General Details !-->
                   <div
                     v-show="currentTab === 2"
@@ -85,17 +56,6 @@
                             <p class="card-text sub-heading pb-3">
                               Activity for John Doe in the system
                             </p>
-                          </div>
-
-                          <div class="button-area">
-                            <a
-                              href="#"
-                              title="Edit John Doe's Details"
-                              class="btn btn-brand"
-                            >
-                              <i class="far fa-plus icon left mr-2"></i>
-                              Add note
-                            </a>
                           </div>
                         </div>
                         <div class="table-responsive hide-scroll-bars pt-3">
@@ -154,7 +114,7 @@
                   <!-- START Candidate Notes !-->
                   <div
                     v-show="currentTab === 3"
-                    class="tab-content"
+                    class="tab-content notes-tab"
                     id="candidate-email-addresses"
                   >
                     <div class="row button-row mb-3 p-1 pt-4">
@@ -166,85 +126,62 @@
                               Notes for John Doe in the system
                             </p>
                           </div>
-
-                          <div class="button-area">
-                            <router-link
-                              to="/users/view/notes/create"
-                              class="btn btn-brand"
-                              title="Create New Note"
-                              ><i class="far fa-plus icon left mr-2"></i>
-
-                              Add note</router-link
-                            >
-                            <!-- <a
-                              href="#"
-                              title="Edit John Doe's Details"
-                              class="btn btn-brand"
-                            >
-                              <i class="far fa-plus icon left mr-2"></i>
-
-                              Add note
-                            </a> -->
-                          </div>
                         </div>
-                        <ul class="list-group notes mt-3">
-                          <li class="list-group-item p-3">
-                            <router-link
-                              to="/users/view/notes/view"
-                              class="list-selector"
-                              title="View Note"
-                            >
-                              Cras justo odio
-                              <span class="float-right">
-                                24th January 2023</span
-                              >
-                            </router-link>
-                          </li>
-                          <li class="list-group-item p-3">
-                            <router-link
-                              to="/users/view/notes/view"
-                              class="list-selector"
-                              title="View Note"
-                            >
-                              Dapibus ac facilisis in
-                              <span class="float-right">
-                                14th January 2023</span
-                              >
-                            </router-link>
-                          </li>
-                          <li class="list-group-item p-3">
-                            <router-link
-                              to="/users/view/notes/view"
-                              class="list-selector"
-                              title="View Note"
-                            >
-                              Cras justo odio
-                              <span class="float-right">
-                                12th January 2023</span
-                              >
-                            </router-link>
-                          </li>
-                          <li class="list-group-item p-3">
-                            <router-link
-                              to="/users/view/notes/view"
-                              class="list-selector"
-                   S           title="View Note"
-                            >
-                              Porta ac consectetur ac
-                              <span class="float-right"> 7th January 2023</span>
-                            </router-link>
-                          </li>
-                          <li class="list-group-item p-3">
-                            <router-link
-                              to="/users/view/notes/view"
-                              class="list-selector"
-                              title="View Note"
-                            >
-                              Vestibulum at eros
-                              <span class="float-right"> 6th January 2023</span>
-                            </router-link>
-                          </li>
-                        </ul>
+                        <div class="table-responsive hide-scroll-bars pt-3">
+                          <table
+                            id="Users-all-Users-table"
+                            class="table table-sm table-hover"
+                          >
+                            <tbody class="table-body">
+                              <tr>
+                                <td>Medical Locums Note </td>
+                                <td>
+                                  <span>22/01/2023</span>
+                                </td>
+                                <td class="col-actions hover-primary">
+                                  <router-link
+                                    to="/users/view/notes/view"
+                                    class="icon-button"
+                                    title="View Medical Locums Group"
+                                  >
+                                    <i class="far fa-eye"></i>
+                                  </router-link>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Porta ac consectetur ac</td>
+                                <td>
+                                  <span>16/01/2023</span>
+                                </td>
+                                <td class="col-actions hover-primary">
+                                  <router-link
+                                    to="/users/view/notes/view"
+                                    class="icon-button"
+                                    title="View Medical Locums Group"
+                                  >
+                                    <i class="far fa-eye"></i>
+                                  </router-link>
+                                </td>
+                              </tr>
+                              <tr>
+                                
+                                <td>Note</td>
+                                <td>
+                                  <span>11/01/2023</span>
+                                </td>
+                                <td class="col-actions hover-primary">
+                                  <router-link
+                                    to="/users/view/notes/view"
+                                    class="icon-button"
+                                    title="View Medical Locums Group"
+                                  >
+                                    <i class="far fa-eye"></i>
+                                  </router-link>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -262,12 +199,14 @@
 <script>
 import LayoutAccount from "./Components/LayoutAccount.vue"
 import PersonalInformation from "./Components/PersonalInformation.vue"
+import AccountSettings from "./Components/AccountSettings.vue"
 
 export default {
   name: "Account",
   components: {
     LayoutAccount,
     PersonalInformation,
+    AccountSettings,
   },
   data() {
     return {
@@ -278,12 +217,12 @@ export default {
           icon: "far fa-map-marker-alt icon left mr-2 lg",
         },
         {
-          title: "Account Settings   ",
+          title: "Account Settings",
           icon: "far fa-phone icon left mr-2 lg",
         },
 
         {
-          title: "Activity",
+          title: "Activity History",
           icon: "far fa-user icon left mr-2 lg",
         },
         {

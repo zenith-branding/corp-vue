@@ -47,11 +47,6 @@
               ><i class="far fa-clock mr-1"></i>Shifts
             </router-link>
           </li>
-          <li class="nav-item mr-2 py-lg-1 mr-lg-5">
-            <router-link to="#/reports" class="nav-link" title="Reports"
-              ><i class="far far fa-hospital mr-1"></i>Reports</router-link
-            >
-          </li>
           <li
             class="nav-item dropdown mr-2 py-lg-1 mr-lg-5"
             @mouseover="toggleReports = true"

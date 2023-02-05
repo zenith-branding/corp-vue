@@ -24,7 +24,7 @@
                 </ul>
                 <!-- END Tab Buttons -->
               </div>
-              <div class="col-xl-9 col-sm-12 pt-5 pt-lg-0">
+              <div class="col-xl-9 col-sm-12 pt-5 pt-xl-0">
                 <div class="tab-contents">
                   <!-- START Candidate Address !-->
                   <div
@@ -120,7 +120,7 @@
                     class="tab-content"
                     id="candidate-contact-number"
                   >
-                    <div class="row button-row mb-3 p-1 pt-lg-0">
+                    <div class="row button-row mb-3 p-1 pt-xl-0">
                       <div class="col-sm-12">
                         <h4 class="card-title text-brand pb-3">
                           Contact Numbers
@@ -156,7 +156,7 @@
                     class="tab-content"
                     id="candidate-email-addresses"
                   >
-                    <div class="row button-row mb-3 p-1 pt-lg-0">
+                    <div class="row button-row mb-3 p-1 pt-xl-0">
                       <div class="col-sm-12">
                         <h4 class="card-title text-brand pb-3">
                           Email Addresses
@@ -185,7 +185,7 @@
                     class="tab-content active"
                     id="candidate-general-details"
                   >
-                    <div class="row button-row mb-3 p-1 pt-lg-0">
+                    <div class="row button-row mb-3 p-1 pt-xl-0">
                       <div class="col-sm-12">
                         <div class="d-flex justify-content-between">
                           <div>
@@ -254,7 +254,7 @@
                     class="tab-content"
                     id="candidate-email-addresses"
                   >
-                    <div class="row button-row mb-3 p-1 pt-lg-0">
+                    <div class="row button-row mb-3 p-1 pt-xl-0">
                       <div class="col-sm-12">
                         <div class="d-flex justify-content-between">
                           <div>
