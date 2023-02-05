@@ -27,7 +27,7 @@
                 <td>178</td>
                 <td>£3,503</td>
                 <td>03-01-2023</td>
-                <td class="col-actions hover-primary">
+                <td class="col-actions">
                   <router-link
                     to="/payroll/ready-to-pay/batch"
                     class="icon-button bg-success"

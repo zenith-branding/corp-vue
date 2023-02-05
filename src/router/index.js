@@ -15,6 +15,9 @@ import ShiftsDetailsView from "../views/shifts/ShiftsDetailsView.vue"
 import InvoicesView from "../views/invoices/InvoicesView.vue"
 import IncomingInvoicesView from "../views/invoices/IncomingInvoicesView.vue"
 import OutgoingInvoicesView from "../views/invoices/OutgoingInvoicesView.vue"
+import CandidatesView from "../views/candidates/CandidatesView.vue"
+import ClientsView from "../views/clients/ClientsView.vue"
+
 
 
 const router = createRouter({
@@ -99,6 +102,22 @@ const router = createRouter({
     },
 
     // --- UsersEnd ----
+    // --- Candidates ----
+    {
+      path: "/candidates",
+      name: "CandidatesView",
+      component: CandidatesView,
+    },
+
+    // --- CandidatesEnd ----
+    // --- Clients ----
+    {
+      path: "/clients",
+      name: "ClientsView",
+      component: ClientsView,
+    },
+
+    // --- CandidatesEnd ----
 
     // --- Shifts ----
     {
@@ -113,6 +132,7 @@ const router = createRouter({
     },
 
     // --- ShiftsEnd ----
+
     // --- Invoices ----
     {
       path: "/invoices",

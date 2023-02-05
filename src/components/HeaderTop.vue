@@ -23,7 +23,7 @@
         <div class="col-lg-9 col-md-9 col-sm-8 col-8 navigation-col">
           <ul class="pt-3">
             <li class="btn-icon  last float-right">
-              <a href="/login" class="" title="Log Out"
+              <a href="/logout" class="" title="Log Out"
                 ><i class="far fa-power-off text-white"></i
               ></a>
             </li>
