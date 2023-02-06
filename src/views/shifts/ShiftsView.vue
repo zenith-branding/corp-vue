@@ -8,7 +8,7 @@
           <div class="content-area">
             <!-- Title Area !-->
             <h1 class="main-heading">Shifts</h1>
-            <p class="main-sub-heading">
+            <p class="main-sub-heading pb-4">
               List of all current shifts in the system
             </p>
             <!-- END Title Area !-->
@@ -16,30 +16,30 @@
         </div>
 
         <div
-          class="col-sm-6 d-sm-flex justify-content-end align-items-center pb-xs-5"
+          class="col-sm-6 d-sm-flex justify-content-end align-items-center pb-xs-5 pb-4"
         >
           <div class="button-area d-flex">
-              <!-- Sort By Button !-->
-              <select class="custom-select mr-3" id="inlineFormCustomSelect">
-                  <option selected>Sort By</option>
-                  <option value="1">Candidate</option>
-                  <option value="2">Hospital</option>
-                  <option value="3">Date</option>
-                </select>
-                <!-- END Sort By Button !-->
-                <!-- Search Button Button !-->
-                <a href="#" title="Add" class="btn btn-primary mr-3">
-                  <i class="far fa-search icon left mr-2"></i>Search
-                </a>
-                <!-- END Search Button Button !-->
             <!-- Search Input Field !-->
             <input
-              class="form-control"
+              class="form-control mr-3"
               type="text"
               placeholder="Search Shift"
               aria-label="Shift Search"
             />
             <!-- END Search Input Field !-->
+            <!-- Sort By Button !-->
+            <select class="custom-select mr-3" id="inlineFormCustomSelect">
+              <option selected>Sort By</option>
+              <option value="1">Role</option>
+              <option value="2">Name</option>
+              <option value="3">Status</option>
+            </select>
+            <!-- END Sort By Button !-->
+            <!-- Search Button Button !-->
+            <a href="#" title="Add" class="btn btn-primary">
+              <i class="far fa-search icon left mr-2"></i>Search
+            </a>
+            <!-- END Search Button Button !-->
           </div>
         </div>
       </div>
@@ -50,8 +50,8 @@
           <div class="col-md-6 col-sm-12">
             <div class="content-area">
               <h4 class="card-title text-brand">Shifts</h4>
-              <p class="card-text pb-1" id="Shifts-all-Shifts-counts">
-                <span class="total">4</span> Shifts currently in the system
+              <p class="card-text pb-4 mt-0" id="Shifts-all-Shifts-counts">
+                <span class="total">2</span> Shifts currently in the system
               </p>
             </div>
           </div>
@@ -74,6 +74,27 @@
               </tr>
             </thead>
             <tbody class="table-body">
+              <tr>
+                <td>SH-1</td>
+                <td>TSH-252948</td>
+                <td>John Doe</td>
+                <td>Nuffield Hospital</td>
+                <td>30-01-2021</td>
+                <td>
+                  <span class="badge badge-pill badge-success">Paid</span>
+                </td>
+
+                <td>IN-8495843</td>
+                <td class="col-actions hover-primary">
+                  <router-link
+                    to="/shifts/view"
+                    class="icon-button"
+                    title="View Medical Locums Group"
+                  >
+                    <i class="far fa-eye"></i>
+                  </router-link>
+                </td>
+              </tr>
               <tr>
                 <td>SH-1</td>
                 <td>TSH-252948</td>

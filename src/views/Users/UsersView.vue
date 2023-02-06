@@ -205,7 +205,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary" @click="myModal = !myModal">
-                  Save changes
+                  Create User
                 </button>
                 <button
                   type="button"

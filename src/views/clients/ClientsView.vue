@@ -22,8 +22,8 @@
             <input
               class="form-control mr-3"
               type="text"
-              placeholder="Search Candidate"
-              aria-label="Candidate Search"
+              placeholder="Search Client"
+              aria-label="Client Search"
             />
             <!-- END Search Input Field !-->
             <!-- Sort By Button !-->
@@ -72,10 +72,10 @@
               </tr>
             </thead>
             <tbody class="table-body">
-              <tr v-for="Candidate in APIData.data" :key="Candidate.id">
-                <td>{{ Candidate.id }}</td>
-                <td>{{ Candidate.forename }}</td>
-                <td>{{ Candidate.email }}</td>
+              <tr v-for="Client in APIData.data" :key="Client.id">
+                <td>{{ Client.id }}</td>
+                <td>{{ Client.forename }}</td>
+                <td>{{ Client.email }}</td>
                 <td>PAYE</td>
                 <td>
                   <span class="badge badge-pill badge-success">Active</span>
@@ -176,7 +176,7 @@ import HeaderBottom from "../../components/HeaderBottom.vue"
 import HeaderTop from "../../components/HeaderTop.vue"
 import { mapState } from "vuex"
 import { getAPI } from "../../utils/axios-api"
-// import CreateCandidateForm from "./Components/CreateCandidateForm.vue"
+// import CreateClientForm from "./Components/CreateClientForm.vue"
 
 export default {
   name: "ClientsView",
