@@ -2,7 +2,7 @@
   <div class="col-lg-6 col-md-12 col-sm-12 m-md-b m-sm-b m-xs-b">
     <div id="dashboard-candidates-waiting-payroll" class="card">
       <div class="card-body">
-        <h2 class="card-title text-success mb-3">
+        <h2 class="card-title text-success mb-4">
           Latest Candidates Awaiting Payment
         </h2>
         <div class="table-responsive">

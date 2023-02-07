@@ -32,21 +32,21 @@
                     <PersonalInformation />
                   </div>
                   <!-- END Personal Information !-->
-                  <!-- START Candidate Contact Numbers !-->
+                  <!-- START my account Contact Numbers !-->
                   <div
                     v-show="currentTab === 1"
                     class="tab-content"
-                    id="candidate-contact-number"
+                    id="my account-contact-number"
                   >
                     <AccountSettings />
                   </div>
-                  <!-- END Candidate Contact Numbers !-->
+                  <!-- END my account Contact Numbers !-->
 
-                  <!-- START Candidate General Details !-->
+                  <!-- START my account General Details !-->
                   <div
                     v-show="currentTab === 2"
                     class="tab-content active"
-                    id="candidate-general-details"
+                    id="my account-general-details"
                   >
                     <div class="row button-row mb-3 p-1 pt-4">
                       <div class="col-sm-12">
@@ -110,12 +110,12 @@
                       </div>
                     </div>
                   </div>
-                  <!-- END Candidate General Details !-->
-                  <!-- START Candidate Notes !-->
+                  <!-- END my account General Details !-->
+                  <!-- START my account Notes !-->
                   <div
                     v-show="currentTab === 3"
                     class="tab-content notes-tab"
-                    id="candidate-email-addresses"
+                    id="my account-email-addresses"
                   >
                     <div class="row button-row mb-3 p-1 pt-4">
                       <div class="col-sm-12">
@@ -185,7 +185,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- END Candidate Notes !-->
+                  <!-- END my account Notes !-->
                 </div>
               </div>
             </div>

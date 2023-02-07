@@ -8,19 +8,37 @@
                         <div class="content-area">
                             <!-- Title Area !-->
                             <h1 class="main-heading">All Outgoing Invoices</h1>
-                            <p class="main-sub-heading">List of all outgoing invoices in the system</p>
+                            <p class="main-sub-heading pb-4">List of all outgoing invoices in the system</p>
                             <!-- END Title Area !-->
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="button-area text-right">
-                            <!-- Tickets Search Button !-->
-                            <a href="#" title="Search" class="btn btn-brand">
-                                <i class="far fa-search icon left"></i>Search
-                            </a>
-                            <!-- END Tickets Search Button !-->
-                        </div>
-                    </div>
+                    <div
+          class="col-sm-6 d-sm-flex justify-content-end align-items-center pb-xs-5 pb-4"
+        >
+          <div class="button-area d-flex">
+            <!-- Search Input Field !-->
+            <input
+              class="form-control mr-3"
+              type="text"
+              placeholder="Search Invoice"
+              aria-label="Invoice Search"
+            />
+            <!-- END Search Input Field !-->
+            <!-- Sort By Button !-->
+            <select class="custom-select mr-3" id="inlineFormCustomSelect">
+              <option selected>Sort By</option>
+              <option value="1">Date</option>
+              <option value="2">Name</option>
+              <option value="3">Status</option>
+            </select>
+            <!-- END Sort By Button !-->
+            <!-- Search Button Button !-->
+            <a href="#" title="Add" class="btn btn-primary">
+              <i class="far fa-search icon left mr-2"></i>Search
+            </a>
+            <!-- END Search Button Button !-->
+          </div>
+        </div>
                 </div> 
             </div>
             <div id="invoices-all-outgoing-invoices" class="card card-table">
@@ -29,7 +47,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <div class="content-area">
                                 <h4 class="card-title text-brand text-primary">List of all Outoging Invoices</h4>
-                                <p class="card-text text-faded" id="invoices-all-outgoing-invoices-counts"><span class="total">4</span> outgoing invoices currently in the system</p>
+                                <p class="card-text text-faded pb-4 mt-0" id="invoices-all-outgoing-invoices-counts"><span class="total">4</span> outgoing invoices currently in the system</p>
                             </div>
                         </div>
                     </div>

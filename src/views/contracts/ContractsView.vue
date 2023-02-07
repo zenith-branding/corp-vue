@@ -7,14 +7,13 @@
         <div class="col-sm-6">
           <div class="content-area">
             <!-- Title Area !-->
-            <h1 class="main-heading">Shifts</h1>
+            <h1 class="main-heading">Contracts</h1>
             <p class="main-sub-heading pb-4">
-              List of all current shifts in the system
+              List of all current contracts in the system
             </p>
             <!-- END Title Area !-->
           </div>
         </div>
-
         <div
           class="col-sm-6 d-sm-flex justify-content-end align-items-center pb-xs-5 pb-4"
         >
@@ -23,8 +22,8 @@
             <input
               class="form-control mr-3"
               type="text"
-              placeholder="Search Shift"
-              aria-label="Shift Search"
+              placeholder="Search Contract"
+              aria-label="Contract Search"
             />
             <!-- END Search Input Field !-->
             <!-- Sort By Button !-->
@@ -44,50 +43,76 @@
         </div>
       </div>
     </div>
-    <div id="Shifts-all-Shifts" class="card card-table">
+
+    <div id="Contracts-all-Contracts" class="card card-table">
       <div class="card-body">
         <div class="row card-table-header">
           <div class="col-md-6 col-sm-12">
             <div class="content-area">
-              <h4 class="card-title text-brand">Shifts</h4>
-              <p class="card-text pb-4 mt-0" id="Shifts-all-Shifts-counts">
-                <span class="total">2</span> Shifts currently in the system
+              <h4 class="card-title text-brand">Contracts</h4>
+              <p
+                class="card-text main-sub-heading pb-4 mt-0"
+                id="Contracts-all-Contracts-counts"
+              >
+                <span class="total">2</span> Contracts currently in the system
               </p>
             </div>
           </div>
         </div>
         <div class="table-responsive hide-scroll-bars">
-          <table
-            id="Shifts-all-Shifts-table"
-            class="table table-sm table-hover"
-          >
+          <table id="Contracts-all-Contracts-table" class="table table-sm">
             <thead class="table-head">
               <tr>
                 <th scope="col">Ref No</th>
-                <th scope="col">Candidate</th>
-                <th scope="col">Candidate Location</th>
-                <th scope="col">Client</th>
-                <th scope="col">Client Location</th>
-                <th scope="col">Invoice Status</th>
-                <th scope="col">Invoice ID</th>
-                <th scope="col" class="col-actions">View</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">End Date</th>
+                <th scope="col">Job Title</th>                
+                <th scope="col">Consultant</th>
+                <th scope="col">Time Stamp</th>
+                <th scope="col">Rates Shifts</th>
+                <th scope="col" class="col-actions">Actions</th>
               </tr>
             </thead>
             <tbody class="table-body">
-              <tr>
-                <td>TSH-252948</td>
-                <td>John Doe</td>
-                <td>Cambridge</td>
-                <td>Nuffield Hospital</td>
-                <td>East of England</td>
+              <tr v-for="Contract in APIData.data" :key="Contract.id">
+                <td>{{ Contract.id }}</td>
+                <td>{{ Contract.forename }}</td>
+                <td>{{ Contract.email }}</td>
+                <td>PAYE</td>
                 <td>
-                  <span class="badge badge-pill badge-success">Paid</span>
+                  <span class="badge badge-pill badge-success">Active</span>
                 </td>
-
-                <td>IN-8495843</td>
+                <td class="col-actions">
+                  <router-link
+                    to="/Contracts/view"
+                    class="icon-button"
+                    title="View Medical Locums Group"
+                  >
+                    <i class="far fa-eye"></i>
+                  </router-link>
+                  <a href="#" class="icon-button bg-default" title="Shifts">
+                    <i class="far fa-clock"></i>
+                  </a>
+                  <a href="#" class="icon-button bg-default" title="Payslips">
+                    <i class="far fa-money-check"></i>
+                  </a>
+                  <a href="#" class="icon-button bg-default" title="Invoices">
+                    <i class="far fa-file-invoice-dollar"></i>
+                  </a>
+                </td>
+              </tr>
+              <!--  -->
+              <tr>
+                <td>CON-1409</td>
+                <td>02/02/2023</td>
+                <td>02/02/2023</td>
+                <td>RGN Band 5</td>
+                <td>Rodney Doe</td>
+                <td>01/02/2023 13:04:24</td>
+                <td>Pay rate only</td>
                 <td class="col-actions hover-primary">
                   <router-link
-                    to="/shifts/view"
+                    to="/contracts/view"
                     class="icon-button"
                     title="View Medical Locums Group"
                   >
@@ -95,20 +120,19 @@
                   </router-link>
                 </td>
               </tr>
+              <!--  -->
+              <!--  -->
               <tr>
-                <td>TSH-252948</td>
-                <td>John Doe</td>
-                <td>Cambridge</td>
-                <td>Nuffield Hospital</td>
-                <td>East of England</td>
-                <td>
-                  <span class="badge badge-pill badge-success">Paid</span>
-                </td>
-
-                <td>IN-8495843</td>
+                <td>CON-1410</td>
+                <td>04/02/2023</td>
+                <td>04/02/2023</td>
+                <td>RGN Band 5</td>
+                <td>Rodney Doe</td>
+                <td>01/02/2023 13:04:24</td>
+                <td>Pay rate only</td>
                 <td class="col-actions hover-primary">
                   <router-link
-                    to="/shifts/view"
+                    to="/contracts/view"
                     class="icon-button"
                     title="View Medical Locums Group"
                   >
@@ -116,13 +140,14 @@
                   </router-link>
                 </td>
               </tr>
+              <!--  -->
             </tbody>
           </table>
         </div>
         <!-- https://laravel-vue-pagination.org/guide/install.html#install -->
         <Bootstrap5Pagination
           :data="APIData"
-          @pagination-change-page="getUsers"
+          @pagination-change-page="getContracts"
         />
         <div class="pagination-wrapper mt-3">
           <nav>
@@ -148,6 +173,7 @@
       </div>
     </div>
   </div>
+
 </template>
 
 <script>
@@ -156,9 +182,10 @@ import HeaderBottom from "../../components/HeaderBottom.vue"
 import HeaderTop from "../../components/HeaderTop.vue"
 import { mapState } from "vuex"
 import { getAPI } from "../../utils/axios-api"
+// import CreateContractForm from "./Components/CreateContractForm.vue"
 
 export default {
-  name: "ShiftsView",
+  name: "ContractsView",
 
   components: {
     HeaderTop,
@@ -167,15 +194,20 @@ export default {
   mounted() {
     console.log("Component mounted.")
   },
+  data() {
+    return {
+      myModal: false,
+    }
+  },
   computed: mapState(["APIData"]),
   created() {
     getAPI
-      .get("/Shifts/", {
+      .get("/Contracts/", {
         headers: { Authorization: `Bearer ${this.$store.state.token}` },
       })
       .then((response) => {
-        console.log(response.data.Shifts)
-        this.$store.state.APIData = response.data.Shifts
+        console.log(response.data.Contracts)
+        this.$store.state.APIData = response.data.Contracts
         this.status = "success"
       })
       .catch((err) => {
@@ -184,13 +216,13 @@ export default {
   },
 
   methods: {
-    getUsers(page) {
+    getContracts(page) {
       if (typeof page === "undefined") {
         page = 1
       }
 
       this.$http
-        .get("/users?page=" + page)
+        .get("/Contracts?page=" + page)
 
         .then((response) => {
           console.log(response)

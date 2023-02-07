@@ -1,8 +1,8 @@
 <template>
-  <div class="col-lg-6 col-md-12 col-sm-12 m-md-b m-sm-b m-xs-b mb-3">
+  <div class="col-lg-6 col-md-12 col-sm-12 m-md-b m-sm-b m-xs-b mb-4">
     <div id="dashboard-candidates-waiting-payroll" class="card">
       <div class="card-body">
-        <h2 class="card-title text-success mb-3">
+        <h2 class="card-title text-success mb-4">
           Latest Client Payments Waiting to Receive
         </h2>
         <div class="table-responsive">

@@ -17,6 +17,8 @@ import IncomingInvoicesView from "../views/invoices/IncomingInvoicesView.vue"
 import OutgoingInvoicesView from "../views/invoices/OutgoingInvoicesView.vue"
 import CandidatesView from "../views/candidates/CandidatesView.vue"
 import ClientsView from "../views/clients/ClientsView.vue"
+import ContractsView from "../views/contracts/ContractsView.vue"
+import ContractsDetailsView from "../views/contracts/ContractsDetailsView.vue"
 
 
 
@@ -117,6 +119,18 @@ const router = createRouter({
       component: ClientsView,
     },
 
+    // --- CandidatesEnd ----
+    // --- Contracts ----
+    {
+      path: "/contracts",
+      name: "ContractsView",
+      component: ContractsView,
+    },
+    {
+      path: "/contracts/view",
+      name: "ContractsDetailsView",
+      component: ContractsDetailsView,
+    },
     // --- CandidatesEnd ----
 
     // --- Shifts ----

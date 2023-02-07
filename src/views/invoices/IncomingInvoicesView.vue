@@ -4,45 +4,44 @@
   <div class="main-wrapper container">
     <div class="main-heading-wrapper">
       <div class="row">
-        <div class="col-sm-6">
+      <div class="col-sm-6">
           <div class="content-area">
             <!-- Title Area !-->
             <h1 class="main-heading">All Incoming Invoices</h1>
-            <p class="main-sub-heading">
+            <p class="main-sub-heading pb-4">
               List of all incoming invoices in the system
             </p>
             <!-- END Title Area !-->
           </div>
         </div>
-
-        <div
-          class="col-sm-6 d-sm-flex justify-content-end align-items-center pb-xs-5"
+                <div
+          class="col-sm-6 d-sm-flex justify-content-end align-items-center pb-xs-5 pb-4"
         >
           <div class="button-area d-flex">
-            <!-- Sort By Button !-->
-            <select class="custom-select mr-3" id="inlineFormCustomSelect">
-              <option selected>Sort By</option>
-              <option value="1">Client</option>
-              <option value="2">Status</option>
-              <option value="3">Date</option>
-            </select>
-            <!-- END Sort By Button !-->
-            <!-- Search Button Button !-->
-            <a href="#" title="Add" class="btn btn-primary mr-3">
-              <i class="far fa-search icon left mr-2"></i>Search
-            </a>
-            <!-- END Search Button Button !-->
             <!-- Search Input Field !-->
             <input
-              class="form-control"
+              class="form-control mr-3"
               type="text"
               placeholder="Search Invoice"
               aria-label="Invoice Search"
             />
             <!-- END Search Input Field !-->
+            <!-- Sort By Button !-->
+            <select class="custom-select mr-3" id="inlineFormCustomSelect">
+              <option selected>Sort By</option>
+              <option value="1">Date</option>
+              <option value="2">Name</option>
+              <option value="3">Status</option>
+            </select>
+            <!-- END Sort By Button !-->
+            <!-- Search Button Button !-->
+            <a href="#" title="Add" class="btn btn-primary">
+              <i class="far fa-search icon left mr-2"></i>Search
+            </a>
+            <!-- END Search Button Button !-->
           </div>
         </div>
-      </div>
+    </div>
     </div>
     <div id="Invoices-all-Invoices" class="card card-table">
       <div class="card-body">
@@ -50,7 +49,7 @@
           <div class="col-md-6 col-sm-12">
             <div class="content-area">
               <h4 class="card-title text-brand">Invoices</h4>
-              <p class="card-text pb-1" id="Invoices-all-Invoices-counts">
+              <p class="card-text pb-4 mt-0" id="Invoices-all-Invoices-counts">
                 <span class="total">4</span> Invoices currently in the system
               </p>
             </div>

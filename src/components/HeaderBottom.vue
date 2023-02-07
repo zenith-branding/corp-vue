@@ -43,6 +43,10 @@
             >
           </li>
           <li class="nav-item mr-2 py-lg-1 mr-lg-5">
+<router-link to="/contracts" class="nav-link" title="Contracts"
+  ><i class="far fa-user-nurse mr-1"></i>Contracts</router-link
+></li>
+          <li class="nav-item mr-2 py-lg-1 mr-lg-5">
             <router-link to="/shifts" class="nav-link" title="Shifts"
               ><i class="far fa-clock mr-1"></i>Shifts
             </router-link>
