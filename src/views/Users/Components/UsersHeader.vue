@@ -11,7 +11,7 @@
           </div>
         </div>
         <div
-          class="col-sm-6 d-sm-flex justify-content-end align-items-center pb-xs-5"
+          class="col-sm-6 d-sm-flex justify-content-end align-items-center pb-xs-5 pt-3 pt-md-0"
         >
           <div class="button-area d-flex">
             <!-- Search Button Button !-->

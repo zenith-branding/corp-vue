@@ -248,11 +248,10 @@
                     </div>
                   </div>
                   <!-- END Candidate General Details !-->
-                  <!-- START Candidate Notes !-->
+                  <!-- START user Notes !-->
                   <div
                     v-show="currentTab === 4"
-                    class="tab-content"
-                    id="candidate-email-addresses"
+                    class="tab-content notes-tab"
                   >
                     <div class="row button-row mb-3 p-1 pt-xl-0">
                       <div class="col-sm-12">
@@ -263,80 +262,66 @@
                               Notes for John Doe in the system
                             </p>
                           </div>
-
-                          <div class="button-area">
-                            <router-link
-                              to="/users/view/notes/create"
-                              class="btn btn-primary"
-                              title="Create New Note"
-                              ><i class="far fa-plus icon left mr-2"></i>
-
-                              Add note</router-link
-                            >
-                          </div>
                         </div>
-                        <ul class="list-group notes mt-3">
-                          <li class="list-group-item p-3">
-                            <router-link
-                              to="/users/view/notes/view"
-                              class="list-selector"
-                              title="View Note"
-                            >
-                              Cras justo odio
-                              <span class="float-right">
-                                24th January 2023</span
-                              >
-                            </router-link>
-                          </li>
-                          <li class="list-group-item p-3">
-                            <router-link
-                              to="/users/view/notes/view"
-                              class="list-selector"
-                              title="View Note"
-                            >
-                              Dapibus ac facilisis in
-                              <span class="float-right">
-                                14th January 2023</span
-                              >
-                            </router-link>
-                          </li>
-                          <li class="list-group-item p-3">
-                            <router-link
-                              to="/users/view/notes/view"
-                              class="list-selector"
-                              title="View Note"
-                            >
-                              Cras justo odio
-                              <span class="float-right">
-                                12th January 2023</span
-                              >
-                            </router-link>
-                          </li>
-                          <li class="list-group-item p-3">
-                            <router-link
-                              to="/users/view/notes/view"
-                              class="list-selector"
-                              title="View Note"
-                            >
-                              Porta ac consectetur ac
-                              <span class="float-right"> 7th January 2023</span>
-                            </router-link>
-                          </li>
-                          <li class="list-group-item p-3">
-                            <router-link
-                              to="/users/view/notes/view"
-                              class="list-selector"
-                              title="View Note"
-                            >
-                              Vestibulum at eros
-                              <span class="float-right"> 6th January 2023</span>
-                            </router-link>
-                          </li>
-                        </ul>
+                        <div class="table-responsive hide-scroll-bars pt-3">
+                          <table
+                            id="Users-all-Users-table"
+                            class="table table-sm table-hover"
+                          >
+                            <tbody class="table-body">
+                              <tr>
+                                <td>Medical Locums Note </td>
+                                <td>
+                                  <span>22/01/2023</span>
+                                </td>
+                                <td class="col-actions hover-primary">
+                                  <router-link
+                                    to="/users/view/notes/view"
+                                    class="icon-button"
+                                    title="View Medical Locums Group"
+                                  >
+                                    <i class="far fa-eye"></i>
+                                  </router-link>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Porta ac consectetur ac</td>
+                                <td>
+                                  <span>16/01/2023</span>
+                                </td>
+                                <td class="col-actions hover-primary">
+                                  <router-link
+                                    to="/users/view/notes/view"
+                                    class="icon-button"
+                                    title="View Medical Locums Group"
+                                  >
+                                    <i class="far fa-eye"></i>
+                                  </router-link>
+                                </td>
+                              </tr>
+                              <tr>
+                                
+                                <td>Note</td>
+                                <td>
+                                  <span>11/01/2023</span>
+                                </td>
+                                <td class="col-actions hover-primary">
+                                  <router-link
+                                    to="/users/view/notes/view"
+                                    class="icon-button"
+                                    title="View Medical Locums Group"
+                                  >
+                                    <i class="far fa-eye"></i>
+                                  </router-link>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <!-- END Candidate Notes !-->
+                  <!-- END user Notes !-->
                 </div>
               </div>
             </div>
