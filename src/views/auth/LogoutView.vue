@@ -11,7 +11,7 @@
         />
         <h1 class="main-heading mb-3">You are logged out.</h1>
         <p class="pt-2">Do you want to login back?</p>
-        <a class="btn btn-primary" href="/login" title="login">Login</a>
+        <router-link class="btn btn-primary" to="/login" title="login">Login</router-link>
       </div>
     </div>
 
