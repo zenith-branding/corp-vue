@@ -18,7 +18,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-3">
-          <li class="nav-item mr-2 py-lg-1 mr-lg-5">
+          <li class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5">
             <router-link
               to="/"
               class="nav-link active"
@@ -27,32 +27,32 @@
               ><i class="far fa-home mr-1"></i>Dashboard
             </router-link>
           </li>
-          <li class="nav-item mr-2 py-lg-1 mr-lg-5">
+          <li class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5">
             <router-link to="/users" class="nav-link" title="Users"
               ><i class="far fa fa-users mr-1"></i>Users</router-link
             >
           </li>
-          <li class="nav-item mr-2 py-lg-1 mr-lg-5">
+          <li class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5">
             <router-link to="/candidates" class="nav-link" title="Candidates"
               ><i class="far fa-user-nurse mr-1"></i>Candidates</router-link
             >
           </li>
-          <li class="nav-item mr-2 py-lg-1 mr-lg-5">
+          <li class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5">
             <router-link to="/clients" class="nav-link" title="Clients"
               ><i class="far far fa-hospital mr-1"></i>Clients</router-link
             >
           </li>
-          <li class="nav-item mr-2 py-lg-1 mr-lg-5">
+          <li class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5">
 <router-link to="/contracts" class="nav-link" title="Contracts"
   ><i class="far fa-user-nurse mr-1"></i>Contracts</router-link
 ></li>
-          <li class="nav-item mr-2 py-lg-1 mr-lg-5">
+          <li class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5">
             <router-link to="/shifts" class="nav-link" title="Shifts"
               ><i class="far fa-clock mr-1"></i>Shifts
             </router-link>
           </li>
           <li
-            class="nav-item dropdown mr-2 py-lg-1 mr-lg-5"
+            class="nav-item dropdown mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5"
             @mouseover="toggleReports = true"
             @mouseleave="toggleReports = false"
           >
@@ -65,7 +65,7 @@
               aria-expanded="false"
               title="Reports"
             >
-              <i class="far fa-file-invoice-dollar mr-1"></i>Reports
+              <i class="far fa-money-check-edit-alt mr-1"></i>Reports
             </router-link>
             <ul
               class="dropdown-menu mt-n5"
@@ -100,7 +100,7 @@
             </ul>
           </li>
           <li
-            class="nav-item dropdown mr-2 py-lg-1 mr-lg-5"
+            class="nav-item dropdown mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5"
             @mouseover="toggleInvoices = true"
             @mouseleave="toggleInvoices = false"
           >

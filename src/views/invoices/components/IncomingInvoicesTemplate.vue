@@ -1,13 +1,15 @@
 <template>
-  <div class="row container">
+
+  <div class="row">
+    <button class="btn btn-primary p-3 my-3 ml-auto">Download Invoice</button>
     <div class="col-12 card px-0">
-      <div class="card-header d-flex justify-content-between bg-primary px-5 py-3">
+      <div class="card-header text-white d-flex justify-content-between bg-primary px-5 py-3">
        
         <a href="#/" class="logo router-link-active" title="Medical Locums">
           <img
             src="../../../assets/mlg-logo.png"
             alt="Medical Locums"
-            class="d-none d-sm-block"
+            class="d-none d-md-block"
           />
         </a>
         <div class="navbar-content d-flex flex-column align-items-end">
@@ -21,27 +23,27 @@
         <div class="row my-5 ">
           <div class="col-sm-6">
             <h6 class="mb-3">Client's details:</h6>
-            <div>
+            <div class="py-1">
               <strong>Ramsay Health Care</strong>
             </div>
-            <div>43-190 Alanod, Milton Keynes</div>
-            <div>Email: john@email.com</div>
-            <div>Phone: +44 123 456 789</div>
+            <div class="py-1">43-190 Alanod, Milton Keynes</div>
+            <div class="py-1">Email: john@email.com</div>
+            <div class="py-1">Phone: +44 123 456 789</div>
           </div>
 
           <div class="col-sm-6 mb-5">
             <h6 class="mb-3">Candidate's details:</h6>
-            <div>
+            <div class="py-1">
               <strong>John Doe</strong>
             </div>
-            <div>43-190 Alanod, Milton Keynes</div>
-            <div>Email: john@email.com</div>
-            <div>Phone: +44 123 456 789</div>
+            <div class="py-1">43-190 Alanod, Milton Keynes</div>
+            <div class="py-1">Email: john@email.com</div>
+            <div class="py-1">Phone: +44 123 456 789</div>
           </div>
         </div>
 
         <div class="table-responsive-sm mt-5">
-          <table class="table data-heavy table-striped">
+          <table class="table table-sm data-heavy table-striped">
             <thead>
               <tr>
 

@@ -28,9 +28,9 @@
             <!-- Sort By Button !-->
             <select class="custom-select mr-3" id="inlineFormCustomSelect">
               <option selected>Sort By</option>
-              <option value="1">Date</option>
-              <option value="2">Name</option>
-              <option value="3">Status</option>
+              <option value="1">Settled</option>
+              <option value="2">Waiting Payment</option>
+              <option value="3">Date</option>
             </select>
             <!-- END Sort By Button !-->
             <!-- Search Button Button !-->

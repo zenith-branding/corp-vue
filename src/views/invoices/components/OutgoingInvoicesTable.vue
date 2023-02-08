@@ -27,14 +27,21 @@
                 <td>2</td>
                 <td>£764</td>
                 <td>03-01-2023</td>
-                <td class="col-actions">
+                <td class="col-actions hover-primary">
                   <router-link
-                    to="/payroll/ready-to-pay/batch"
-                    class="icon-button bg-success"
+                    to="/invoices/incoming/view"
+                    class="icon-button"
                     title="View"
                   >
                     <i class="far fa-eye"></i>
                   </router-link>
+                  <a
+                    href="#"
+                    class="icon-button bg-default"
+                    title="Download Invoice"
+                  >
+                    <i class="fas fa-arrow-alt-down"></i>
+                  </a>                  
                 </td>
               </tr>
               <tr>
@@ -43,14 +50,21 @@
                 <td>1</td>
                 <td>£345</td>
                 <td>03-01-2023</td>
-                <td class="col-actions">
+                <td class="col-actions hover-primary">
                   <router-link
-                    to="/payroll/ready-to-pay/batch"
-                    class="icon-button bg-success"
+                    to="/invoices/incoming/view"
+                    class="icon-button"
                     title="View"
                   >
                     <i class="far fa-eye"></i>
                   </router-link>
+                  <a
+                    href="#"
+                    class="icon-button bg-default"
+                    title="Download Invoice"
+                  >
+                    <i class="fas fa-arrow-alt-down"></i>
+                  </a>                  
                 </td>
               </tr>
               <tr>
@@ -59,14 +73,21 @@
                 <td>3</td>
                 <td>£854</td>
                 <td>04-01-2023</td>
-                <td class="col-actions">
+                <td class="col-actions hover-primary">
                   <router-link
-                    to="/payroll/ready-to-pay/batch"
-                    class="icon-button bg-success"
+                    to="/invoices/incoming/view"
+                    class="icon-button"
                     title="View"
                   >
                     <i class="far fa-eye"></i>
                   </router-link>
+                  <a
+                    href="#"
+                    class="icon-button bg-default"
+                    title="Download Invoice"
+                  >
+                    <i class="fas fa-arrow-alt-down"></i>
+                  </a>                  
                 </td>
               </tr>
               <tr>
@@ -75,14 +96,21 @@
                 <td>1</td>
                 <td>£345</td>
                 <td>03-01-2023</td>
-                <td class="col-actions">
+                <td class="col-actions hover-primary">
                   <router-link
-                    to="/payroll/ready-to-pay/batch"
-                    class="icon-button bg-success"
+                    to="/invoices/incoming/view"
+                    class="icon-button"
                     title="View"
                   >
                     <i class="far fa-eye"></i>
                   </router-link>
+                  <a
+                    href="#"
+                    class="icon-button bg-default"
+                    title="Download Invoice"
+                  >
+                    <i class="fas fa-arrow-alt-down"></i>
+                  </a>                  
                 </td>
               </tr>
               <tr>
@@ -91,14 +119,21 @@
                 <td>4</td>
                 <td>£560</td>
                 <td>04-01-2023</td>
-                <td class="col-actions">
+                <td class="col-actions hover-primary">
                   <router-link
-                    to="/payroll/ready-to-pay/batch"
-                    class="icon-button bg-success"
+                    to="/invoices/incoming/view"
+                    class="icon-button"
                     title="View"
                   >
                     <i class="far fa-eye"></i>
                   </router-link>
+                  <a
+                    href="#"
+                    class="icon-button bg-default"
+                    title="Download Invoice"
+                  >
+                    <i class="fas fa-arrow-alt-down"></i>
+                  </a>                  
                 </td>
               </tr>
               <tr>
@@ -107,14 +142,21 @@
                 <td>1</td>
                 <td>£345</td>
                 <td>03-01-2023</td>
-                <td class="col-actions">
+                <td class="col-actions hover-primary">
                   <router-link
-                    to="/payroll/ready-to-pay/batch"
-                    class="icon-button bg-success"
+                    to="/invoices/incoming/view"
+                    class="icon-button"
                     title="View"
                   >
                     <i class="far fa-eye"></i>
                   </router-link>
+                  <a
+                    href="#"
+                    class="icon-button bg-default"
+                    title="Download Invoice"
+                  >
+                    <i class="fas fa-arrow-alt-down"></i>
+                  </a>                  
                 </td>
               </tr>
             </tbody>
