@@ -52,7 +52,7 @@
               class="btn btn-primary"
               @click="myModal = !myModal"
             >
-              <i class="far fa-plus icon left mr-2"></i>Create user
+              <i class="far fa-plus icon left mr-2"></i>Create User
             </a>
             <!-- END Add User Button !-->
           </div>
@@ -120,7 +120,7 @@
                 <td>user.id</td>
                 <td>user.forename</td>
                 <td>user.email</td>
-                <td>PAYE</td>
+                <td>staff</td>
                 <td>
                   <span class="badge badge-pill badge-success">Active</span>
                 </td>
@@ -140,7 +140,7 @@
                 <td>user.id</td>
                 <td>user.forename</td>
                 <td>user.email</td>
-                <td>PAYE</td>
+                <td>staff</td>
                 <td>
                   <span class="badge badge-pill badge-success">Active</span>
                 </td>
