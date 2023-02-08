@@ -24,31 +24,31 @@
               class="nav-link active"
               aria-current="page"
               title="Dashboard"
-              ><i class="far fa-home mr-lg-1 mr-xl-2"></i>Dashboard
+              ><i class="far fa-home mr-2"></i>Dashboard
             </router-link>
           </li>
           <li class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5">
             <router-link to="/users" class="nav-link" title="Users"
-              ><i class="far fa fa-users mr-lg-1 mr-xl-2"></i>Users</router-link
+              ><i class="far fa fa-users mr-2"></i>Users</router-link
             >
           </li>
           <li class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5">
             <router-link to="/candidates" class="nav-link" title="Candidates"
-              ><i class="far fa-user-nurse mr-lg-1 mr-xl-2"></i>Candidates</router-link
+              ><i class="far fa-user-nurse mr-2"></i>Candidates</router-link
             >
           </li>
           <li class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5">
             <router-link to="/clients" class="nav-link" title="Clients"
-              ><i class="far far fa-hospital mr-lg-1 mr-xl-2"></i>Clients</router-link
+              ><i class="far far fa-hospital mr-2"></i>Clients</router-link
             >
           </li>
           <li class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5">
 <router-link to="/contracts" class="nav-link" title="Contracts"
-  ><i class="far fa-user-nurse mr-lg-1 mr-xl-2"></i>Contracts</router-link
+  ><i class="far fa-user-nurse mr-2"></i>Contracts</router-link
 ></li>
           <li class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5">
             <router-link to="/shifts" class="nav-link" title="Shifts"
-              ><i class="far fa-clock mr-lg-1 mr-xl-2"></i>Shifts
+              ><i class="far fa-clock mr-2"></i>Shifts
             </router-link>
           </li>
           <li
@@ -65,7 +65,7 @@
               aria-expanded="false"
               title="Reports"
             >
-              <i class="far fa-money-check-edit-alt mr-lg-1 mr-xl-2"></i>Reports
+              <i class="far fa-money-check-edit-alt mr-2"></i>Reports
             </router-link>
             <ul
               class="dropdown-menu mt-n5"
@@ -109,7 +109,7 @@
               aria-expanded="false"
               title="Invoices"
             >
-              <i class="far fa-file-invoice-dollar mr-lg-1 mr-xl-2"></i>Invoices
+              <i class="far fa-file-invoice-dollar mr-2"></i>Invoices
             </router-link>
             <ul
               class="dropdown-menu mt-n5"
