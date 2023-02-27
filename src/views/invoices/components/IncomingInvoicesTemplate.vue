@@ -1,6 +1,6 @@
 <template>
 
-  <div class="row">
+  <div class="row mb-5">
     <button class="btn btn-primary p-3 my-3 ml-auto">Download Invoice</button>
     <div class="col-12 card px-0">
       <div class="card-header text-white d-flex justify-content-between bg-primary px-5 py-3">
