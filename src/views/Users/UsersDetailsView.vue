@@ -322,6 +322,28 @@
                     </div>
                   </div>
                   <!-- END user Notes !-->
+                                    <!-- START user Notes !-->
+                  <div
+                    v-show="currentTab === 5"
+                    class="tab-content notes-tab"
+                  >
+                    <div class="row button-row mb-3 p-1 pt-xl-0">
+                      <div class="col-sm-12">
+                        <div class="d-flex justify-content-between">
+                          <div>
+                            <h4 class="card-title text-brand pb-1">Notes Thread</h4>
+                            <p class="card-text sub-heading pb-3">
+                              24 Notes for John Doe in the system
+                            </p>
+                          </div>
+                        </div>
+                        <div class="pt-3">
+                          notes components
+                         </div>
+                 </div>
+              </div>
+              </div>
+                  <!-- END user Notes !-->
                 </div>
               </div>
             </div>
@@ -362,6 +384,10 @@ export default {
         },
         {
           title: "Notes",
+          icon: "<far far fa-sticky-note mr-2 lg",
+        },
+        {
+          title: "Notes Thread",
           icon: "<far far fa-sticky-note mr-2 lg",
         },
       ],
