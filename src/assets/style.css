@@ -7963,6 +7963,37 @@ li.nav-item:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.auth-container {
+  width: 500px;
+}
+.auth-container .badge-warning {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 1.5rem !important;
+}
+form input.form-control {
+  font-size: 16px;
+}
+form .form-auth-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+form .form-auth-details .form-check-label {
+  font-size: 1.1rem;
+}
+form .form-auth-details .form-details-link {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+form .form-auth-details .checkbox {
+  width: 17px;
+  height: 17px;
+  margin-right: -7px;
+}
+form .btn.btn-primary {
+  font-size: 16px;
+}
 .stat-box .card-body {
   color: #868e96;
 }
