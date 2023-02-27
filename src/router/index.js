@@ -10,15 +10,15 @@ import LoginView from "../views/auth/LoginView.vue"
 import LogoutView from "../views/auth/LogoutView.vue"
 import DashboardView from "../views/dashboard/DashboardView.vue"
 import AccountView from "../views/account/AccountView.vue"
-import ShiftsView from "../views/shifts/ShiftsView.vue"
-import ShiftsDetailsView from "../views/shifts/ShiftsDetailsView.vue"
+import TimesheetsView from "../views/Timesheets/TimesheetsView.vue"
+import TimesheetsDetailsView from "../views/Timesheets/TimesheetsDetailsView.vue"
 import InvoicesView from "../views/invoices/InvoicesView.vue"
 import IncomingInvoicesView from "../views/invoices/IncomingInvoicesView.vue"
 import OutgoingInvoicesView from "../views/invoices/OutgoingInvoicesView.vue"
 import CandidatesView from "../views/candidates/CandidatesView.vue"
 import ClientsView from "../views/clients/ClientsView.vue"
-import ContractsView from "../views/contracts/ContractsView.vue"
-import ContractsDetailsView from "../views/contracts/ContractsDetailsView.vue"
+import ShiftsView from "../views/shifts/ShiftsView.vue"
+import ShiftsDetailsView from "../views/shifts/ShiftsDetailsView.vue"
 import IncomingInvoicesDetailsView from "../views/invoices/IncomingInvoicesDetailsView.vue"
 
 
@@ -121,19 +121,6 @@ const router = createRouter({
     },
 
     // --- CandidatesEnd ----
-    // --- Contracts ----
-    {
-      path: "/contracts",
-      name: "ContractsView",
-      component: ContractsView,
-    },
-    {
-      path: "/contracts/view",
-      name: "ContractsDetailsView",
-      component: ContractsDetailsView,
-    },
-    // --- CandidatesEnd ----
-
     // --- Shifts ----
     {
       path: "/shifts",
@@ -142,11 +129,24 @@ const router = createRouter({
     },
     {
       path: "/shifts/view",
-      name: "ShiftsDetails",
+      name: "ShiftsDetailsView",
       component: ShiftsDetailsView,
     },
+    // --- CandidatesEnd ----
 
-    // --- ShiftsEnd ----
+    // --- Timesheets ----
+    {
+      path: "/timesheets",
+      name: "timesheetsView",
+      component: TimesheetsView,
+    },
+    {
+      path: "/timesheets/view",
+      name: "TimesheetsDetails",
+      component: TimesheetsDetailsView,
+    },
+
+    // --- TimesheetsEnd ----
 
     // --- Invoices ----
     {

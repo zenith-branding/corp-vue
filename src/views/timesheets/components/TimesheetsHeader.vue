@@ -5,7 +5,7 @@
         <div class="col-sm-6">
           <div class="content-area">
             <!-- Title Area !-->
-            <h1 class="main-heading">Shifts Details</h1>
+            <h1 class="main-heading">Timesheets Details</h1>
             <p class="main-sub-heading">Full information about the Shift</p>
             <!-- END Title Area !-->
           </div>
@@ -23,8 +23,8 @@
             <input
               class="form-control"
               type="text"
-              placeholder="Search Shifts"
-              aria-label="Shifts Search"
+              placeholder="Search Timesheets"
+              aria-label="Timesheets Search"
             />
             <!-- END Search Input Field !-->
           </div>
@@ -36,7 +36,7 @@
 
 <script>
 export default {
-  name: "ShiftsHeader",
+  name: "TimesheetsHeader",
   components: {},
 }
 </script>
