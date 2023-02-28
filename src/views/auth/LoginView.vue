@@ -59,7 +59,7 @@
       </div>
     </div>
 
-    <div class="col-sm-6 auth-img d-none d-sm-block vh-100"></div>
+    <div class="col-sm-6 auth-login-img d-none d-sm-block vh-100"></div>
   </div>
 </template>
 
