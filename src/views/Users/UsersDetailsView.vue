@@ -336,10 +336,17 @@
                               24 Notes for John Doe in the system
                             </p>
                           </div>
+                          <div class="button-area">
+                            <router-link
+                              to="/users/view/notes/create"
+                              class="btn btn-primary"
+                              title="Add New Note"
+                              ><i class="far fa-plus icon left mr-2"></i>Add
+                              Note</router-link
+                            >
+                          </div>
                         </div>
-                        <div class="pt-3">
-                          notes components
-                         </div>
+                        <NotesThread />
                  </div>
               </div>
               </div>
@@ -356,11 +363,13 @@
 
 <script>
 import LayoutUsersDetails from "./components/LayoutUsersDetails.vue"
+import NotesThread from "./components/NotesThread.vue"
 
 export default {
   name: "UsersDetails",
   components: {
     LayoutUsersDetails,
+    NotesThread,
   },
   data() {
     return {

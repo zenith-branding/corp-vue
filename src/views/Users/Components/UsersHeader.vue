@@ -23,8 +23,8 @@
             <input
               class="form-control"
               type="text"
-              placeholder="Search User"
-              aria-label="User Search"
+              placeholder="Search Note"
+              aria-label="Note Search"
             />
             <!-- END Search Input Field !-->
           </div>

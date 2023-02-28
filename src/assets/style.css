@@ -7957,7 +7957,13 @@ li.nav-item:hover {
 .logo {
   max-width: 65px;
 }
-.auth-img {
+.auth-login-img {
+  background: url("./mlg-bg-login.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.auth-logout-img {
   background: url("./login-page-bg.png");
   background-position: 50% 50%;
   background-size: cover;
@@ -8047,6 +8053,31 @@ form .btn.btn-primary {
   font-weight: 500;
   font-size: 0.9rem;
   margin-top: 2rem;
+}
+.notes-thread .note-block {
+  padding: 1.5rem 0rem;
+  border-bottom: 1px solid #dee2e6;
+}
+.notes-thread .note-block .note-header {
+  color: #008000;
+}
+.notes-thread .note-block .note-header .user {
+  font-weight: bold;
+  padding-right: 20px;
+}
+.notes-thread .note-block .note-header .datetime {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.notes-thread .note-block .note-title {
+  padding: 20px 0px;
+}
+.notes-thread .note-block .note-content {
+  color: #868e96;
+  font-weight: 300;
+}
+.notes-thread .btn-primary {
+  margin-top: 1.5rem;
 }
 @media (max-width: 767.98px) {
   .container {
