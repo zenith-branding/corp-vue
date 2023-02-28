@@ -44,7 +44,7 @@
           </li>
           <li class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5">
 <router-link to="/shifts" class="nav-link" title="Shift"
-  ><i class="far fa-user-nurse mr-lg-1 mr-xl-2"></i>Shift</router-link
+  ><i class="far fa-receipt mr-lg-1 mr-xl-2"></i>Shift</router-link
 ></li>
           <li class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5">
             <router-link to="/timesheets" class="nav-link" title="Timesheets"
