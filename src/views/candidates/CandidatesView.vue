@@ -35,7 +35,12 @@
             </select>
             <!-- END Sort By Button !-->
             <!-- Search Button Button !-->
-            <a href="#" title="Add" class="btn btn-primary">
+            <a
+              href="#"
+              title="Search"
+              class="btn btn-primary"
+              @click="myModal = !myModal"
+            >
               <i class="far fa-search icon left mr-2"></i>Search
             </a>
             <!-- END Search Button Button !-->
@@ -216,6 +221,40 @@
       </div>
     </div>
   </div>
+   <!-- modal search -->
+  <transition name="fade">
+    <div v-if="myModal">
+      <div class="modal-mask">
+        <div class="modal-wrapper">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button class="close" @click="myModal = !myModal">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <h4 class="modal-title">Search Candidate</h4>
+              <div class="modal-body">
+                <CandidateSearchForm />
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" @click="myModal = !myModal">
+                  Search Candidate
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  @click="myModal = !myModal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </transition>
 
 </template>
 
@@ -225,7 +264,7 @@ import HeaderBottom from "../../components/HeaderBottom.vue"
 import HeaderTop from "../../components/HeaderTop.vue"
 import { mapState } from "vuex"
 import { getAPI } from "../../utils/axios-api"
-// import CreateCandidateForm from "./Components/CreateCandidateForm.vue"
+import CandidateSearchForm from "./components/CandidateSearchForm.vue"
 
 export default {
   name: "CandidatesView",
@@ -233,6 +272,7 @@ export default {
   components: {
     HeaderTop,
     HeaderBottom,
+    CandidateSearchForm,
   },
   mounted() {
     console.log("Component mounted.")
@@ -278,3 +318,44 @@ export default {
   },
 }
 </script>
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.modal-mask {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  transition: opacity 0.5s ease;
+}
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.modal-dialog {
+  background: #fdfdfd;
+}
+.modal-title{
+  padding: 1rem 2.5rem 0rem
+}
+
+.modal-content{
+  border-radius: 0;
+}
+
+.close:hover{
+  cursor: pointer;
+}
+</style>

@@ -49,7 +49,7 @@
             <a
               href="#"
               title="Add"
-              class="btn btn-primary"
+              class="btn btn-secondary"
               @click="myModal = !myModal"
             >
               <i class="far fa-plus icon left mr-2"></i>Create User
@@ -287,7 +287,7 @@ import HeaderBottom from "../../components/HeaderBottom.vue"
 import HeaderTop from "../../components/HeaderTop.vue"
 import { mapState } from "vuex"
 import { getAPI } from "../../utils/axios-api"
-import CreateUserForm from "./Components/CreateUserForm.vue"
+import CreateUserForm from "./components/CreateUserForm.vue"
 
 export default {
   name: "UsersView",
