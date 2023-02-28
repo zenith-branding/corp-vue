@@ -7866,6 +7866,9 @@ thead {
   background: #3ab048;
   color: #fff;
 }
+.table-filter .dropdown-menu {
+  top: 65%;
+}
 ul.accordion-tabs li a {
   font-size: 0.9rem;
   min-width: 120px;
@@ -7902,6 +7905,32 @@ ul.accordion-tabs li.active .btn {
 }
 .border-bottom {
   border-bottom: 1px solid #e9ecef;
+}
+.btn-secondary {
+  color: #3ab048;
+  background-color: #fff;
+  border-color: #ced4da;
+}
+.btn-secondary:hover {
+  color: #3ab048;
+  background-color: #fff;
+  border-color: #3ab048;
+}
+.btn-secondary:focus,
+.btn-secondary.focus {
+  box-shadow: 0 0 0 3px rgba(134,142,150,0.5);
+}
+.btn-secondary.disabled,
+.btn-secondary:disabled {
+  background-color: #868e96;
+  border-color: #868e96;
+}
+.btn-secondary:active,
+.btn-secondary.active,
+.show > .btn-secondary.dropdown-toggle {
+  background-color: #727b84;
+  background-image: none;
+  border-color: #6c757d;
 }
 .header-top .logo img {
   width: auto;
@@ -8079,6 +8108,16 @@ form .btn.btn-primary {
 }
 .notes-thread .btn-primary {
   margin-top: 1.5rem;
+}
+.dropdown-wrapper .dropdown-menu {
+  padding: 2rem;
+}
+.dropdown-wrapper .dropdown-menu .dp__input_wrap {
+  width: 70%;
+}
+.dropdown-wrapper .dropdown-menu .form-control {
+  padding: 8px 0px 7px 5px;
+  width: 60%;
 }
 @media (max-width: 767.98px) {
   .container {

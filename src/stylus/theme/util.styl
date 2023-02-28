@@ -84,7 +84,9 @@ thead
         background:#3ab048
         color:$white
 
-
+.table-filter
+    .dropdown-menu
+        top: 65%
 
 
 // accordion tabs
@@ -110,7 +112,6 @@ ul.accordion-tabs
     line-height 1.5
 
 
-
 .btn 
   cursor: pointer
 
@@ -131,3 +132,27 @@ ul.accordion-tabs
 
 .border-bottom
     border-bottom: 1px solid $gray-200
+
+// Buttons
+
+.btn-secondary
+    color $primary
+    background-color $white
+    border-color $gray-400
+    &:hover
+        color $primary
+        background-color $white
+        border-color $primary
+
+.btn-secondary:focus, .btn-secondary.focus
+    box-shadow 0 0 0 3px rgba(134, 142, 150, 0.5)
+
+.btn-secondary.disabled, .btn-secondary:disabled
+    background-color $secondary
+    border-color $secondary
+
+.btn-secondary:active, .btn-secondary.active,
+.show > .btn-secondary.dropdown-toggle
+    background-color $secondaryBtnHov
+    background-image none
+    border-color $secondaryHov
