@@ -50,7 +50,10 @@
           <div class="col-md-6 col-sm-12">
             <div class="content-area">
               <h4 class="card-title text-brand">Timesheets</h4>
-              <p class="card-text pb-4 mt-0" id="Timesheets-all-Timesheets-counts">
+              <p
+                class="card-text pb-4 mt-0"
+                id="Timesheets-all-Timesheets-counts"
+              >
                 <span class="total">2</span> Timesheets currently in the system
               </p>
             </div>
@@ -89,10 +92,43 @@
                   <router-link
                     to="/timesheets/view"
                     class="icon-button"
-                    title="View Medical Locums Group"
+                    title="View Timesheet"
                   >
                     <i class="far fa-eye"></i>
                   </router-link>
+
+                  <router-link
+                    to="/client/view"
+                    class="icon-button"
+                    title="See Candidate"
+                  >
+                    <i class="far far fa-hospital"></i>
+                  </router-link>
+                                    <router-link
+                    to="/candidate/view"
+                    class="icon-button"
+                    title="See Candidate"
+                  >
+                    <i class="far fa-user-nurse"></i>
+                  </router-link>
+                  <router-link
+                    to="/invoices/incoming"
+                    class="icon-button"
+                    title="See Invoice"
+                  >
+                    <i class="far fa-file-invoice-dollar"></i>
+                  </router-link>
+
+                  <a
+                    href="#"
+                    class="icon-button bg-default"
+                    title="Send Payment Breakdown Email"
+                  >
+                    <i class="far fa-envelope"></i>
+                  </a>
+                  <a href="#" class="icon-button bg-default" title="See Batch">
+                    <i class="far fa-receipt"></i>
+                  </a>
                 </td>
               </tr>
               <tr>
@@ -110,10 +146,44 @@
                   <router-link
                     to="/timesheets/view"
                     class="icon-button"
-                    title="View Medical Locums Group"
+                    title="View Timesheet"
                   >
                     <i class="far fa-eye"></i>
                   </router-link>
+
+                  <router-link
+                    to="/client/view"
+                    class="icon-button"
+                    title="See Candidate"
+                  >
+                    <i class="far far fa-hospital"></i>
+                  </router-link>
+                                    <router-link
+                    to="/candidate/view"
+                    class="icon-button"
+                    title="See Candidate"
+                  >
+                    <i class="far fa-user-nurse"></i>
+                  </router-link>
+                  
+                  <router-link
+                    to="/invoices/incoming"
+                    class="icon-button"
+                    title="See Invoice"
+                  >
+                    <i class="far fa-file-invoice-dollar"></i>
+                  </router-link>
+
+                  <a
+                    href="#"
+                    class="icon-button bg-default"
+                    title="Send Payment Breakdown Email"
+                  >
+                    <i class="far fa-envelope"></i>
+                  </a>
+                  <a href="#" class="icon-button bg-default" title="See Batch">
+                    <i class="far fa-receipt"></i>
+                  </a>
                 </td>
               </tr>
             </tbody>

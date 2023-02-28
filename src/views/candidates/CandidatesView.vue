@@ -110,13 +110,36 @@
                 <td>Self Employed</td>
                 <td class="col-actions hover-primary">
                   <router-link
-                    to="/Candidates/view"
+                    to="/candidates/view"
                     class="icon-button"
-                    title="View Medical Locums Group"
+                    title="View Candidate"
                   >
                     <i class="far fa-eye"></i>
                   </router-link>
-                </td>
+
+                  <router-link
+                    to="/client/view"
+                    class="icon-button"
+                    title="See Candidate"
+                  >
+                    <i class="far far fa-hospital"></i>
+                  </router-link>
+                  <router-link
+                    to="/invoices/incoming"
+                    class="icon-button"
+                    title="See Invoice"
+                  >
+                    <i class="far fa-file-invoice-dollar"></i>
+                  </router-link>
+
+                  <a href="#" class="icon-button bg-default" title="Send Payment Breakdown Email">
+                      <i class="far fa-envelope"></i>
+                  </a>
+                  <a href="#" class="icon-button bg-default" title="See Batch">
+                      <i class="far fa-receipt"></i>
+                  </a>
+
+              </td>
               </tr>
               <!--  -->
               <!--  -->
@@ -129,13 +152,36 @@
                 <td>Self Employed</td>
                 <td class="col-actions hover-primary">
                   <router-link
-                    to="/Candidates/view"
+                    to="/users/view"
                     class="icon-button"
-                    title="View Medical Locums Group"
+                    title="View User"
                   >
                     <i class="far fa-eye"></i>
                   </router-link>
-                </td>
+
+                  <router-link
+                    to="/client/view"
+                    class="icon-button"
+                    title="See Candidate"
+                  >
+                    <i class="far far fa-hospital"></i>
+                  </router-link>
+                  <router-link
+                    to="/invoices/incoming"
+                    class="icon-button"
+                    title="See Invoice"
+                  >
+                    <i class="far fa-file-invoice-dollar"></i>
+                  </router-link>
+
+                  <a href="#" class="icon-button bg-default" title="Send Payment Breakdown Email">
+                      <i class="far fa-envelope"></i>
+                  </a>
+                  <a href="#" class="icon-button bg-default" title="See Batch">
+                      <i class="far fa-receipt"></i>
+                  </a>
+
+              </td>
               </tr>
               <!--  -->
             </tbody>

@@ -117,10 +117,10 @@
               </tr>
               <!--  -->
               <tr>
-                <td>user.id</td>
-                <td>user.forename</td>
-                <td>user.email</td>
-                <td>staff</td>
+                <td>1</td>
+                <td>Sofia Brown</td>
+                <td>Brown@email.com</td>
+                <td>Staff</td>
                 <td>
                   <span class="badge badge-pill badge-success">Active</span>
                 </td>
@@ -128,31 +128,89 @@
                   <router-link
                     to="/users/view"
                     class="icon-button"
-                    title="View Medical Locums Group"
+                    title="View User"
                   >
                     <i class="far fa-eye"></i>
                   </router-link>
-                </td>
+                  <router-link
+                    to="/candidate/view"
+                    class="icon-button"
+                    title="See Candidate"
+                  >
+                    <i class="far fa-user-nurse"></i>
+                  </router-link>
+                  <router-link
+                    to="/client/view"
+                    class="icon-button"
+                    title="See Candidate"
+                  >
+                    <i class="far far fa-hospital"></i>
+                  </router-link>
+                  <router-link
+                    to="/invoices/incoming"
+                    class="icon-button"
+                    title="See Invoice"
+                  >
+                    <i class="far fa-file-invoice-dollar"></i>
+                  </router-link>
+
+                  <a href="#" class="icon-button bg-default" title="Send Payment Breakdown Email">
+                      <i class="far fa-envelope"></i>
+                  </a>
+                  <a href="#" class="icon-button bg-default" title="See Batch">
+                      <i class="far fa-receipt"></i>
+                  </a>
+
+              </td>
               </tr>
               <!--  -->
               <!--  -->
               <tr>
-                <td>user.id</td>
-                <td>user.forename</td>
-                <td>user.email</td>
-                <td>staff</td>
+                <td>2</td>
+                <td>John Doe</td>
+                <td>John@email.com</td>
+                <td>Staff</td>
                 <td>
                   <span class="badge badge-pill badge-success">Active</span>
                 </td>
                 <td class="col-actions hover-primary">
                   <router-link
-                    to="/users/view"
+                    to="/shifts/view"
                     class="icon-button"
-                    title="View Medical Locums Group"
+                    title="View Shift"
                   >
                     <i class="far fa-eye"></i>
                   </router-link>
-                </td>
+                  <router-link
+                    to="/candidate/view"
+                    class="icon-button"
+                    title="See Candidate"
+                  >
+                    <i class="far fa-user-nurse"></i>
+                  </router-link>
+                  <router-link
+                    to="/client/view"
+                    class="icon-button"
+                    title="See Candidate"
+                  >
+                    <i class="far far fa-hospital"></i>
+                  </router-link>
+                  <router-link
+                    to="/invoices/incoming"
+                    class="icon-button"
+                    title="See Invoice"
+                  >
+                    <i class="far fa-file-invoice-dollar"></i>
+                  </router-link>
+
+                  <a href="#" class="icon-button bg-default" title="Send Payment Breakdown Email">
+                      <i class="far fa-envelope"></i>
+                  </a>
+                  <a href="#" class="icon-button bg-default" title="See Batch">
+                      <i class="far fa-receipt"></i>
+                  </a>
+
+              </td>
               </tr>
               <!--  -->
             </tbody>

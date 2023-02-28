@@ -44,11 +44,11 @@
           </li>
           <li class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5">
 <router-link to="/shifts" class="nav-link" title="Shift"
-  ><i class="far fa-receipt mr-lg-1 mr-xl-2"></i>Shift</router-link
+  ><i class="far fa-receipt mr-2"></i>Shift</router-link
 ></li>
           <li class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5">
             <router-link to="/timesheets" class="nav-link" title="Timesheets"
-              ><i class="far fa-clock mr-lg-1 mr-xl-2"></i>Timesheets
+              ><i class="far fa-clock mr-2"></i>Timesheets
             </router-link>
           </li>
           <li
@@ -109,7 +109,7 @@
               aria-expanded="false"
               title="Invoices"
             >
-              <i class="far fa-file-invoice-dollar mr-2"></i>Invoices
+              <i class="far fa-file-invoice-dollar mr-2"></i>Pay & Bill
             </router-link>
             <ul
               class="dropdown-menu mt-n5"

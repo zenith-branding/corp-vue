@@ -128,7 +128,7 @@
                   <router-link
                     to="/client/view"
                     class="icon-button"
-                    title="See Candidate"
+                    title="See Client"
                   >
                     <i class="far far fa-hospital"></i>
                   </router-link>
@@ -176,7 +176,7 @@
                   <router-link
                     to="/client/view"
                     class="icon-button"
-                    title="See Candidate"
+                    title="See Client"
                   >
                     <i class="far far fa-hospital"></i>
                   </router-link>

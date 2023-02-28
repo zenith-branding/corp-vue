@@ -5,34 +5,34 @@
             <label for="validationDefault01" class="text-muted">Forename:</label>
             <input
               type="text"
-              class="form-control mb-3"
+              class="form-control mb-4"
               id="validationDefault01"
               value=""
             />
             <label for="validationDefault01" class="text-muted">Surname:</label>
             <input
               type="text"
-              class="form-control mb-3"
+              class="form-control mb-4"
               id="validationDefault01"
               value=""
             />
             <label for="validationDefault01" class="text-muted">Email Address:</label>
             <input
               type="text"
-              class="form-control mb-3"
+              class="form-control mb-4"
               id="validationDefault01"
               value=""
             />
             <label for="validationDefault01" class="text-muted">Password:</label>
             <input
               type="text"
-              class="form-control mb-3"
+              class="form-control mb-4"
               id="validationDefault01"
               value=""
             /><label for="validationDefault01" class="text-muted">Confirm Password:</label>
             <input
               type="text"
-              class="form-control mb-3"
+              class="form-control mb-4"
               id="validationDefault01"
               value=""
             />
