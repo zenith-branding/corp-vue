@@ -142,12 +142,27 @@ form
 
 // ======== Secondary navbar ========
 .secondary-navbar
-    .navigation
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        li
-            a 
-                color: $gray-600
-                i 
-                    font-size: 18px;
+    ul.accordion-tabs
+        li 
+            .btn-secondary 
+                display: table
+                i
+                    display: table-cell
+                    vertical-align: middle
+                    font-size: 18px
+            a
+                font-size: .9rem
+                min-width: 120px
+        li.active
+            .btn
+                background: $infoBtnHov
+                
+    // .navigation
+    //     display: flex;
+    //     justify-content: space-between;
+    //     flex-wrap: wrap;
+    //     li
+    //         a 
+    //             color: $gray-600
+    //             i 
+    //                 font-size: 18px;

@@ -1,5 +1,5 @@
 <template>
-
+  <LayoutCandidatesDetails>
     <div class="main-content user-main">
       <div class="main-content-panel my-2">
         <div class="card mb-3">
@@ -358,17 +358,18 @@
         </div>
       </div>
     </div>
-
+  </LayoutCandidatesDetails>
 </template>
 
 <script>
-// import CandidatesDetailsTab from "./components/CandidatesDetailsTab.vue"
+import LayoutCandidatesDetails from "./components/LayoutCandidatesDetails.vue"
 // // import NotesThread from "./components/NotesThread.vue"
 
 export default {
-  name: "CandidatesDetailsTab",
+  name: "CandidatesDetails",
   components: {
-
+    LayoutCandidatesDetails,
+    // NotesThread,
   },
   data() {
     return {
@@ -429,4 +430,3 @@ export default {
   },
 }
 </script>
-

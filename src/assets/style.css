@@ -7869,11 +7869,11 @@ thead {
 .table-filter .dropdown-menu {
   top: 65%;
 }
-ul.accordion-tabs li a {
+.main-content-panel ul.accordion-tabs li a {
   font-size: 0.9rem;
   min-width: 120px;
 }
-ul.accordion-tabs li.active .btn {
+.main-content-panel ul.accordion-tabs li.active .btn {
   background: rgba(58,176,72,0.33);
 }
 .list-group.notes .list-group-item {
@@ -8123,16 +8123,20 @@ form .btn.btn-primary {
   padding: 8px 0px 7px 5px;
   width: 60%;
 }
-.secondary-navbar .navigation {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.secondary-navbar ul.accordion-tabs li .btn-secondary {
+  display: table;
 }
-.secondary-navbar .navigation li a {
-  color: #868e96;
-}
-.secondary-navbar .navigation li a i {
+.secondary-navbar ul.accordion-tabs li .btn-secondary i {
+  display: table-cell;
+  vertical-align: middle;
   font-size: 18px;
+}
+.secondary-navbar ul.accordion-tabs li a {
+  font-size: 0.9rem;
+  min-width: 120px;
+}
+.secondary-navbar ul.accordion-tabs li.active .btn {
+  background: rgba(58,176,72,0.33);
 }
 @media (max-width: 767.98px) {
   .container {
