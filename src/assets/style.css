@@ -7932,6 +7932,10 @@ ul.accordion-tabs li.active .btn {
   background-image: none;
   border-color: #6c757d;
 }
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 3px #198754;
+}
 .header-top .logo img {
   width: auto;
   height: 42px;
@@ -7968,7 +7972,7 @@ ul.accordion-tabs li.active .btn {
   background: #198754;
 }
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0,0,0,0.6);
+  color: rgba(0,0,0,0.7);
 }
 li.nav-item:hover {
   background: rgba(58,176,72,0.18);
@@ -8125,6 +8129,13 @@ form .btn.btn-primary {
   }
   .header-top .btn-icon:first-child {
     margin-right: 55px;
+  }
+  .navbar-collapse.collapse.show .navbar-nav .nav-item {
+    margin: 5px 0px;
+    padding: 5px 5px;
+  }
+  .navbar-collapse.collapse.show .navbar-nav .nav-item .nav-link i {
+    width: 25px;
   }
 }
 @media (max-width: 576px) {

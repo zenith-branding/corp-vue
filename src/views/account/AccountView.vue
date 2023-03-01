@@ -16,7 +16,7 @@
                     class="mr-2"
                   >
                     <a
-                      class="text-left btn btn-info w-100 m-1 p-2"
+                      class="text-left btn btn-info w-100 m-1 p-3"
                       :title="tab.title"
                     >
                       <i :class="tab.icon"></i>{{ tab.title }}</a
