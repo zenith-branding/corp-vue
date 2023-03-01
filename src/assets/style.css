@@ -7977,12 +7977,9 @@ thead {
 li.nav-item:hover {
   background: rgba(58,176,72,0.18);
 }
-.navbar-expand-md .navbar-nav .dropdown-menu {
-  top: 28px;
-  padding: 0.5rem;
-}
-.navbar-expand-md .navbar-nav .dropdown-menu .dropdown-item {
-  padding: 1rem 1.5rem;
+.dropdown .dropdown-menu {
+  margin: 0px;
+  line-height: 24px;
 }
 .table-sm th,
 .table-sm td {

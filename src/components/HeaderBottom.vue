@@ -68,7 +68,7 @@
               <i class="far fa-money-check-edit-alt mr-2"></i>Reports
             </router-link>
             <ul
-              class="dropdown-menu mt-n5"
+              class="dropdown-menu"
               v-bind:class="{ 'd-block': toggleReports, 'd-none': !toggleReports }"
               aria-labelledby="dropdownMenuButton1"
             >
@@ -112,7 +112,7 @@
               <i class="far fa-file-invoice-dollar mr-2"></i>Pay & Bill
             </router-link>
             <ul
-              class="dropdown-menu mt-n5"
+              class="dropdown-menu"
               v-bind:class="{ 'd-block': toggleInvoices, 'd-none': !toggleInvoices }"
               aria-labelledby="dropdownMenuButton1"
             >
