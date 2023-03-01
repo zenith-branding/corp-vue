@@ -22,8 +22,8 @@
         <div class="col-lg-3 col-md-4 col-sm-12 m-xs-b">
           <CandidatesSidebar />
         </div>
-        <div class="col-lg-9 col-md-8 col-sm-12">
-          <div class="col-12">
+        <div class="col-lg-9 col-md-8 col-sm-12 pr-2">
+          <div class="col-12 pr-2">
             <div class="tab-contents">
               <!-- START Personal Information !-->
               <div v-show="currentTab === 0" class="tab-content">
@@ -36,7 +36,7 @@
                 class="tab-content"
                 id="my account-contact-number"
               >
-                <AccountSettings />
+                <CandidateTimesheetsTab />
               </div>
               <!-- END my account Contact Numbers !-->
 
@@ -165,10 +165,12 @@
 
 <script>
 import CandidateDetailsTab from "./CandidateDetailsTab.vue"
+import CandidateTimesheetsTab from "./CandidateTimesheetsTab.vue"
+
 import CandidatesSidebar from "./CandidatesSidebar.vue"
 export default {
   name: "SecondaryNavbar",
-  components: { CandidatesSidebar, CandidateDetailsTab },
+  components: { CandidatesSidebar, CandidateDetailsTab, CandidateTimesheetsTab },
   data() {
     return {
       currentTab: 0,
