@@ -8123,6 +8123,17 @@ form .btn.btn-primary {
   padding: 8px 0px 7px 5px;
   width: 60%;
 }
+.secondary-navbar .navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.secondary-navbar .navigation li a {
+  color: #868e96;
+}
+.secondary-navbar .navigation li a i {
+  font-size: 18px;
+}
 @media (max-width: 767.98px) {
   .container {
     max-width: 100%;

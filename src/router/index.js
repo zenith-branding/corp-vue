@@ -16,6 +16,7 @@ import InvoicesView from "../views/invoices/InvoicesView.vue"
 import IncomingInvoicesView from "../views/invoices/IncomingInvoicesView.vue"
 import OutgoingInvoicesView from "../views/invoices/OutgoingInvoicesView.vue"
 import CandidatesView from "../views/candidates/CandidatesView.vue"
+import CandidatesDetailsView from "../views/candidates/CandidatesDetailsView.vue"
 import ClientsView from "../views/clients/ClientsView.vue"
 import ShiftsView from "../views/shifts/ShiftsView.vue"
 import ShiftsDetailsView from "../views/shifts/ShiftsDetailsView.vue"
@@ -110,6 +111,11 @@ const router = createRouter({
       path: "/candidates",
       name: "CandidatesView",
       component: CandidatesView,
+    },
+    {
+      path: "/candidates/view",
+      name: "CandidatesDetailsView",
+      component: CandidatesDetailsView,
     },
 
     // --- CandidatesEnd ----
