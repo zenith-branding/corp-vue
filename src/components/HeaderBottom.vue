@@ -43,6 +43,10 @@
             >
           </li>
           <li class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5">
+          <router-link to="/payroll" class="nav-link" title="Payroll"
+            ><i class="fas fa-money-bill mr-2"></i>Payroll</router-link
+          ></li>
+          <li class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5">
 <router-link to="/shifts" class="nav-link" title="Shift"
   ><i class="far fa-receipt mr-2"></i>Shift</router-link
 ></li>

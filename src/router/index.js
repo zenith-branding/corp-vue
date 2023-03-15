@@ -21,6 +21,7 @@ import ClientsView from "../views/clients/ClientsView.vue"
 import ShiftsView from "../views/shifts/ShiftsView.vue"
 import ShiftsDetailsView from "../views/shifts/ShiftsDetailsView.vue"
 import IncomingInvoicesDetailsView from "../views/invoices/IncomingInvoicesDetailsView.vue"
+import PayrollView from "../views/payroll/PayrollView.vue"
 
 
 
@@ -177,6 +178,12 @@ const router = createRouter({
     },
 
     // --- InvoicesEnd ----
+    // --- Payroll ----
+    {
+      path: "/payroll",
+      name: "PayrollView",
+      component: PayrollView,
+    },
   ],
 })
 
