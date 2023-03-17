@@ -22,11 +22,12 @@ import ShiftsView from "../views/shifts/ShiftsView.vue"
 import ShiftsDetailsView from "../views/shifts/ShiftsDetailsView.vue"
 import IncomingInvoicesDetailsView from "../views/invoices/IncomingInvoicesDetailsView.vue"
 import PayrollView from "../views/payroll/PayrollView.vue"
+import AllPayrollView from "../views/payroll/AllPayrollView.vue"
 import ReadyToPayPayrollView from "../views/payroll/ReadyToPayPayrollView.vue"
 import OnHoldPayrollView from "../views/payroll/OnHoldPayrollView.vue"
 import PendingPayrollView from "../views/payroll/PendingPayrollView.vue"
 import PaidPayrollView from "../views/payroll/PaidPayrollView.vue"
-
+import ReportsView from "../views/reports/ReportsView.vue"
 
 
 const router = createRouter({
@@ -118,7 +119,7 @@ const router = createRouter({
       component: CandidatesView,
     },
     {
-      path: "/candidates/view",
+      path: "/candidate/view",
       name: "CandidatesDetailsView",
       component: CandidatesDetailsView,
     },
@@ -189,6 +190,11 @@ const router = createRouter({
       component: PayrollView,
     },
     {
+      path: "/payroll/all",
+      name: "AllPayrollView",
+      component: AllPayrollView,
+    },
+    {
       path: "/payroll/ready-to-pay",
       name: "ReadyToPayPayrollView",
       component: ReadyToPayPayrollView,
@@ -208,7 +214,14 @@ const router = createRouter({
       name: "PaidPayrollView",
       component: PaidPayrollView,
     },
-
+    // --- PayrollEnd ----
+    // --- Reports ----
+    {
+      path: "/reports",
+      name: "ReportsView",
+      component: ReportsView,
+    },
+    // --- ReportsEnd ----
   ],
 })
 

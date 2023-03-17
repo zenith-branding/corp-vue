@@ -88,7 +88,7 @@
                 </td>
                 <td class="col-actions">
                   <router-link
-                    to="/Candidates/view"
+                    to="/candidate/view"
                     class="icon-button"
                     title="View Medical Locums Group"
                   >
@@ -115,7 +115,7 @@
                 <td>Self Employed</td>
                 <td class="col-actions hover-primary">
                   <router-link
-                    to="/candidates/view"
+                    to="/candidate/view"
                     class="icon-button"
                     title="View Candidate"
                   >

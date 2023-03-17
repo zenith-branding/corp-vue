@@ -55,7 +55,6 @@
               class="nav-link dropdown-toggle"
               id="dropdownMenuButton1"
               role="button"
-              data-bs-toggle="dropdown"
               aria-expanded="false"
               title="Payroll"
             >
@@ -70,7 +69,7 @@
               aria-labelledby="dropdownMenuButton1"
             >
             <li>
-                <router-link to="/payroll" class="dropdown-item"
+                <router-link to="/payroll/all" class="dropdown-item"
                   >All Payroll</router-link
                 >
               </li>
@@ -108,22 +107,20 @@
             </router-link>
           </li>
           <li
-            class="nav-item dropdown mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5"
-            @mouseover="toggleReports = true"
-            @mouseleave="toggleReports = false"
+            class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5"
+
           >
             <router-link
-              to="#/reports"
-              class="nav-link dropdown-toggle"
+              to="/reports"
+              class="nav-link"
               id="dropdownMenuButton1"
               role="button"
-              data-bs-toggle="dropdown"
               aria-expanded="false"
               title="Reports"
             >
               <i class="far fa-money-check-edit-alt mr-2"></i>Reports
             </router-link>
-            <ul
+            <!-- <ul
               class="dropdown-menu"
               v-bind:class="{
                 'd-block': toggleReports,
@@ -151,7 +148,7 @@
                   >Outstanding Timesheets</router-link
                 >
               </li>
-            </ul>
+            </ul> -->
           </li>
           <li
             class="nav-item dropdown mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5"
@@ -163,10 +160,10 @@
               class="nav-link dropdown-toggle"
               id="dropdownMenuButton1"
               role="button"
-              data-bs-toggle="dropdown"
               aria-expanded="false"
               title="Invoices"
             >
+            <!-- data-bs-toggle="dropdown" -->
               <i class="far fa-file-invoice-dollar mr-2"></i>Pay & Bill
             </router-link>
             <ul
