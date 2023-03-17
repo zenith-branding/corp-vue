@@ -7897,11 +7897,20 @@ thead {
   padding: 0.4rem 0.6rem;
   border-radius: 10rem;
 }
+.badge-pill.p-lg {
+  padding: 0.6rem 1rem !important;
+}
 .card-body {
   line-height: 1.5;
 }
 .card-title {
   margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+}
+.card-title .badge-secondary {
+  margin-left: 10px;
+  font-size: 1rem;
+  padding: 0.6rem 0.8rem;
 }
 .border-bottom {
   border-bottom: 1px solid #e9ecef;

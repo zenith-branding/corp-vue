@@ -87,7 +87,7 @@
                 <td>Nuffield Hospital</td>
                 <td>East of England</td>
                 <td>
-                  <span class="badge badge-pill badge-success">Paid</span>
+                  <span class="badge badge-pill badge-success p-lg">Paid</span>
                 </td>
 
                 <td>IN-8495843</td>
