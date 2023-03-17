@@ -22,6 +22,8 @@ import ShiftsView from "../views/shifts/ShiftsView.vue"
 import ShiftsDetailsView from "../views/shifts/ShiftsDetailsView.vue"
 import IncomingInvoicesDetailsView from "../views/invoices/IncomingInvoicesDetailsView.vue"
 import PayrollView from "../views/payroll/PayrollView.vue"
+import ReadyToPayPayrollView from "../views/payroll/ReadyToPayPayrollView.vue"
+import OnHoldPayrollView from "../views/payroll/OnHoldPayrollView.vue"
 
 
 
@@ -183,6 +185,16 @@ const router = createRouter({
       path: "/payroll",
       name: "PayrollView",
       component: PayrollView,
+    },
+    {
+      path: "/payroll/ready-to-pay",
+      name: "ReadyToPayPayrollView",
+      component: ReadyToPayPayrollView,
+    },
+    {
+      path: "/payroll/on-hold",
+      name: "OnHoldPayrollView",
+      component: OnHoldPayrollView,
     },
   ],
 })

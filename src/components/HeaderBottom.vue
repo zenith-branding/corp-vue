@@ -2,9 +2,6 @@
   <div class="header-bottom container-xl bg-light mb-4">
     <nav class="container navbar navbar-expand-md navbar-light">
       <span class="d-md-none d-sm-block"></span>
-      <!-- <div class="container-fluid"> -->
-      <!-- <span class=""></span>
-        <a class="navbar-brand d-none d-md-block" href="#">Home</a> -->
       <button
         class="navbar-toggler"
         type="button"
@@ -42,14 +39,69 @@
               ><i class="far far fa-hospital mr-2"></i>Clients</router-link
             >
           </li>
+          <!-- <li class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5">
+            <router-link to="/payroll" class="nav-link" title="Payroll"
+              ><i class="fas fa-money-bill mr-2"></i>Payroll</router-link
+            >
+          </li> -->
+          <!--  -->
+          <li
+            class="nav-item dropdown mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5"
+            @mouseover="togglePayroll = true"
+            @mouseleave="togglePayroll = false"
+          >
+            <router-link
+              to="/payroll"
+              class="nav-link dropdown-toggle"
+              id="dropdownMenuButton1"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              title="Payroll"
+            >
+              <i class="fas fa-money-bill mr-2"></i>Payroll
+            </router-link>
+            <ul
+              class="dropdown-menu"
+              v-bind:class="{
+                'd-block': togglePayroll,
+                'd-none': !togglePayroll,
+              }"
+              aria-labelledby="dropdownMenuButton1"
+            >
+            <li>
+                <router-link to="/payroll" class="dropdown-item"
+                  >All Payroll</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/payroll/ready-to-pay" class="dropdown-item"
+                  >Ready to Pay</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/payroll/on-hold" class="dropdown-item"
+                  >On Hold</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/payroll/pending" class="dropdown-item"
+                  >Pending</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/payroll/incoming" class="dropdown-item"
+                  >Paid</router-link
+                >
+              </li>
+            </ul>
+          </li>
+          <!--  -->
           <li class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5">
-          <router-link to="/payroll" class="nav-link" title="Payroll"
-            ><i class="fas fa-money-bill mr-2"></i>Payroll</router-link
-          ></li>
-          <li class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5">
-<router-link to="/shifts" class="nav-link" title="Shift"
-  ><i class="far fa-receipt mr-2"></i>Shift</router-link
-></li>
+            <router-link to="/shifts" class="nav-link" title="Shift"
+              ><i class="far fa-receipt mr-2"></i>Shift</router-link
+            >
+          </li>
           <li class="nav-item mr-2 py-lg-1 mr-md-2 mr-lg-4 mr-xl-5">
             <router-link to="/timesheets" class="nav-link" title="Timesheets"
               ><i class="far fa-clock mr-2"></i>Timesheets
@@ -73,10 +125,12 @@
             </router-link>
             <ul
               class="dropdown-menu"
-              v-bind:class="{ 'd-block': toggleReports, 'd-none': !toggleReports }"
+              v-bind:class="{
+                'd-block': toggleReports,
+                'd-none': !toggleReports,
+              }"
               aria-labelledby="dropdownMenuButton1"
             >
-              
               <li>
                 <router-link to="/reports/outgoing" class="dropdown-item"
                   >Payroll - Ready to Pay</router-link
@@ -117,7 +171,10 @@
             </router-link>
             <ul
               class="dropdown-menu"
-              v-bind:class="{ 'd-block': toggleInvoices, 'd-none': !toggleInvoices }"
+              v-bind:class="{
+                'd-block': toggleInvoices,
+                'd-none': !toggleInvoices,
+              }"
               aria-labelledby="dropdownMenuButton1"
             >
               <li>
@@ -139,7 +196,6 @@
           </li>
         </ul>
       </div>
-      <!-- </div> -->
     </nav>
   </div>
 </template>
@@ -151,6 +207,7 @@ export default {
     return {
       toggleReports: false,
       toggleInvoices: false,
+      togglePayroll: false,
     }
   },
 }

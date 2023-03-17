@@ -10,7 +10,7 @@
         >
           <router-link
             to="/candidates"
-            title="267 Shifts on-hold this week"
+            title="Candidates"
             class="card-body"
           >
             <div class="stat-box-wrapper">
@@ -36,8 +36,8 @@
           class="card card-success stat-box mb-3"
         >
           <router-link
-            to="/invoices/outgoing/waiting-payment"
-            title="£21,392 Clients paid this week"
+            to="/candidates"
+            title="Candidates"
             class="card-body"
           >
             <div class="stat-box-wrapper">
