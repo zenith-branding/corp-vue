@@ -90,7 +90,7 @@
                 >
               </li>
               <li>
-                <router-link to="/payroll/incoming" class="dropdown-item"
+                <router-link to="/payroll/paid" class="dropdown-item"
                   >Paid</router-link
                 >
               </li>

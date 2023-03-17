@@ -24,6 +24,8 @@ import IncomingInvoicesDetailsView from "../views/invoices/IncomingInvoicesDetai
 import PayrollView from "../views/payroll/PayrollView.vue"
 import ReadyToPayPayrollView from "../views/payroll/ReadyToPayPayrollView.vue"
 import OnHoldPayrollView from "../views/payroll/OnHoldPayrollView.vue"
+import PendingPayrollView from "../views/payroll/PendingPayrollView.vue"
+import PaidPayrollView from "../views/payroll/PaidPayrollView.vue"
 
 
 
@@ -196,6 +198,17 @@ const router = createRouter({
       name: "OnHoldPayrollView",
       component: OnHoldPayrollView,
     },
+    {
+      path: "/payroll/pending",
+      name: "PendingPayrollView",
+      component: PendingPayrollView,
+    },
+    {
+      path: "/payroll/paid",
+      name: "PaidPayrollView",
+      component: PaidPayrollView,
+    },
+
   ],
 })
 
