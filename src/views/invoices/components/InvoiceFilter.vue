@@ -54,6 +54,38 @@
           />
         </div>
       </li>
+       <li>
+        <div class="filter-option">
+          <p class="sub-heading">Per</p>
+        </div>
+        <div>
+         <select class="custom-select mr-3 my-2 w-100" id="inlineFormCustomSelect">
+            <option selected>Type</option>
+            <option value="1">Candidate</option>
+            <option value="2">Client</option>
+            <option value="3">Consultant</option>
+          </select>
+        </div>
+        <div class="filter-option">
+          <p class="sub-heading my-3">Name</p>
+        </div>
+        <div>
+          <input
+            class="form-control mr-3 my-4 w-100"
+            type="text"
+            placeholder="Name"
+            aria-label="Invoice Search"
+          />
+                            <a 
+                            @click="toggleFilter = !toggleFilter"
+                            href="#" title="Add" class="btn btn-primary w-100 mt-4">
+            <i class="far fa-search icon left mr-2"></i>Search
+          </a>
+        </div>
+      </li>
+      <li>
+
+      </li>
     </ul>
   </div>
 </template>

@@ -7890,6 +7890,10 @@ thead {
 .btn {
   cursor: pointer;
 }
+.btn.lrg {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+}
 .badge {
   font-size: 85%;
 }

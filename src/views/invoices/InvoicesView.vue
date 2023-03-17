@@ -18,7 +18,7 @@
         <div class="table-filter">
           <router-link
             to="#"
-            class="btn btn-secondary nav-link dropdown-toggle mr-3"
+            class="btn btn-secondary lrg nav-link  mr-3 w-100"
             id="dropdownMenuButton1"
             role="button"
             data-bs-toggle="dropdown"
@@ -34,26 +34,19 @@
         <!-- END Dropdown Filter!-->
 
         <div class="button-area d-flex">
-          <!-- Search Input Field !-->
-          <input
-            class="form-control mr-3"
-            type="text"
-            placeholder="Search Invoice"
-            aria-label="Invoice Search"
-          />
-          <!-- END Search Input Field !-->
+
           <!-- Sort By Button !-->
-          <select class="custom-select mr-3" id="inlineFormCustomSelect">
+          <!-- <select class="custom-select mr-3" id="inlineFormCustomSelect">
             <option selected>Sort By</option>
             <option value="1">Settled</option>
             <option value="2">Waiting Payment</option>
             <option value="3">Date</option>
-          </select>
+          </select> -->
           <!-- END Sort By Button !-->
           <!-- Search Button Button !-->
-          <a href="#" title="Add" class="btn btn-primary">
+          <!-- <a href="#" title="Add" class="btn btn-primary">
             <i class="far fa-search icon left mr-2"></i>Search
-          </a>
+          </a> -->
           <!-- END Search Button Button !-->
         </div>
       </div>
