@@ -390,14 +390,14 @@ export default {
           title: "Activity",
           icon: "far fa-user icon left mr-2 lg",
         },
-        {
-          title: "Notes",
-          icon: "<far far fa-sticky-note mr-2 lg",
-        },
-        {
-          title: "Notes Thread",
-          icon: "<far far fa-sticky-note mr-2 lg",
-        },
+        // {
+        //   title: "Notes",
+        //   icon: "<far far fa-sticky-note mr-2 lg",
+        // },
+        // {
+        //   title: "Notes",
+        //   icon: "<far far fa-sticky-note mr-2 lg",
+        // },
       ],
     }
   },

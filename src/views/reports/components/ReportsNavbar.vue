@@ -39,7 +39,8 @@
             <div class="tab-contents">
               <!-- START Personal Information !-->
               <div v-show="currentTab === 0" class="tab-content">
-                <PayBillTab />
+                
+                <PayrollTab />
               </div>
               <!-- END Personal Information !-->
               <!-- START my account Contact Numbers !-->
@@ -48,7 +49,8 @@
                 class="tab-content"
                 id="my account-contact-number"
               >
-                <PayrollTab />
+              <PayBillTab />
+                
               </div>
               <!-- END my account Contact Numbers !-->
 
@@ -87,12 +89,12 @@ export default {
       currentTab: 0,
       tabs: [
         {
-          title: "Pay & Bill",
-          icon: "far fa-cog icon left mr-2 lg",
-        },
-        {
           title: "Payrol",
           icon: "far fa-hospital icon left mr-2 lg",
+        },
+        {
+          title: "Pay & Bill",
+          icon: "far fa-cog icon left mr-2 lg",
         },
         {
           title: "Invoices",

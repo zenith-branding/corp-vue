@@ -50,65 +50,55 @@
                   <div class="col-sm-12">
                     <div class="d-flex justify-content-between">
                       <div>
-                        <h4 class="card-title text-brand pb-1">Activity</h4>
+                        <h4 class="card-title text-brand pb-1">Clients</h4>
                         <p class="card-text sub-heading pb-3">
-                          Activity for John Doe in the system
+                          Clients
                         </p>
                       </div>
                     </div>
                     <div class="table-responsive hide-scroll-bars pt-3">
-                      <table
-                        id="Users-all-Users-table"
-                        class="table table-sm table-hover"
-                      >
-                        <thead class="table-head">
-                          <tr>
-                            <th scope="col">Type</th>
-                            <th scope="col">Model</th>
-                            <th scope="col">Date</th>
-                          </tr>
-                        </thead>
-                        <tbody class="table-body">
-                          <tr>
-                            <td>
-                              <span class="badge badge-pill badge-warning"
-                                >Update</span
-                              >
-                            </td>
-                            <td>Address</td>
-                            <td>
-                              <span>22/01/2023</span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <span class="badge badge-pill badge-success"
-                                >Create</span
-                              >
-                            </td>
-                            <td>Note</td>
-                            <td>
-                              <span>16/01/2023</span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <span class="badge badge-pill badge-danger"
-                                >Delete</span
-                              >
-                            </td>
-                            <td>Note</td>
-                            <td>
-                              <span>11/01/2023</span>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                      
                     </div>
                   </div>
                 </div>
               </div>
               <!-- END my account General Details !-->
+                <!-- START user Notes !-->
+                  <div
+                    v-show="currentTab === 3"
+                    class="tab-content notes-tab"
+                  >
+                  <div class="card p-4 mt-2">
+
+              
+                    <div class="row button-row mb-3 p-1 pt-xl-0">
+                      <div class="col-sm-12">
+                        <div class="d-flex justify-content-between">
+                          <div>
+                            <h4 class="card-title text-brand pb-1">Notes</h4>
+                            <p class="card-text sub-heading pb-3">
+                              24 Notes for John Doe in the system
+                            </p>
+                          </div>
+                          <div class="button-area">
+                            <router-link
+                              to="/users/view/notes/create"
+                              class="btn btn-primary"
+                              title="Add New Note"
+                              ><i class="far fa-plus icon left mr-2"></i>Add
+                              Note</router-link
+                            >
+                          </div>
+                        </div>
+                        <div class="">
+
+                          <NotesThread />
+                        </div>
+                 </div>
+                 </div>
+              </div>
+              </div>
+                  <!-- END user Notes !-->
              
             </div>
           </div>
@@ -166,11 +156,12 @@
 <script>
 import CandidateDetailsTab from "./CandidateDetailsTab.vue"
 import CandidateTimesheetsTab from "./CandidateTimesheetsTab.vue"
+import NotesThread from "../../users/components/NotesThread.vue"
 
 import CandidatesSidebar from "./CandidatesSidebar.vue"
 export default {
   name: "SecondaryNavbar",
-  components: { CandidatesSidebar, CandidateDetailsTab, CandidateTimesheetsTab },
+  components: { CandidatesSidebar, CandidateDetailsTab, CandidateTimesheetsTab, NotesThread  },
   data() {
     return {
       currentTab: 0,
@@ -187,18 +178,10 @@ export default {
           title: "Clients",
           icon: "far fa-hospital icon left mr-2 lg",
         },
-        // {
-        //   title: "Activity",
-        //   icon: "far fa-user icon left mr-2 lg",
-        // },
-        // {
-        //   title: "Notes",
-        //   icon: "<far far fa-sticky-note mr-2 lg",
-        // },
-        // {
-        //   title: "Notes Thread",
-        //   icon: "<far far fa-sticky-note mr-2 lg",
-        // },
+        {
+          title: "Notes",
+          icon: "<far far fa-sticky-note mr-2 lg",
+        },
       ],
     }
   },

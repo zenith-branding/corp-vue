@@ -257,7 +257,7 @@
                       <div class="col-sm-12">
                         <div class="d-flex justify-content-between">
                           <div>
-                            <h4 class="card-title text-brand pb-1">Notes Thread</h4>
+                            <h4 class="card-title text-brand pb-1">Notes</h4>
                             <p class="card-text sub-heading pb-3">
                               24 Notes for John Doe in the system
                             </p>
@@ -318,7 +318,7 @@ export default {
           icon: "far fa-user icon left mr-2 lg",
         },
         {
-          title: "Notes Thread",
+          title: "Notes",
           icon: "<far far fa-sticky-note mr-2 lg",
         },
       ],
