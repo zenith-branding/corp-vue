@@ -26,9 +26,9 @@
             </thead>
             <tbody class="table-body">
               <tr>
-                <td>id</td>
-                <td> user.forename </td>
-                <td> user.email </td>
+                <td>ID-01</td>
+                <td> John </td>
+                <td> John@email.com </td>
                 <td>Create</td>
                 <td>
                   <span class="badge badge-pill badge-success">Active</span>
@@ -45,9 +45,9 @@
                 </td>
               </tr>
                             <tr>
-                <td>id</td>
-                <td> user.forename </td>
-                <td> user.email </td>
+                <td>ID-02</td>
+                <td> John </td>
+                <td> John@email.com </td>
                 <td>Create</td>
                 <td>
                   <span class="badge badge-pill badge-success">Active</span>
@@ -64,9 +64,9 @@
                 </td>
               </tr>
                             <tr>
-                <td>id</td>
-                <td> user.forename </td>
-                <td> user.email </td>
+                <td>ID-03</td>
+                <td> John </td>
+                <td> John@email.com </td>
                 <td>Create</td>
                 <td>
                   <span class="badge badge-pill badge-success">Active</span>

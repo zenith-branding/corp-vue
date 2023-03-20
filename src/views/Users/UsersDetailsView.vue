@@ -248,83 +248,9 @@
                     </div>
                   </div>
                   <!-- END Candidate General Details !-->
-                  <!-- START user Notes !-->
-                  <div
-                    v-show="currentTab === 4"
-                    class="tab-content notes-tab"
-                  >
-                    <div class="row button-row mb-3 p-1 pt-xl-0">
-                      <div class="col-sm-12">
-                        <div class="d-flex justify-content-between">
-                          <div>
-                            <h4 class="card-title text-brand pb-1">Notes</h4>
-                            <p class="card-text sub-heading pb-3">
-                              Notes for John Doe in the system
-                            </p>
-                          </div>
-                        </div>
-                        <div class="table-responsive hide-scroll-bars pt-3">
-                          <table
-                            id="Users-all-Users-table"
-                            class="table table-sm table-hover"
-                          >
-                            <tbody class="table-body">
-                              <tr>
-                                <td>Medical Locums Note </td>
-                                <td>
-                                  <span>22/01/2023</span>
-                                </td>
-                                <td class="col-actions hover-primary">
-                                  <router-link
-                                    to="/users/view/notes/view"
-                                    class="icon-button"
-                                    title="View Medical Locums Group"
-                                  >
-                                    <i class="far fa-eye"></i>
-                                  </router-link>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>Porta ac consectetur ac</td>
-                                <td>
-                                  <span>16/01/2023</span>
-                                </td>
-                                <td class="col-actions hover-primary">
-                                  <router-link
-                                    to="/users/view/notes/view"
-                                    class="icon-button"
-                                    title="View Medical Locums Group"
-                                  >
-                                    <i class="far fa-eye"></i>
-                                  </router-link>
-                                </td>
-                              </tr>
-                              <tr>
-                                
-                                <td>Note</td>
-                                <td>
-                                  <span>11/01/2023</span>
-                                </td>
-                                <td class="col-actions hover-primary">
-                                  <router-link
-                                    to="/users/view/notes/view"
-                                    class="icon-button"
-                                    title="View Medical Locums Group"
-                                  >
-                                    <i class="far fa-eye"></i>
-                                  </router-link>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- END user Notes !-->
                                     <!-- START user Notes !-->
                   <div
-                    v-show="currentTab === 5"
+                    v-show="currentTab === 4"
                     class="tab-content notes-tab"
                   >
                     <div class="row button-row mb-3 p-1 pt-xl-0">
@@ -390,10 +316,6 @@ export default {
         {
           title: "Activity",
           icon: "far fa-user icon left mr-2 lg",
-        },
-        {
-          title: "Notes",
-          icon: "<far far fa-sticky-note mr-2 lg",
         },
         {
           title: "Notes Thread",

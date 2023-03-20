@@ -8098,6 +8098,12 @@ form .btn.btn-primary {
   font-size: 0.9rem;
   margin-top: 2rem;
 }
+.notes-thread ul li:nth-child(even) {
+  margin-left: 75px;
+}
+.notes-thread ul li:nth-child(odd) {
+  margin-right: 75px;
+}
 .notes-thread .note-block {
   padding: 1.5rem 0rem;
   border-bottom: 1px solid #dee2e6;
